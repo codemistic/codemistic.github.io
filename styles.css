@@ -52,8 +52,9 @@ p {
 }
 
 hr {
-    border-color: rgb(68, 64, 64);
-    width: 30%;
+    margin: 10px auto;
+    
+    width: 100%;
 }
 
 .roadmap-header {
@@ -64,15 +65,15 @@ hr {
 
 /* navbar */
 
-.navbar {
+.navbar,.dropdown-menu {
     background-color: steelblue;
     position: sticky;
 }
 
-.nav-item {
+.nav-item,.dropdown-item {
     padding: 0 18px;
     font-family: 'Ubuntu', sans-serif;
-    color: htrgba(211, 209, 207, 0.904);
+    color: white
 }
 
 .navbar-brand {
@@ -81,12 +82,30 @@ hr {
     font-size: 2.3rem;
     padding-left: 1.2%;
 }
-
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color:white;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.dropdown-divider {
+    height: 0;
+    margin: .5rem 0;
+    overflow: hidden;
+    border-top: 1px solid steelblue;
+}
 
 /* HEADER */
 
 .heading {
     background-color: steelblue;
+    
     color: white;
     padding: 2%;
 }
@@ -192,7 +211,7 @@ hr {
     padding: 2%;
     width: 96%;
     height: 95%;
-    box-shadow: 1px 1px 5px 3px #9babf0b7;
+    box-shadow: 1px 1px 5px 3px rgb(212, 211, 211);
     margin-top: 10px;
 }
 
@@ -208,7 +227,7 @@ hr {
 }
 
 .language-card:hover {
-    box-shadow: 1px 1px 5px 3px #94a5f1ea;
+    box-shadow: 1px 1px 5px 3px #929292ea;
 }
 
 .python {
@@ -245,6 +264,7 @@ hr {
 .feature-card-header {
     font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
 }
 
 .feature-card-content {
@@ -265,33 +285,168 @@ hr {
 
 /* Mail Section*/
 
-.how {
-    margin-top: 3%;
-}
 
-.mail {
-    color: blue;
+
+/* .mail {
+    color: rgb(214, 214, 214);
     text-decoration: none;
 }
 
 .mail:hover {
-    color: rgba(0, 0, 255, 0.753);
-}
+    color: rgba(253, 253, 253, 0.753);
+} */
 
 
 /* Footer Section */
-
+/* Footer */
 footer {
+    background: steelblue ;
+    padding: 2%
+}
+footer h5{
+    color: white;
+}
+footer .logo{
+    width: 32%;
+    text-align: center;
+
+}
+footer .foot-header {
+    margin-bottom: 8px; 
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1.7px;
+}
+
+footer .footer-ul {
+    list-style: none;
+    text-align: left;
+    font-size: 1rem;
+    padding-inline-start: 0;
+}
+
+footer .f-links {
+    color: rgb(255, 255, 255);
+}
+
+footer .f-links:hover {
+    color: rgb(191, 221, 247);
+}
+
+footer .footer-column {
+    margin-left: 0%;
+    display: inline-block;
+    width: 17%;
+    
+}
+
+footer .f-img {
+    width: 135px;
+    text-align: center;
+}
+footer .mt-3{
+    text-align: center;
+    color: white;
+}
+
+
+@media (max-width: 1292px){
+    footer .logo {
+    width: 35%;
+}
+}
+@media (max-width: 1024px) {
+    footer .rt, footer .footer-ul {
+        
+        text-align: center;
+        width: 100%;
+    }
+    footer .foot-header {
+       
+        text-align: center;
+        width: 100%;
+    }
+    footer .col-md-3, .col-md-7{
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+    footer .logo{
+        width: 100%;
+        text-align: center;
+    }
+    footer .footer-column {
+        text-align: center;
+        width: 32.5%;
+    }
+}
+@media (max-width: 768px){
+    footer .rt, footer .footer-ul {
+        
+        text-align: center;
+        width: 100%;
+    }
+    footer .foot-header {
+       
+        text-align: center;
+        width: 100%;
+    }
+    footer .col-md-3, .col-md-7{
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+    footer .logo{
+        width: 100%;
+        text-align: center;
+    }
+    footer .footer-column {
+        text-align: center;
+        width: 100%;
+    }
+
+
+}
+@media only screen and (max-width: 400px) {
+    footer .rt, footer .footer-ul {
+        
+        text-align: center;
+        width: 100%;
+    }
+    footer .foot-header {
+
+        text-align: center;
+        width: 100%;
+    }
+    footer .col-md-3, .col-md-7{
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+    footer .logo{
+        width: 100%;
+        text-align: center;
+    }
+    footer .footer-column {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+
+/* footer {
     color: white;
     font-family: 'Ubuntu', sans-serif;
-    text-align: center;
+    text-align: center; 
     background-color: steelblue;
     padding: 2%;
 }
 
 .footer-links {
     margin-bottom: 1%;
-}
+}*/
 
 
 /* Team section */
