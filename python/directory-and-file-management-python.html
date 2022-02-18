@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="A directory simply is a structured list of documents and folders. A directory can have sub-directories and files. When we have too many files, Python directory comes in handy in file management with directories and sub-directories.Python has os module with multiple methods defined inside for directory and file management."/>
+<meta name="keywords" content="Python directory,directory in Python,set,C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+    <title>Directory in Python | Python Tutorials | CodeMistic</title>
+    <script data-ad-client="ca-pub-5352867889640158" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MCNC43J');</script>
+    <!-- End Google Tag Manager -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTQSLH0XW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-YPTQSLH0XW');
+    </script>
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="img/png" href="../favicon.png"/>
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous"/>
+
+    <!-- FONTS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Ubuntu&family=Varela+Round&display=swap"
+        rel="stylesheet"/>
+
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity=""
+        crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity=""
+        crossorigin="anonymous"/>
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../lang_styles.css"/>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCNC43J"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- NAVIGATION BAR -->
+
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark">
+        <a class="navbar-brand" href="../index.html">CODEMISTIC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tutorials
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        <a class="dropdown-item" href="../cpp.html">C++</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../python.html">Python</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../java.html">Java</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../dsa.html">Data Structure and Algorithms</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../tutorials.html">All Tutorials</a>
+                        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../teen-code.html">Teen-Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../campus.html">Campus Programme</a>
+                </li>
+                <!-- <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" target="_blank">Contribute</a>
+                    </li> -->
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="../register.html">Join Our Community</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+
+    
+    <!-- Accordion -->
+
+    <section class="lbar">
+        <div class="lang-img col-md-2">
+            <img src="../logo/python.png" alt="python" class="imghome" >
+        </div>
+        <ul id="accordion" class="accordion ml-5">
+            <li class=" collape in">
+                <div class="link">Python Introduction<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="start-python.html " class="closed">Getting Started</a>
+                    </li>
+                    <li>
+                        <a href="keyword-and-identifiers-python.html" class="closed">Keyword and Identifiers</a>
+                    </li>
+                    <li>
+                        <a href="statements-and-comments-python.html" class="closed">Statements & Comments</a>
+                    </li>
+                    <li>
+                        <a href="variables-python.html" class="closed">Python Variables</a>
+                    </li>
+                    <li>
+                        <a href="datatypes-python.html" class="closed">Python Datatypes</a>
+                    </li>
+                    <li>
+                        <a href="type-conversion-python.html" class="closed">Python Type Conversion</a>
+                    </li>
+                    <li>
+                        <a href="input-output-import-python.html" class="closed">Python I/O and import</a>
+                    </li>
+                    <li>
+                        <a href="operators-python.html" class="closed">Python Operators</a>
+                    </li>
+                    <li>
+                        <a href="namespace-python.html" class="closed">Python Namespace</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Flow Control<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                                <a href="if-else-python.html" class="closed">Getting if...else</a>
+                            </li>
+                            <li>
+                                <a href="keyword-for-loop-python.html" class="closed">Python for Loop</a>
+                            </li>
+                            <li>
+                            <a href="while-loop-python.html" class="closed">Python while Loop</a>
+                        </li>
+                        <li>
+                            <a href="break-and-continue-python.html" class="closed">Python break and continue</a>
+                        </li>
+                        <li>
+                            <a href="pass-python.html" class="closed">Python Pass</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Function<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="functions-python.html" class="closed">Getting Functions</a>
+                         </li>
+                         <li>
+                            <a href="keyword-and-arguments-python.html" class="closed">Keyword and Arguments</a>
+                        </li>
+                        <li>
+                            <a href="recursion-python.html" class="closed">Python Recursions</a>
+                        </li>
+                        <li>
+                            <a href="anonymous-python.html" class="closed">Anonymous Function</a>
+                        </li>
+                        <li>
+                            <a href="global-local-and-nonlocal-python.html" class="closed">Global, Local and Nonlocal</a>
+                        </li>
+                        
+                        <li>
+                            <a href="modules-python.html" class="closed">Python Modules</a>
+                        </li>
+                        <li>
+                            <a href="package-python.html" class="closed">Python Packages</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Data Types<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                                <a href="numbers-python.html" class="closed">Python Numbers</a>
+                            </li>
+                            <li>
+                                <a href="list-python.html" class="closed">Python List</a>
+                            </li>
+                            <li>
+                                <a href="tuple-python.html" class="closed">Python Tuple</a>
+                            </li>
+                            <li>
+                                <a href="string-python.html" class="closed">Python String</a>
+                            </li>
+                            <li>
+                                <a href="set-python.html" class="closed">Python Set</a>
+                            </li>
+                            <li>
+                                <a href="dictionary-python.html" class="closed">Python Dictionary</a>
+                            </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python File Handeling<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse show">
+                    <li>
+                             <a href="file-operation-python.html" class="closed">Python File Operation</a>
+                         </li>
+                         <li>
+                            <a href="directory-and-file-management-python.html" class="opened">Python Directory</a>
+                        </li>
+                        <li>
+                            <a href="exception-python.html" class="closed">Python Exception</a>
+                        </li>
+                        <li>
+                            <a href="exception-handling-python.html" class="closed">Python Exception Handling</a>
+                        </li>
+                        <li>
+                            <a href="user-defined-exception-python.html" class="closed">Python User-defined Exception</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Object and Class<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="oop-python.html" class="closed">Python OOP</a>
+                         </li>
+                         <li>
+                            <a href="class-python.html" class="closed">Python Class</a>
+                        </li>
+                        <li>
+                            <a href="inheritance-python.html" class="closed">Python Inheritance</a>
+                        </li>
+                        <li>
+                            <a href="multiple-inheritance-python.html" class="closed">Multiple Inheritance</a>
+                        </li>
+                        <li>
+                            <a href="operator-overloading-python.html" class="closed">Operator Overloading</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Advance Topics<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="iterator-python.html" class="closed">Python Iterator</a>
+                         </li>
+                         <li>
+                            <a href="generator-python.html" class="closed">Python Generator</a>
+                        </li>
+                        <li>
+                            <a href="closure-python.html" class="closed">Python Closure</a>
+                        </li>
+                        <li>
+                            <a href="decorator-python.html" class="closed">Python Decorators</a>
+                        </li>
+                        <li>
+                            <a href="properties-python.html" class="closed">Python Properties</a>
+                        </li>
+                        <li>
+                            <a href="regex-python.html" class="closed">Python RegEx</a>
+                        </li>
+                        
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Date and Time<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="datetime-python.html" class="closed">Python datetime Module</a>
+                         </li>
+                         <li>
+                            <a href="datetime.strftime()-python.html" class="closed">Python datetime.strftime()</a>
+                        </li>
+                        <li>
+                            <a href="datetime.strptime()-python.html" class="closed">Python datetime.strptime()</a>
+                        </li>
+                        <li>
+                            <a href="current-date-and-time-python.html" class="closed">Current Date and Time</a>
+                        </li>
+                        <li>
+                            <a href="get-current-time-python.html" class="closed">Get current time</a>
+                        </li>
+                        <li>
+                            <a href="timestamp-to-datetime-python.html" class="closed">Timestamp to datetime</a>
+                        </li>
+                        <li>
+                            <a href="time-module-python.html" class="closed">Python Time Module</a>
+                        </li>
+                        <li>
+                            <a href="time.sleep-python.html" class="closed">Python time.sleep</a>
+                        </li>
+                        
+                </ul>
+            </li>
+
+        </ul>
+
+    </section>
+     <br>
+    <section class="para">
+        <!-- <div class="but mt-4">
+            &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-md btn-primary "><a href="../dsa.html"><i
+                        class="fas fa-arrow-left "></i>&nbsp;Back to Index</a></button>
+        </div> -->
+
+        <!-- breadcrumb -->
+
+        <nav class="bdcrumb" id="bdcrumb" aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a  href="../tutorials.html"><i class="fas fa-home"></i></a></li>
+                <li class="breadcrumb-item"><a  href="../python.html#languages">Python Index</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Python Directory</li>
+            </ul>
+        </nav>
+
+        <!-- breadcrumb ending -->
+    <!-- HEADING -->
+
+
+
+    <br>
+        <div class="wrapper">
+            <h3><strong>What is a Python Directory?</strong></h3>
+<p>A directory simply is a structured list of documents and folders. A directory can have sub-directories and files. When we have too many files, Python directory comes in handy in file management with directories and sub-directories.</p>
+<p>Python has <code>os</code> module with multiple methods defined inside for directory and file management.</p>
+
+<h3><strong>How to create a new directory in Python?</strong></h3>
+<p>To create a new directory Python has a function <code>mkdir( )</code> built into <code>os</code> module.</p>
+<p><strong>Syntax</strong></p>
+<pre><code>os.mkdir('name')</code></pre>
+<p>Where <code>name</code> is the directory to be created in the current working location.</p>
+<p><strong>Example</strong></p>
+<pre><code>
+&gt;&gt;&gt; import os
+&gt;&gt;&gt; os.mkdir('abc') #create a directory abc in current directory
+&gt;&gt;&gt; os.mkdir('C:/abc') #create a direcotry abc in C:</code></pre>
+<p><strong>Note</strong>: Use the forward slash <code>/</code> while creating directories in another location.</p>
+
+<h3><strong>How to get the current directory location?</strong></h3>
+<p>To get the location of the current working directory, Python has a function <code>getcwd( )</code> built in <code>os</code> module.</p>
+<p>Let&#8217;s see how this is done:</p>
+<pre><code>
+&gt;&gt;&gt; import os
+&gt;&gt;&gt; os.getcwd()  #get the current location
+'C:\\Python\\examples'
+&gt;&gt;&gt; print (os.getcwd())
+'C:\Python\examples'</code></pre>
+
+<h2><strong>How to rename a directory in Python?</strong></h2>
+<p>Python has <code>rename( )</code> function to rename a directory.</p>
+<p><strong>Syntax</strong></p>
+<pre><code>os.rename(old_name,new_name)</code></pre>
+<p>Here is an example, where we will change the name of the file <code>xyz.txt</code> to <code>abc.txt</code>.</p>
+<pre><code>
+&gt;&gt;&gt; import os
+&gt;&gt;&gt; os.rename('xyz.txt','abc.txt')</code></pre>
+
+<h3><strong>How to change directories in Python?</strong></h3>
+<p>In Python, <code>chdir( )</code> function defined in module <code>os</code> is used to change the working directories.</p>
+<p><strong>Example</strong></p>
+<p>Suppose we want to change our working directory to <code>xyz</code> folder in <code>D:</code>. Here is how it is done.</p>
+<pre><code>
+&gt;&gt;&gt; import os
+&gt;&gt;&gt; os.chdir('D:/xyz') #this will change our working directory</code></pre>
+<h3><strong>How to list directories in Python?</strong></h3>
+<p>Python has <code>listdir( )</code> function in module <code>os</code> to list all the directories and files in a particular location.</p>
+<p><code>listdir( )</code> returns a list containing the names of the entries in the directory given by <em>path</em>. The list is in arbitrary order, and does not include the special entries <code>'.'</code></code> and <code>'..'</code> even if they are present in the directory.</p>
+<p>Here is an example:</p>
+<pre><code>&gt;&gt;&gt; import os
+&gt;&gt;&gt; os.listdir()
+['files',
+'example.txt',
+'try.py',
+python_logo.png']</code></pre>
+
+<p>The function returned the list of files and directories in our working directory. This output depends upon the directories and files contained within the target directory.</p>
+
+<h3><strong>How to remove or delete a directory in Python?</strong></h3>
+<p>To remove or delete a directory path in Python, <code>rmdir( )</code> is used which is defined in os module.</p>
+<p><code>rmdir( )</code> works only when the directory we want to delete is empty, else it raises an OS error.</p>
+<p>So here are the ways to remove or delete empty and non-empty directory paths.</p>
+<p><strong>Removing empty directories</strong></p>
+<pre><code>
+&gt;&gt;&gt; import os
+&gt;&gt;&gt; os.listdir()
+['example.txt']
+&gt;&gt;&gt; os.rmdir('example.txt')
+&gt;&gt;&gt; os.listdir()
+[]</code></pre>
+<p><strong>Removing non-empty directories</strong></p>
+<p><code>rmdir( )</code> works only when a directory is empty. If we have to remove or delete the directory path of non-empty directory, we have to use <code>retree( )</code> funtion defined in <code>shutil</code> module.</p>
+<pre><code>
+&gt;&gt;&gt; import os
+&gt;&gt;&gt; import shutil
+&gt;&gt;&gt; os.listdir()
+['xyz']
+&gt;&gt;&gt; shutil.rmtree('xxyz')
+&gt;&gt;&gt; os.listdir()
+[]</code></pre>
+<p><strong>Removing multiple directories at once</strong></p>
+<p>To remove multiple directories at once, Python has function <code>removedirs( )</code> defined in <code>os</code> module.</p>
+<p>Unlike <code>rmdir( )</code>, <code>removedirs( )</code> remove all the parent directories mentioned in the directory path recursively until an exception is raised.</p>
+<p><strong>Let&#8217;s take a deeper look with an example:</strong></p>
+<p>Suppose we have a directory <code>z</code> inside <code>y</code>, which is child directory of <code>x</code>.</p>
+<p>Now to remove all three directories at once we can use <code>removedirs( )</code> in following way.</p>
+<pre><code>
+&gt;&gt;&gt; import os
+&gt;&gt;&gt; os.removedirs('x/y/z')
+</code></pre>
+<p>This will delete the directory path of all <code>x</code>, <code>y</code>, and <code>z</code> if no exception is raised.</p>
+<p>First it will remove <code>z</code>, then it will remove <code>z's</code> parent directory <code>y</code> and finally <code>y's</code> parent directory <code>x</code>.</p>
+<p>If <code>y</code> is non-empty and hence raises and exception while removing, only <code>x</code> will be deleted.</p>
+<h3><strong>Python Directory methods</strong></h3>
+<p>Here is the tabular list of Python directory methods defined in os module for directory management.</p>
+<table>
+<tbody>
+<tr>
+<th>Python directory methods with description</th>
+</tr>
+<tr>
+<td><strong>os.access(path, mode)</strong><br />
+Use the real <code>uid/gid</code> to test for access to the path.</td>
+</tr>
+<tr>
+<td><strong>os.chdir(path)</strong><br />
+Used to change the current working directory to the path specified.</td>
+</tr>
+<tr>
+<td><strong>os.chflags(path, flags)</strong><br />
+Set the flags of path to the numeric flags.</td>
+</tr>
+<tr>
+<td><strong>os.chmod(path, mode)</strong><br />
+Change the mode of path to the numeric mode.</td>
+</tr>
+<tr>
+<td><strong>os.chown(path, uid, gid)</strong><br />
+Change the owner and group id of <em>path</em> to the numeric <code>uid</code> and <code>gid</code>. To leave one of the ids unchanged, set it to -1.</td>
+</tr>
+<tr>
+<td><strong>os.chroot(path)</strong><br />
+Changes the root directory of the current process to the specified path.</td>
+</tr>
+<tr>
+<td><strong>os.fchdir(fd)</strong><br />
+Changes the current working directory to the directory represented by the file descriptor <code>fd</code>. The descriptor must refer to an opened directory.</td>
+</tr>
+<tr>
+<td><strong>os.getcwd()</strong><br />
+It returns a string representing the current working directory.</td>
+</tr>
+<tr>
+<td><strong>os.getcwdu()</strong><br />
+It returns a Unicode object representing the current working directory.</td>
+</tr>
+<tr>
+<td><strong>os.lchflags(path, flags)</strong><br />
+Set the flags of path to the numeric flags, like <code>chflags( )</code>, but do not follow symbolic links.</td>
+</tr>
+<tr>
+<td><strong>os.lchmod(path, mode)</strong><br />
+It changes the mode of path to the numeric mode.</td>
+</tr>
+<tr>
+<td><strong>os.lchown(path, uid, gid)</strong><br />
+It changes the owner and group id of path to the numeric <code>uid</code> and <code>gid</code>. This function will not follow symbolic links.</td>
+</tr>
+<tr>
+<td><strong>os.listdir(path)</strong><br />
+Returns a list containing the names of the entries in the directory given by path.</td>
+</tr>
+<tr>
+<td><strong>os.lstat(path)</strong><br />
+It works like <code>stat( )</code>, but do not follow symbolic links.</td>
+</tr>
+<tr>
+<td><strong>os.makedirs(path[, mode])</strong><br />
+It creates directories recursively.</td>
+</tr>
+<tr>
+<td><strong>os.mkdir( )</strong><br />
+Creates a new directory named path.</td>
+</tr>
+<tr>
+<td><strong>os.mkfifo(path[, mode])</strong><br />
+Create a <code>FIFO</code> (a named pipe) named path with numeric mode. The default mode is <code>0666</code> (octal).</td>
+</tr>
+<tr>
+<td><strong>os.readlink(path)</strong><br />
+Returns a string representing the path to which the symbolic link points.</td>
+</tr>
+<tr>
+<td><strong>os.removedirs(path)</strong><br />
+Remove directories recursively starting from child to parent.</td>
+</tr>
+<tr>
+<td><strong>os.rename(src, dst)</strong><br />
+Rename the directory <code>src</code> to <code>dst</code>.</td>
+</tr>
+<tr>
+<td><strong>os.renames(old, new)</strong><br />
+It renames the old directories with a new name recursively.</td>
+</tr>
+<tr>
+<td><strong>os.rmdir(path)</strong><br />
+Removes the directory path specified.</td>
+</tr>
+<tr>
+<td><strong>os.stat(path)</strong><br />
+Perform a stat system call on the given path.</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+<div class="but text-right">
+    <button class="btn btn-primary pull-right"><a href="exception-python.html">Next Topic&nbsp;<i
+                class="fas fa-arrow-right "></i><br/>Python Exception</a></button>
+</div><br>
+</section>
+
+<!-- footer -->
+
+<footer >
+<div class="row footer" >
+    <div class="logo">
+        <img src="../image.png" alt="" class="f-img">
+        <h5>LEARN CODE DISCUSS</h5>
+    </div>
+    
+        <div class="footer-column ">
+            
+            <ul class="footer-ul">
+                <li class="foot-header"><strong>CodeMistic</strong></li>
+                
+                    <li class="f-li"><a href="../index.html" class="f-links">Home</a></li>
+                
+                
+                    <li class="f-li"><a href="../team.html" class="f-links">Our Team</a></li>
+                
+                
+                    <li class="f-li"><a href="../terms-and-conditions.html" class="f-links">Terms of Service</a></li>
+                
+                
+                    <li class="f-li"><a href="../privacy-policy.html" class="f-links">Privacy Policy</a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-column ">
+          
+            <ul class="footer-ul ">
+                <li class="foot-header"><strong>LEARN</strong></li>
+                
+                    <li class="f-li"><a href="../cpp.html" class="f-links">C++</a></li>
+                
+                
+                    <li class="f-li"><a href="../java.html" class="f-links">Java</a></li>
+                
+                
+                    <li class="f-li"><a href="../python.html" class="f-links">Python</a></li>
+                
+                
+                    <li class="f-li"><a href="../dsa.html" class="f-links">DSA</a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-column ">
+            
+            <ul class="footer-ul ">
+                <li class="foot-header"><strong>CONTRIBUTE</strong></li>
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSduxk_aP9M1lqUAebQJwRXiVm2ukmdgv3T7gjBpOsr_gdeOcQ/viewform?usp=sf_link" class="f-links" target="_blank">Write an Article/Blog</a></li>
+                
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" class="f-links" target="_blank">Internships</a></li>
+                
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe9nr_Aw0fGIqm3_xWhqEzTr3UWdOFz-pvKpQvkAsosORYq9w/viewform?usp=sf_link" class="f-links" target="_blank">Videos</a></li>
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLScOW3hJjxxwzPYL4u51oboc4T1aDtIUEIRa20hKPKu4UlcZAA/viewform?usp=sf_link" class="f-links" target="_blank">Donations/Funds</a></li>
+                
+            </ul>
+        </div>
+    
+</div>
+<div class="footer-links" style="text-align: center;">
+    <!-- <h7>Connect With Us</h7><br><br> -->
+    <a href="https://www.facebook.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-facebook "
+            style="color:#3b5998; "></i></a>
+    <a href="https://www.instagram.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-instagram "
+            style="color:#e95950; "></i></a>
+    <a href="https://www.twitter.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-twitter "
+            style="color:#8accf5; "></i></a>
+    <a href="https://www.linkedin.com/company/codemistic " target="_blank "><i
+            class="icons fa-2x fab fa-linkedin " style="color:#88b3ee; "></i></a>
+    <a href="https://t.me/codemistic " target="_blank "><i class="icons fa-2x fab fa-telegram "
+            style="color:#65adda; "></i></a>
+
+    <a href="https://www.youtube.com/channel/UCS1Iv_kkgQGDwoXtvrlwlag " target="_blank "><i
+            class="icons fa-2x fab fa-youtube " style="color:red; "></i></a>
+    <p class="foot mt-3">&#169 Copyright : <strong>CodeMistic</strong> All Rights Reserved.</p>
+</div>
+</footer>
+
+
+
+<!-- CSS Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
+integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
+crossorigin="anonymous "></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='../side.js'></script>
+</body>
+
+</html>

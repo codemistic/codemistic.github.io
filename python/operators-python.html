@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Operators are used to perform operations on variables and values. For example: Python divides the operators in the following groups: Arithmetic operators,Assignment operators,Comparision operators,Logical operators,Identity operators,Membership operators,Bitwise operators"/>
+<meta name="keywords" content="Python Operators,Operators in Python,C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+    <title>Operators Python | Python Tutorials | CodeMistic</title>
+    <script data-ad-client="ca-pub-5352867889640158" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MCNC43J');</script>
+    <!-- End Google Tag Manager -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTQSLH0XW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-YPTQSLH0XW');
+    </script>
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="img/png" href="../favicon.png"/>
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous"/>
+
+    <!-- FONTS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Ubuntu&family=Varela+Round&display=swap"
+        rel="stylesheet"/>
+
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity=""
+        crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity=""
+        crossorigin="anonymous"/>
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../lang_styles.css"/>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCNC43J"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- NAVIGATION BAR -->
+
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark">
+        <a class="navbar-brand" href="../index.html">CODEMISTIC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tutorials
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        <a class="dropdown-item" href="../cpp.html">C++</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../python.html">Python</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../java.html">Java</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../dsa.html">Data Structure and Algorithms</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../tutorials.html">All Tutorials</a>
+                        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../teen-code.html">Teen-Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../campus.html">Campus Programme</a>
+                </li>
+                <!-- <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" target="_blank">Contribute</a>
+                    </li> -->
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="../register.html">Join Our Community</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+
+    
+    <!-- Accordion -->
+
+    <section class="lbar">
+        <div class="lang-img col-md-2">
+            <img src="../logo/python.png" alt="python" class="imghome" >
+        </div>
+        <ul id="accordion" class="accordion ml-5">
+            <li class=" collape in">
+                <div class="link">Python Introduction<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse show">
+                    <li>
+                        <a href="start-python.html " class="closed">Getting Started</a>
+                    </li>
+                    <li>
+                        <a href="keyword-and-identifiers-python.html" class="closed">Keyword and Identifiers</a>
+                    </li>
+                    <li>
+                        <a href="statements-and-comments-python.html" class="closed">Statements & Comments</a>
+                    </li>
+                    <li>
+                        <a href="variables-python.html" class="closed">Python Variables</a>
+                    </li>
+                    <li>
+                        <a href="datatypes-python.html" class="closed">Python Datatypes</a>
+                    </li>
+                    <li>
+                        <a href="type-conversion-python.html" class="closed">Python Type Conversion</a>
+                    </li>
+                    <li>
+                        <a href="input-output-import-python.html" class="closed">Python I/O and import</a>
+                    </li>
+                    <li>
+                        <a href="operators-python.html" class="opened">Python Operators</a>
+                    </li>
+                    <li>
+                        <a href="namespace-python.html" class="closed">Python Namespace</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Flow Control<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                                <a href="if-else-python.html" class="closed">Getting if...else</a>
+                            </li>
+                            <li>
+                                <a href="keyword-for-loop-python.html" class="closed">Python for Loop</a>
+                            </li>
+                            <li>
+                            <a href="while-loop-python.html" class="closed">Python while Loop</a>
+                        </li>
+                        <li>
+                            <a href="break-and-continue-python.html" class="closed">Python break and continue</a>
+                        </li>
+                        <li>
+                            <a href="pass-python.html" class="closed">Python Pass</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Function<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="functions-python.html" class="closed">Getting Functions</a>
+                         </li>
+                         <li>
+                            <a href="keyword-and-arguments-python.html" class="closed">Keyword and Arguments</a>
+                        </li>
+                        <li>
+                            <a href="recursion-python.html" class="closed">Python Recursions</a>
+                        </li>
+                        <li>
+                            <a href="anonymous-python.html" class="closed">Anonymous Function</a>
+                        </li>
+                        <li>
+                            <a href="global-local-and-nonlocal-python.html" class="closed">Global, Local and Nonlocal</a>
+                        </li>
+                        
+                        <li>
+                            <a href="modules-python.html" class="closed">Python Modules</a>
+                        </li>
+                        <li>
+                            <a href="package-python.html" class="closed">Python Packages</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Data Types<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                                <a href="numbers-python.html" class="closed">Python Numbers</a>
+                            </li>
+                            <li>
+                                <a href="list-python.html" class="closed">Python List</a>
+                            </li>
+                            <li>
+                                <a href="tuple-python.html" class="closed">Python Tuple</a>
+                            </li>
+                            <li>
+                                <a href="string-python.html" class="closed">Python String</a>
+                            </li>
+                            <li>
+                                <a href="set-python.html" class="closed">Python Set</a>
+                            </li>
+                            <li>
+                                <a href="dictionary-python.html" class="closed">Python Dictionary</a>
+                            </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python File Handeling<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="file-operation-python.html" class="closed">Python File Operation</a>
+                         </li>
+                         <li>
+                            <a href="directory-and-file-management-python.html" class="closed">Python Dictionary</a>
+                        </li>
+                        <li>
+                            <a href="exception-python.html" class="closed">Python Exception</a>
+                        </li>
+                        <li>
+                            <a href="exception-handling-python.html" class="closed">Python Exception Handling</a>
+                        </li>
+                        <li>
+                            <a href="user-defined-exception-python.html" class="closed">Python User-defined Exception</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Object and Class<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="oop-python.html" class="closed">Python OOP</a>
+                         </li>
+                         <li>
+                            <a href="class-python.html" class="closed">Python Class</a>
+                        </li>
+                        <li>
+                            <a href="inheritance-python.html" class="closed">Python Inheritance</a>
+                        </li>
+                        <li>
+                            <a href="multiple-inheritance-python.html" class="closed">Multiple Inheritance</a>
+                        </li>
+                        <li>
+                            <a href="operator-overloading-python.html" class="closed">Operator Overloading</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Advance Topics<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="iterator-python.html" class="closed">Python Iterator</a>
+                         </li>
+                         <li>
+                            <a href="generator-python.html" class="closed">Python Generator</a>
+                        </li>
+                        <li>
+                            <a href="closure-python.html" class="closed">Python Closure</a>
+                        </li>
+                        <li>
+                            <a href="decorator-python.html" class="closed">Python Decorators</a>
+                        </li>
+                        <li>
+                            <a href="properties-python.html" class="closed">Python Properties</a>
+                        </li>
+                        <li>
+                            <a href="regex-python.html" class="closed">Python RegEx</a>
+                        </li>
+                        
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Date and Time<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="datetime-python.html" class="closed">Python datetime Module</a>
+                         </li>
+                         <li>
+                            <a href="datetime.strftime()-python.html" class="closed">Python datetime.strftime()</a>
+                        </li>
+                        <li>
+                            <a href="datetime.strptime()-python.html" class="closed">Python datetime.strptime()</a>
+                        </li>
+                        <li>
+                            <a href="current-date-and-time-python.html" class="closed">Current Date and Time</a>
+                        </li>
+                        <li>
+                            <a href="get-current-time-python.html" class="closed">Get current time</a>
+                        </li>
+                        <li>
+                            <a href="timestamp-to-datetime-python.html" class="closed">Timestamp to datetime</a>
+                        </li>
+                        <li>
+                            <a href="time-module-python.html" class="closed">Python Time Module</a>
+                        </li>
+                        <li>
+                            <a href="time.sleep-python.html" class="closed">Python time.sleep</a>
+                        </li>
+                        
+                </ul>
+            </li>
+
+        </ul>
+
+    </section>
+       
+
+    <br>
+    <section class="para">
+        <!-- <div class="but mt-4">
+            &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-md btn-primary "><a href="../dsa.html"><i
+                        class="fas fa-arrow-left "></i>&nbsp;Back to Index</a></button>
+        </div> -->
+
+        <!-- breadcrumb -->
+
+        <nav class="bdcrumb" id="bdcrumb" aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a  href="../tutorials.html"><i class="fas fa-home"></i></a></li>
+                <li class="breadcrumb-item"><a  href="../python.html#languages">Python Index</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Python Operators</li>
+            </ul>
+        </nav>
+
+        <!-- breadcrumb ending -->
+    <!-- HEADING -->
+
+
+
+    <br>
+        <div class="wrapper">
+            
+                <h3>Python Operators</h3>
+                
+
+<p>Operators are used to perform operations on variables and values.</p>
+
+<p>For example:</p>
+
+<p>Python divides the operators in the following groups:</p>
+<ul>
+    <li>Arithmetic operators</li>
+    <li>Assignment operators</li>
+    <li>Comparision operators</li>
+    <li>Logical operators</li>
+    <li>Identity operators</li>
+    <li>Membership operators</li>
+    <li>Bitwise operators</li>
+</ul>
+<h3>Arithmetic operators</h3>
+
+<p>Arithmetic operators are used with numeric values to perform common mathematical operations:</p>
+
+<table>
+    <tbody>
+        <tr>
+            <th>Operator</th>
+            <th>Meaning</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>+</td>
+            <td>Add two operands or unary plus</td>
+            <td>x + y+ 27</td>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>Subtract right operand from the left or unary minus</td>
+            <td>x - y- 27</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>Multiply two operands</td>
+            <td>x * y</td>
+        </tr>
+        <tr>
+            <td>/</td>
+            <td>Divide left operand by the right one (always results into float)</td>
+            <td>x / y</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Modulus - remainder of the division of left operand by the right</td>
+            <td>x % y (remainder of x/y)</td>
+        </tr>
+        <tr>
+            <td>//</td>
+            <td>Floor division - division that results into whole number adjusted to the left in the number line</td>
+            <td>x // y</td>
+        </tr>
+        <tr>
+            <td>**</td>
+            <td>Exponent - left operand raised to the power of right</td>
+            <td>x**y (x to the power y)</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Example:</h3>
+
+<pre>
+<code>x = 15
+y = 4
+
+# Output: x + y = 19
+print(&#39;x + y =&#39;,x+y)
+
+# Output: x - y = 11
+print(&#39;x - y =&#39;,x-y)
+
+# Output: x * y = 60
+print(&#39;x * y =&#39;,x*y)
+
+# Output: x / y = 3.75
+print(&#39;x / y =&#39;,x/y)
+
+# Output: x // y = 3
+print(&#39;x // y =&#39;,x//y)
+
+# Output: x ** y = 50625
+print(&#39;x ** y =&#39;,x**y)</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre>
+<samp>x + y = 19
+x - y = 11
+x * y = 60
+x / y = 3.75
+x // y = 3
+x ** y = 50625</samp></pre>
+
+<hr />
+<h3>Comparison operators</h3>
+
+<p>Comparison operators are used to compare two values:</p>
+
+<table>
+    <tbody>
+        <tr>
+            <th>Operator</th>
+            <th>Meaning</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>&gt;</td>
+            <td>Greater than - True if left operand is greater than the right</td>
+            <td>x &gt; y</td>
+        </tr>
+        <tr>
+            <td>&lt;</td>
+            <td>Less than - True if left operand is less than the right</td>
+            <td>x &lt; y</td>
+        </tr>
+        <tr>
+            <td>==</td>
+            <td>Equal to - True if both operands are equal</td>
+            <td>x == y</td>
+        </tr>
+        <tr>
+            <td>!=</td>
+            <td>Not equal to - True if operands are not equal</td>
+            <td>x != y</td>
+        </tr>
+        <tr>
+            <td>&gt;=</td>
+            <td>Greater than or equal to - True if left operand is greater than or equal to the right</td>
+            <td>x &gt;= y</td>
+        </tr>
+        <tr>
+            <td>&lt;=</td>
+            <td>Less than or equal to - True if left operand is less than or equal to the right</td>
+            <td>x &lt;= y</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Example</h3>
+
+<pre>
+<code>x = 10
+y = 12
+
+# Output: x &gt; y is False
+print(&#39;x &gt; y is&#39;,x&gt;y)
+
+# Output: x &lt; y is True
+print(&#39;x &lt; y is&#39;,x&lt;y)
+
+# Output: x == y is False
+print(&#39;x == y is&#39;,x==y)
+
+# Output: x != y is True
+print(&#39;x != y is&#39;,x!=y)
+
+# Output: x &gt;= y is False
+print(&#39;x &gt;= y is&#39;,x&gt;=y)
+
+# Output: x &lt;= y is True
+print(&#39;x &lt;= y is&#39;,x&lt;=y)</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre>
+<samp>x &gt; y is False
+x &lt; y is True
+x == y is False
+x != y is True
+x &gt;= y is False
+x &lt;= y is True</samp></pre>
+
+<hr />
+<h3>Logical operators</h3>
+
+<p>Logical operators are used to combine conditional statements:</p>
+
+<table>
+    <tbody>
+        <tr>
+            <th>Operator</th>
+            <th>Meaning</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>and</td>
+            <td>True if both the operands are true</td>
+            <td>x and y</td>
+        </tr>
+        <tr>
+            <td>or</td>
+            <td>True if either of the operands is true</td>
+            <td>x or y</td>
+        </tr>
+        <tr>
+            <td>not</td>
+            <td>True if operand is false (complements the operand)</td>
+            <td>not x</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Example:</h3>
+
+<pre>
+<code>x = True
+y = False
+
+print(&#39;x and y is&#39;,x and y)
+
+print(&#39;x or y is&#39;,x or y)
+
+print(&#39;not x is&#39;,not x)</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre>
+<samp>x and y is False
+x or y is True
+not x is False</samp></pre>
+
+<hr />
+<h3>Bitwise operators</h3>
+
+<p>Bitwise operators act on operands as if they were strings of binary digits. They operate bit by bit, hence the name.</p>
+
+<table>
+    <tbody>
+        <tr>
+            <th>Operator</th>
+            <th>Meaning</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>&amp;</td>
+            <td>Bitwise AND</td>
+            <td>x &amp; y = 0 (<code>0000 0000</code>)</td>
+        </tr>
+        <tr>
+            <td>|</td>
+            <td>Bitwise OR</td>
+            <td>x | y = 14 (<code>0000 1110</code>)</td>
+        </tr>
+        <tr>
+            <td>~</td>
+            <td>Bitwise NOT</td>
+            <td>~x = -11 (<code>1111 0101</code>)</td>
+        </tr>
+        <tr>
+            <td>^</td>
+            <td>Bitwise XOR</td>
+            <td>x ^ y = 14 (<code>0000 1110</code>)</td>
+        </tr>
+        <tr>
+            <td>&gt;&gt;</td>
+            <td>Bitwise right shift</td>
+            <td>x &gt;&gt; 2 = 2 (<code>0000 0010</code>)</td>
+        </tr>
+        <tr>
+            <td>&lt;&lt;</td>
+            <td>Bitwise left shift</td>
+            <td>x &lt;&lt; 2 = 40 (<code>0010 1000</code>)</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr />
+<h3>Assignment operators</h3>
+
+<p>Assignment operators are used to assign values to variables:</p>
+
+<p><code>c = 27</code> is a simple assignment operator that assigns the value 27 on the right to the variable <var>c</var> on the left.</p>
+
+<p>There are various compound operators in Python like <code>c += 27</code> that adds to the variable and later assigns the same. It is equivalent to <code>c = c + 27</code>.</p>
+
+<table>
+    <tbody>
+        <tr>
+            <th>Operator</th>
+            <th>Example</th>
+            <th>Equivalent to</th>
+        </tr>
+        <tr>
+            <td>=</td>
+            <td>c = 27</td>
+            <td>c = 27</td>
+        </tr>
+        <tr>
+            <td>+=</td>
+            <td>c += 27</td>
+            <td>c = c + 27</td>
+        </tr>
+        <tr>
+            <td>-=</td>
+            <td>c -= 27</td>
+            <td>c = c - 27</td>
+        </tr>
+        <tr>
+            <td>*=</td>
+            <td>c *= 27</td>
+            <td>c = c * 27</td>
+        </tr>
+        <tr>
+            <td>/=</td>
+            <td>c /= 27</td>
+            <td>c = c / 27</td>
+        </tr>
+        <tr>
+            <td>%=</td>
+            <td>c %= 27</td>
+            <td>c = c % 27</td>
+        </tr>
+        <tr>
+            <td>//=</td>
+            <td>c //= 27</td>
+            <td>c = c // 5</td>
+        </tr>
+        <tr>
+            <td>**=</td>
+            <td>c **= 27</td>
+            <td>c = c ** 27</td>
+        </tr>
+        <tr>
+            <td>&amp;=</td>
+            <td>c &amp;= 27</td>
+            <td>c = c &amp; 27</td>
+        </tr>
+        <tr>
+            <td>|=</td>
+            <td>c |= 27</td>
+            <td>c = c | 27</td>
+        </tr>
+        <tr>
+            <td>^=</td>
+            <td>c ^= 27</td>
+            <td>c = c ^ 27</td>
+        </tr>
+        <tr>
+            <td>&gt;&gt;=</td>
+            <td>c &gt;&gt;= 27</td>
+            <td>c = c &gt;&gt; 27</td>
+        </tr>
+        <tr>
+            <td>&lt;&lt;=</td>
+            <td>c &lt;&lt;= 27</td>
+            <td>c = c &lt;&lt; 27</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr />
+<h3>Special operators</h3>
+
+<p>Python language offers some special types of operators like the identity operator or the membership operator. They are described below with examples.</p>
+
+<h3 >Identity operators</h3>
+
+<p>Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location:
+
+</p>
+
+<table>
+    <tbody>
+        <tr>
+            <th>Operator</th>
+            <th>Meaning</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>is</td>
+            <td>True if the operands are identical (refer to the same object)</td>
+            <td>x is True</td>
+        </tr>
+        <tr>
+            <td>is not</td>
+            <td>True if the operands are not identical (do not refer to the same object)</td>
+            <td>x is not True</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Example:</h3>
+
+<pre>
+<code>x1 = 5
+y1 = 5
+x2 = &#39;CODEMISTIC&#39;
+y2 = &#39;CODEMISTIC&#39;
+x3 = [1,2,3]
+y3 = [1,2,3]
+
+# Output: False
+print(x1 is not y1)
+
+# Output: True
+print(x2 is y2)
+
+# Output: False
+print(x3 is y3)</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre>
+<samp>False
+True
+False</samp></pre>
+
+<hr />
+<h3>Membership operators</h3>
+
+<p><code>in</code> and <code>not in</code> are the membership operators in Python. They are used to test whether a value or variable is found in a sequence string, list, tuple, set and dictionary.</p>
+
+<p>In a dictionary we can only test for presence of key, not the value.</p>
+
+<table>
+    <tbody>
+        <tr>
+            <th>Operator</th>
+            <th>Meaning</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>in</td>
+            <td>True if value/variable is found in the sequence</td>
+            <td>5 in x</td>
+        </tr>
+        <tr>
+            <td>not in</td>
+            <td>True if value/variable is not found in the sequence</td>
+            <td>5 not in x</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Example:</h3>
+
+<pre>
+<code>x = &#39;Hello world&#39;
+y = {1:&#39;a&#39;,2:&#39;b&#39;}
+
+# Output: True
+print(&#39;H&#39; in x)
+
+# Output: True
+print(&#39;hello&#39; not in x)
+
+# Output: True
+print(1 in y)
+
+# Output: False
+print(&#39;a&#39; in y)</code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre>
+<samp>True
+True
+True
+False</samp></pre>
+</p>
+
+</div>
+<div class="but text-right">
+    <button class="btn btn-primary pull-right"><a href="namespace-python.html">Next Topic&nbsp;<i
+                class="fas fa-arrow-right "></i><br/>Python Namespace</a></button>
+</div><br>
+</section>
+
+<!-- footer -->
+
+<footer >
+<div class="row footer" >
+    <div class="logo">
+        <img src="../image.png" alt="" class="f-img">
+        <h5>LEARN CODE DISCUSS</h5>
+    </div>
+    
+        <div class="footer-column ">
+            
+            <ul class="footer-ul">
+                <li class="foot-header"><strong>CodeMistic</strong></li>
+                
+                    <li class="f-li"><a href="../index.html" class="f-links">Home</a></li>
+                
+                
+                    <li class="f-li"><a href="../team.html" class="f-links">Our Team</a></li>
+                
+                
+                    <li class="f-li"><a href="../terms-and-conditions.html" class="f-links">Terms of Service</a></li>
+                
+                
+                    <li class="f-li"><a href="../privacy-policy.html" class="f-links">Privacy Policy</a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-column ">
+          
+            <ul class="footer-ul ">
+                <li class="foot-header"><strong>LEARN</strong></li>
+                
+                    <li class="f-li"><a href="../cpp.html" class="f-links">C++</a></li>
+                
+                
+                    <li class="f-li"><a href="../java.html" class="f-links">Java</a></li>
+                
+                
+                    <li class="f-li"><a href="../python.html" class="f-links">Python</a></li>
+                
+                
+                    <li class="f-li"><a href="../dsa.html" class="f-links">DSA</a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-column ">
+            
+            <ul class="footer-ul ">
+                <li class="foot-header"><strong>CONTRIBUTE</strong></li>
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSduxk_aP9M1lqUAebQJwRXiVm2ukmdgv3T7gjBpOsr_gdeOcQ/viewform?usp=sf_link" class="f-links" target="_blank">Write an Article/Blog</a></li>
+                
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" class="f-links" target="_blank">Internships</a></li>
+                
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe9nr_Aw0fGIqm3_xWhqEzTr3UWdOFz-pvKpQvkAsosORYq9w/viewform?usp=sf_link" class="f-links" target="_blank">Videos</a></li>
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLScOW3hJjxxwzPYL4u51oboc4T1aDtIUEIRa20hKPKu4UlcZAA/viewform?usp=sf_link" class="f-links" target="_blank">Donations/Funds</a></li>
+                
+            </ul>
+        </div>
+    
+</div>
+<div class="footer-links" style="text-align: center;">
+    <!-- <h7>Connect With Us</h7><br><br> -->
+    <a href="https://www.facebook.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-facebook "
+            style="color:#3b5998; "></i></a>
+    <a href="https://www.instagram.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-instagram "
+            style="color:#e95950; "></i></a>
+    <a href="https://www.twitter.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-twitter "
+            style="color:#8accf5; "></i></a>
+    <a href="https://www.linkedin.com/company/codemistic " target="_blank "><i
+            class="icons fa-2x fab fa-linkedin " style="color:#88b3ee; "></i></a>
+    <a href="https://t.me/codemistic " target="_blank "><i class="icons fa-2x fab fa-telegram "
+            style="color:#65adda; "></i></a>
+
+    <a href="https://www.youtube.com/channel/UCS1Iv_kkgQGDwoXtvrlwlag " target="_blank "><i
+            class="icons fa-2x fab fa-youtube " style="color:red; "></i></a>
+    <p class="foot mt-3">&#169 Copyright : <strong>CodeMistic</strong> All Rights Reserved.</p>
+</div>
+</footer>
+
+
+
+<!-- CSS Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
+integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
+crossorigin="anonymous "></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='../side.js'></script>
+</body>
+
+</html>

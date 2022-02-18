@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="In Python, a list is created by placing all the items (elements) inside a square bracket [ ], separated by commas. It can contain heterogeneous elements also.We also can create a list by using the list( ) function We can print a list in three ways:
+    1) Directly passing it to the print( ) function.
+    2) Accessing individual elements using subscript operator [ ].
+    3) Accessing multiple elements using slice operator [ : ]."/>
+<meta name="keywords" content="Python list,list in Python,C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+    <title>list data type Python | Python Tutorials | CodeMistic</title>
+    <script data-ad-client="ca-pub-5352867889640158" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MCNC43J');</script>
+    <!-- End Google Tag Manager -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTQSLH0XW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-YPTQSLH0XW');
+    </script>
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="img/png" href="../favicon.png"/>
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous"/>
+
+    <!-- FONTS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Ubuntu&family=Varela+Round&display=swap"
+        rel="stylesheet"/>
+
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity=""
+        crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity=""
+        crossorigin="anonymous"/>
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../lang_styles.css"/>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCNC43J"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- NAVIGATION BAR -->
+
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark">
+        <a class="navbar-brand" href="../index.html">CODEMISTIC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tutorials
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        <a class="dropdown-item" href="../cpp.html">C++</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../python.html">Python</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../java.html">Java</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../dsa.html">Data Structure and Algorithms</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../tutorials.html">All Tutorials</a>
+                        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../teen-code.html">Teen-Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../campus.html">Campus Programme</a>
+                </li>
+                <!-- <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" target="_blank">Contribute</a>
+                    </li> -->
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="../register.html">Join Our Community</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+
+    
+    <!-- Accordion -->
+
+    <section class="lbar">
+        <div class="lang-img col-md-2">
+            <img src="../logo/python.png" alt="python" class="imghome" >
+        </div>
+        <ul id="accordion" class="accordion ml-5">
+            <li class=" collape in show">
+                <div class="link">Python Introduction<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse ">
+                    <li>
+                        <a href="start-python.html " class="closed">Getting Started</a>
+                    </li>
+                    <li>
+                        <a href="keyword-and-identifiers-python.html" class="closed">Keyword and Identifiers</a>
+                    </li>
+                    <li>
+                        <a href="statements-and-comments-python.html" class="closed">Statements & Comments</a>
+                    </li>
+                    <li>
+                        <a href="variables-python.html" class="closed">Python Variables</a>
+                    </li>
+                    <li>
+                        <a href="datatypes-python.html" class="closed">Python Datatypes</a>
+                    </li>
+                    <li>
+                        <a href="type-conversion-python.html" class="closed">Python Type Conversion</a>
+                    </li>
+                    <li>
+                        <a href="input-output-import-python.html" class="closed">Python I/O and import</a>
+                    </li>
+                    <li>
+                        <a href="operators-python.html" class="closed">Python Operators</a>
+                    </li>
+                    <li>
+                        <a href="namespace-python.html" class="closed">Python Namespace</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Flow Control<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                                <a href="if-else-python.html" class="closed">Getting if...else</a>
+                            </li>
+                            <li>
+                                <a href="keyword-for-loop-python.html" class="closed">Python for Loop</a>
+                            </li>
+                            <li>
+                            <a href="while-loop-python.html" class="closed">Python while Loop</a>
+                        </li>
+                        <li>
+                            <a href="break-and-continue-python.html" class="closed">Python break and continue</a>
+                        </li>
+                        <li>
+                            <a href="pass-python.html" class="closed">Python Pass</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Function<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="functions-python.html" class="closed">Getting Functions</a>
+                         </li>
+                         <li>
+                            <a href="keyword-and-arguments-python.html" class="closed">Keyword and Arguments</a>
+                        </li>
+                        <li>
+                            <a href="recursion-python.html" class="closed">Python Recursions</a>
+                        </li>
+                        <li>
+                            <a href="anonymous-python.html" class="closed">Anonymous Function</a>
+                        </li>
+                        <li>
+                            <a href="global-local-and-nonlocal-python.html" class="closed">Global, Local and Nonlocal</a>
+                        </li>
+                        
+                        <li>
+                            <a href="modules-python.html" class="closed">Python Modules</a>
+                        </li>
+                        <li>
+                            <a href="package-python.html" class="closed">Python Packages</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Data Types<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse show">
+                    <li>
+                                <a href="numbers-python.html" class="closed">Python Numbers</a>
+                            </li>
+                            <li>
+                                <a href="list-python.html" class="opened">Python List</a>
+                            </li>
+                            <li>
+                                <a href="tuple-python.html" class="closed">Python Tuple</a>
+                            </li>
+                            <li>
+                                <a href="string-python.html" class="closed">Python String</a>
+                            </li>
+                            <li>
+                                <a href="set-python.html" class="closed">Python Set</a>
+                            </li>
+                            <li>
+                                <a href="dictionary-python.html" class="closed">Python Dictionary</a>
+                            </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python File Handeling<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="file-operation-python.html" class="closed">Python File Operation</a>
+                         </li>
+                         <li>
+                            <a href="directory-and-file-management-python.html" class="closed">Python Dictionary</a>
+                        </li>
+                        <li>
+                            <a href="exception-python.html" class="closed">Python Exception</a>
+                        </li>
+                        <li>
+                            <a href="exception-handling-python.html" class="closed">Python Exception Handling</a>
+                        </li>
+                        <li>
+                            <a href="user-defined-exception-python.html" class="closed">Python User-defined Exception</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Object and Class<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="oop-python.html" class="closed">Python OOP</a>
+                         </li>
+                         <li>
+                            <a href="class-python.html" class="closed">Python Class</a>
+                        </li>
+                        <li>
+                            <a href="inheritance-python.html" class="closed">Python Inheritance</a>
+                        </li>
+                        <li>
+                            <a href="multiple-inheritance-python.html" class="closed">Multiple Inheritance</a>
+                        </li>
+                        <li>
+                            <a href="operator-overloading-python.html" class="closed">Operator Overloading</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Advance Topics<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="iterator-python.html" class="closed">Python Iterator</a>
+                         </li>
+                         <li>
+                            <a href="generator-python.html" class="closed">Python Generator</a>
+                        </li>
+                        <li>
+                            <a href="closure-python.html" class="closed">Python Closure</a>
+                        </li>
+                        <li>
+                            <a href="decorator-python.html" class="closed">Python Decorators</a>
+                        </li>
+                        <li>
+                            <a href="properties-python.html" class="closed">Python Properties</a>
+                        </li>
+                        <li>
+                            <a href="regex-python.html" class="closed">Python RegEx</a>
+                        </li>
+                        
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Date and Time<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="datetime-python.html" class="closed">Python datetime Module</a>
+                         </li>
+                         <li>
+                            <a href="datetime.strftime()-python.html" class="closed">Python datetime.strftime()</a>
+                        </li>
+                        <li>
+                            <a href="datetime.strptime()-python.html" class="closed">Python datetime.strptime()</a>
+                        </li>
+                        <li>
+                            <a href="current-date-and-time-python.html" class="closed">Current Date and Time</a>
+                        </li>
+                        <li>
+                            <a href="get-current-time-python.html" class="closed">Get current time</a>
+                        </li>
+                        <li>
+                            <a href="timestamp-to-datetime-python.html" class="closed">Timestamp to datetime</a>
+                        </li>
+                        <li>
+                            <a href="time-module-python.html" class="closed">Python Time Module</a>
+                        </li>
+                        <li>
+                            <a href="time.sleep-python.html" class="closed">Python time.sleep</a>
+                        </li>
+                        
+                </ul>
+            </li>
+
+        </ul>
+
+    </section>
+    
+
+     <br>
+    <section class="para">
+        <!-- <div class="but mt-4">
+            &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-md btn-primary "><a href="../dsa.html"><i
+                        class="fas fa-arrow-left "></i>&nbsp;Back to Index</a></button>
+        </div> -->
+
+        <!-- breadcrumb -->
+
+        <nav class="bdcrumb" id="bdcrumb" aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a  href="../tutorials.html"><i class="fas fa-home"></i></a></li>
+                <li class="breadcrumb-item"><a  href="../python.html#languages">Python Index</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Python List</li>
+            </ul>
+        </nav>
+
+        <!-- breadcrumb ending -->
+    <!-- HEADING -->
+
+
+
+    <br>
+        <div class="wrapper">
+            <h3>Python List</h3>
+            <hr>
+            <h4>Introduction to Python List</h4>
+            <p>
+                Unlike C++ or Java, Python doesn’t has arrays. So , to hold a sequence of values, Python provides us a special built in
+                class called ‘list’ .Thus a list in Python is defined as a collection of values.The important characteristics of Python
+                lists are as follows:<br>
+                1) Lists are ordered.<br>
+                2) Lists can contain any arbitrary objects.<br>
+                3) List elements can be accessed by index.<br>
+                4) Lists can be nested to arbitrary depth.<br>
+                5) Lists are mutable.<br>
+                6) Lists are dynamic.<br>
+                In Python, a list is created by placing all the items (elements) inside a square bracket [ ], separated by commas.
+                It can contain heterogeneous elements also.We also can create a list by using the list( ) function
+                We can print a list in three ways:<br>
+                1) Directly passing it to the print( ) function.<br>
+                2) Accessing individual elements using subscript operator [ ].<br>
+                3) Accessing multiple elements using slice operator [ : ].<br>
+<pre><code>
+mynums=[10,20,30,40,50]
+print(mynums)
+</code></pre>
+<b>Output</b>
+<pre><code>
+[10,20,30,40,50]
+</code></pre>
+                <h5>Adding new element to a list</h5>
+                The most common way of adding a new element to an existing list is by calling the append( ) method.This method takes
+                 one argument and adds it at the end of the list<br>
+<pre><code>
+mynums=[10,20,30,40,50]
+print(mynums)
+mynums.append(60)
+print(mynums)
+</code></pre>
+<b>Output</b>
+<pre><code>
+[10,20,30,40,50]
+[10,20,30,40,50,60]    
+</code></pre>                 
+                 <h5>Slice Operator With List</h5>
+                 Just like we can apply slice operator with strings , similarly Python allows us to apply slice operator with lists also.
+                <br>Syntax: list_var[x:y]
+                <br>x denotes the start index of slicing and y denotes the end index . But Python ends slicing at y-1 index.<br>
+                slicing can accept a third parameter also after the two index numbers.The third parameter is called step value.So the complete
+                 syntax of slicing operator is:<br>
+                s[begin:end:step]<br>
+                Step value indicates how many characters to move forward after the first character is retrieved from the string and it’s default value
+                 is 1 , but can be changed as per our choice. Another point to understand is that if step is positive or not mentioned then 
+                 Movement is in forward direction ( L->R)
+                 Default for start is 0 and end is len
+                 But if step is negative , then
+                 Movement is in backward direction (R->L)
+                 Default for start is -1 and end is –(len+1)
+                 <b>Examples:</b>
+<pre><code>
+mynums=[10,20,30,40,50]
+print(mynums[1:4]) 
+mynums=[10,20,30,40,50]
+print(mynums[1: ])
+mynums=[10,20,30, 40,50]
+print(mynums[:3])
+mynums=[10,20,30,40,50]
+print(mynums[1:4:2])
+</code></pre>
+<b>Output</b>
+<pre><code>
+[20,30,40] 
+[20,30,40,50] 
+[10,20,30 ]
+[20,40]
+</code></pre> 
+</p>
+
+                <hr>
+                <h4>Operations on Python List</h4>
+                <p>
+                    <h5>Modifying A List</h5>
+                    Python allows us to edit/change/modify an element in a list by simply using it’s index and assigning a new value to it.<br>
+                    Syntax:list_var[index_no]=new_value<br>
+                    Python allows us to modify multiple continuous list values in a single statement , which is done using the regular slice operator.
+                    <br>Syntax:list_var[m:n]=[list of new value ]<br>
+<pre><code>
+sports=["cricket","hockey","football","snooker"]
+print(sports)
+sports[1:3]=["badminton","tennis"]
+print(sports)  
+</code></pre>
+<b>Output</b>
+<pre><code>
+["cricket","hockey","football","snooker"]
+["cricket","badminton","tennis","snooker"]
+</code></pre>     
+                    <h5>Deleting Item From The List</h5>
+                    Python allows us to delete an item from the list by calling the operator/keyword called del. 
+                    Syntax:del list_var[index_no]<br>
+                    Python allows us to delete multiple items from the list in 2 ways:<br>
+                    1) Assigning Empty List<br>
+                    2) Passing slice to del operator<br>
+<pre><code>
+sports=["cricket","hockey","football","snooker"]
+print(sports)
+del sports[3]
+print(sports) 
+</code></pre>
+<b>Output</b>
+<pre><code>
+["cricket","hockey","football","snooker"]
+["cricket","hockey","football"]
+</code></pre>                    
+                    <b>Deleting Entire List</b><br>
+                    We can delete or remove the entire list object as well as it’s reference from the memory by passing the list object 
+                    reference to the del operator.<br>
+                    Syntax: del list_var<br>
+                    <h5>Appending Or Prepending Items To A List</h5>
+                    Additional items can be added to the start or end of a list using the + concatenation operator or the += compound assignment operator
+                    The only condition is that the item to be concatenated must be a list
+<pre><code>
+sports=["cricket","hockey","football"]
+sports=["carrom","chess","table-tennis"]+sports
+print(sports)
+</code></pre>
+<b>Output</b>
+<pre><code>
+["carrom","chess","table-tennis","cricket","hockey","football"]                  
+</code></pre> 
+                    <h5>Multiplying A List</h5>
+                    Python allows us to multiply a list by an integer and when we do so it makes copies of list items that many number of times, while preserving the order.
+                    <br>Syntax: list_var * n<br>
+                    <b>Membership Operator On List</b><br>
+                    We can apply membership operators in and not in on the list to search for a particular item<br>
+                    Syntax: element in list_var<br>
+</p>
+<hr>
+<h4>Builtin Functions for List</h4>
+<p>
+There are some built-in functions in Python that we can use on lists. These are:<br>
+<b>len():</b> Returns the number of items in the list<br>
+<b>max():</b> Returns the greatest item present in the list<br>
+<b>min():</b> Returns the least item present in the list<br>
+<b>sum():</b> Returns the sum of all the items present in the list . However items must be of Numeric or boolean type<br>
+<b>sorted():</b> Returns a sorted version of the list passed as argument. To sort the list in descending order , we can pass the keyword argument reverse with value set to True to the function sorted( )
+<br><b>list():</b> The list( ) function converts an iterable i.e tuple , range, set , dictionary and string to a list.
+<br><b>any():</b> The any( ) function accepts a List as argument and returns True if atleast one element of the List is True. If not, this method returns False. If the List is empty, then also it returns False
+<br>Syntax: list(iterable)<br>
+<b>all():</b> The all( ) function accepts a List as argument and returns True if  all the elements of the List are True or if the List is empty .If not, this method returns False.
+<br> all(iterable)<br>
+</p>
+<hr>
+<h4>List Methods</h4>
+<p>
+There are some methods also in  Python that we can use on lists. These are:<br>
+<b>1)append(): </b>Adds a single element to the end of the list . Modifies the list in place but doesn’t return anything<br>
+Syntax: list_var.append(item)
+<br><b>2)extend(): </b>extend() also adds to the end of a list, but the argument is expected to be an iterable. 
+Modifies the list in place but doesn’t return anything.<br>
+Syntax: list_var.extend(iterable)
+<br><b>3)insert(): </b>The insert() method inserts the element to the list at the given index. Modifies the list in place but doesn’t return anything
+<br>Syntax: list_var.insert(index,item)
+<br><b>4)index(): </b>The index() method searches an element in the list and returns it’s index. 
+If the element occurs more than once it returns it’s smallest/first position. 
+If element is not found, it raises a ValueError exception <br>
+Syntax: list_var.index(item)
+<br><b>5)count():</b> The count() method returns the number of occurrences of an element in a list
+In simple terms, it counts how many times an element has occurred in a list and returns it.<br>
+Syntax: list_var.count(item)
+<br><b>6)remove(): </b>The remove() method searches for the given element in the list and removes the first matching element.
+If the element(argument) passed to the remove() method doesn't exist, ValueError exception is thrown.<br>
+Syntax: list_var.remove(item)
+<br><b>7)pop(): </b>The pop() method removes and returns the element at the given index (passed as an argument) from the list.<br>
+Syntax: list_var.pop(index)
+<br><b>8)clear(): </b>The clear() method removes all items from the list. 
+It only empties the given list and  doesn't return any value.<br>
+Syntax: list_var.clear( )
+<br><b>9)sort(): </b>The sort() method sorts the elements of a given list.
+The order can be ascending or descending<br>
+Syntax: list_var.sort(reverse=True|False, key=name of func) 
+<br><b>10)reverse(): </b>The reverse() method reverses the elements of a given list.
+It doesn't return any value. It only reverses the elements and updates the list.<br>
+Syntax: list_var.reverse( )
+
+</p>
+<h4>List Comprehensions</h4>
+<p>
+Comprehensions are constructs that allow sequences to be built from other sequences. 
+In simple words to build a List from another List or Set from another Set , we can use Comprehensions
+Python 2.0 introduced list comprehensions and Python 3.0 comes with dictionary and set comprehensions.<br>
+Syntax: list_variable = [x   for x in iterable  <test_cond>]
+<pre><code>
+myList=list(map(lambda x:x ,"Bhopal"))
+print(myList)
+</code></pre>
+<b>Output</b>
+<pre><code>
+['B','H','O','P','A','L']
+</code></pre>
+Explanation:<br>
+1) For a Python List Comprehension, we use the delimiters for a list- square brackets. 
+<br>2) Inside those, we use a for-statement on an iterable.
+<br>3) Then there is an optional test condition we can apply on each member of iterable 
+<br>4) Finally we have our output expression
+<h5>Adding Conditions In List Comprehension</h5>
+As previously mentioned , it is possible to add a test condition in List Comprehension.
+When we do this , we get only those items from the iterable for which the condition is True. 
+<br>Syntax: list_variable = [x   for x in iterable  <test_cond>]
+<h5>Adding Conditions In List Comprehension</h5>
+List Comprehension allows us to mention more than one if condition.
+To do this we simply have to mention the next if after the condition of first if 
+<br>Syntax: list_variable = [x   for x in iterable  'test_cond 1' 'test cond 2']<br>
+List Comprehension allows us to use logical or/and operator also but we should use only 1 if statement
+<pre><code>
+a = [1,2,3,4,5,6,7,8,9,10]
+b = [x for x in a if x % 2 == 0 or x % 3 == 0]
+print(b)
+</code></pre>
+<b>Output</b>
+<pre><code>
+[2,3,4,6,8,9,10]
+</code></pre>
+<h5>if-else in List comprehension</h5>
+List Comprehension allows us to put if- else statements also 
+But since in a comprehension, the first thing we specify is the value to put in a list, so we put our if-else in place of value.<br>
+Syntax: list_variable = [expr1 if cond else expr2   for x in iterable  ]
+
+</p>
+
+
+</div>
+<div class="but text-right">
+    <button class="btn btn-primary pull-right"><a href="tuple-python.html">Next Topic&nbsp;<i
+                class="fas fa-arrow-right "></i><br/>Python Tuple</a></button>
+</div><br>
+</section>
+
+<!-- footer -->
+
+<footer >
+<div class="row footer" >
+    <div class="logo">
+        <img src="../image.png" alt="" class="f-img">
+        <h5>LEARN CODE DISCUSS</h5>
+    </div>
+    
+        <div class="footer-column ">
+            
+            <ul class="footer-ul">
+                <li class="foot-header"><strong>CodeMistic</strong></li>
+                
+                    <li class="f-li"><a href="../index.html" class="f-links">Home</a></li>
+                
+                
+                    <li class="f-li"><a href="../team.html" class="f-links">Our Team</a></li>
+                
+                
+                    <li class="f-li"><a href="../terms-and-conditions.html" class="f-links">Terms of Service</a></li>
+                
+                
+                    <li class="f-li"><a href="../privacy-policy.html" class="f-links">Privacy Policy</a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-column ">
+          
+            <ul class="footer-ul ">
+                <li class="foot-header"><strong>LEARN</strong></li>
+                
+                    <li class="f-li"><a href="../cpp.html" class="f-links">C++</a></li>
+                
+                
+                    <li class="f-li"><a href="../java.html" class="f-links">Java</a></li>
+                
+                
+                    <li class="f-li"><a href="../python.html" class="f-links">Python</a></li>
+                
+                
+                    <li class="f-li"><a href="../dsa.html" class="f-links">DSA</a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-column ">
+            
+            <ul class="footer-ul ">
+                <li class="foot-header"><strong>CONTRIBUTE</strong></li>
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSduxk_aP9M1lqUAebQJwRXiVm2ukmdgv3T7gjBpOsr_gdeOcQ/viewform?usp=sf_link" class="f-links" target="_blank">Write an Article/Blog</a></li>
+                
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" class="f-links" target="_blank">Internships</a></li>
+                
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe9nr_Aw0fGIqm3_xWhqEzTr3UWdOFz-pvKpQvkAsosORYq9w/viewform?usp=sf_link" class="f-links" target="_blank">Videos</a></li>
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLScOW3hJjxxwzPYL4u51oboc4T1aDtIUEIRa20hKPKu4UlcZAA/viewform?usp=sf_link" class="f-links" target="_blank">Donations/Funds</a></li>
+                
+            </ul>
+        </div>
+    
+</div>
+<div class="footer-links" style="text-align: center;">
+    <!-- <h7>Connect With Us</h7><br><br> -->
+    <a href="https://www.facebook.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-facebook "
+            style="color:#3b5998; "></i></a>
+    <a href="https://www.instagram.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-instagram "
+            style="color:#e95950; "></i></a>
+    <a href="https://www.twitter.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-twitter "
+            style="color:#8accf5; "></i></a>
+    <a href="https://www.linkedin.com/company/codemistic " target="_blank "><i
+            class="icons fa-2x fab fa-linkedin " style="color:#88b3ee; "></i></a>
+    <a href="https://t.me/codemistic " target="_blank "><i class="icons fa-2x fab fa-telegram "
+            style="color:#65adda; "></i></a>
+
+    <a href="https://www.youtube.com/channel/UCS1Iv_kkgQGDwoXtvrlwlag " target="_blank "><i
+            class="icons fa-2x fab fa-youtube " style="color:red; "></i></a>
+    <p class="foot mt-3">&#169 Copyright : <strong>CodeMistic</strong> All Rights Reserved.</p>
+</div>
+</footer>
+
+
+
+<!-- CSS Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
+integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
+crossorigin="anonymous "></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='../side.js'></script>
+</body>
+
+</html>

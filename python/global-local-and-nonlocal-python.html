@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="A variable which is defined inside a function is local to that function.It is accessible from the point at which it is defined until the end of the function.It exists for as long as the function is executing.Even the parameter in the function definition behave like local variables.When we use the assignment operator (=) inside a function, it’s default behaviour is to create a new local variable – unless a variable with the same name is already defined in the local scope."/>
+<meta name="keywords" content="Python global,local global in Python,C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+    <title>Global,Local and Non-Local Python | Python Tutorials | CodeMistic</title>
+    <script data-ad-client="ca-pub-5352867889640158" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MCNC43J');</script>
+        <!-- End Google Tag Manager -->
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTQSLH0XW"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-YPTQSLH0XW');
+        </script>
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="img/png" href="../favicon.png"/>
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous"/>
+
+    <!-- FONTS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Ubuntu&family=Varela+Round&display=swap"
+        rel="stylesheet"/>
+
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity=""
+        crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity=""
+        crossorigin="anonymous"/>
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../lang_styles.css"/>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCNC43J"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- NAVIGATION BAR -->
+
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark">
+        <a class="navbar-brand" href="../index.html">CODEMISTIC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tutorials
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        <a class="dropdown-item" href="../cpp.html">C++</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../python.html">Python</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../java.html">Java</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../dsa.html">Data Structure and Algorithms</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../tutorials.html">All Tutorials</a>
+                        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../teen-code.html">Teen-Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../campus.html">Campus Programme</a>
+                </li>
+                <!-- <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" target="_blank">Contribute</a>
+                    </li> -->
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="../register.html">Join Our Community</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+
+    
+    <!-- Accordion -->
+
+    <section class="lbar">
+        <div class="lang-img col-md-2">
+            <img src="../logo/python.png" alt="python" class="imghome" >
+        </div>
+        <ul id="accordion" class="accordion ml-5">
+            <li class=" collape in">
+                <div class="link">Python Introduction<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="start-python.html " class="closed">Getting Started</a>
+                    </li>
+                    <li>
+                        <a href="keyword-and-identifiers-python.html" class="closed">Keyword and Identifiers</a>
+                    </li>
+                    <li>
+                        <a href="statements-and-comments-python.html" class="closed">Statements & Comments</a>
+                    </li>
+                    <li>
+                        <a href="variables-python.html" class="closed">Python Variables</a>
+                    </li>
+                    <li>
+                        <a href="datatypes-python.html" class="closed">Python Datatypes</a>
+                    </li>
+                    <li>
+                        <a href="type-conversion-python.html" class="closed">Python Type Conversion</a>
+                    </li>
+                    <li>
+                        <a href="input-output-import-python.html" class="closed">Python I/O and import</a>
+                    </li>
+                    <li>
+                        <a href="operators-python.html" class="closed">Python Operators</a>
+                    </li>
+                    <li>
+                        <a href="namespace-python.html" class="closed">Python Namespace</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Flow Control<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                                <a href="if-else-python.html" class="closed">Getting if...else</a>
+                            </li>
+                            <li>
+                                <a href="keyword-for-loop-python.html" class="closed">Python for Loop</a>
+                            </li>
+                            <li>
+                            <a href="while-loop-python.html" class="closed">Python while Loop</a>
+                        </li>
+                        <li>
+                            <a href="break-and-continue-python.html" class="closed">Python break and continue</a>
+                        </li>
+                        <li>
+                            <a href="pass-python.html" class="closed">Python Pass</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Function<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse show">
+                    <li>
+                             <a href="functions-python.html" class="closed">Getting Functions</a>
+                         </li>
+                         <li>
+                            <a href="keyword-and-arguments-python.html" class="closed">Keyword and Arguments</a>
+                        </li>
+                        <li>
+                            <a href="recursion-python.html" class="closed">Python Recursions</a>
+                        </li>
+                        <li>
+                            <a href="anonymous-python.html" class="closed">Anonymous Function</a>
+                        </li>
+                        <li>
+                            <a href="global-local-and-nonlocal-python.html" class="opened">Global, Local and Nonlocal</a>
+                        </li>
+                        
+                        <li>
+                            <a href="modules-python.html" class="closed">Python Modules</a>
+                        </li>
+                        <li>
+                            <a href="package-python.html" class="closed">Python Packages</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Data Types<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                                <a href="numbers-python.html" class="closed">Python Numbers</a>
+                            </li>
+                            <li>
+                                <a href="list-python.html" class="closed">Python List</a>
+                            </li>
+                            <li>
+                                <a href="tuple-python.html" class="closed">Python Tuple</a>
+                            </li>
+                            <li>
+                                <a href="string-python.html" class="closed">Python String</a>
+                            </li>
+                            <li>
+                                <a href="set-python.html" class="closed">Python Set</a>
+                            </li>
+                            <li>
+                                <a href="dictionary-python.html" class="closed">Python Dictionary</a>
+                            </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python File Handeling<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="file-operation-python.html" class="closed">Python File Operation</a>
+                         </li>
+                         <li>
+                            <a href="directory-and-file-management-python.html" class="closed">Python Dictionary</a>
+                        </li>
+                        <li>
+                            <a href="exception-python.html" class="closed">Python Exception</a>
+                        </li>
+                        <li>
+                            <a href="exception-handling-python.html" class="closed">Python Exception Handling</a>
+                        </li>
+                        <li>
+                            <a href="user-defined-exception-python.html" class="closed">Python User-defined Exception</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Object and Class<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="oop-python.html" class="closed">Python OOP</a>
+                         </li>
+                         <li>
+                            <a href="class-python.html" class="closed">Python Class</a>
+                        </li>
+                        <li>
+                            <a href="inheritance-python.html" class="closed">Python Inheritance</a>
+                        </li>
+                        <li>
+                            <a href="multiple-inheritance-python.html" class="closed">Multiple Inheritance</a>
+                        </li>
+                        <li>
+                            <a href="operator-overloading-python.html" class="closed">Operator Overloading</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Advance Topics<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="iterator-python.html" class="closed">Python Iterator</a>
+                         </li>
+                         <li>
+                            <a href="generator-python.html" class="closed">Python Generator</a>
+                        </li>
+                        <li>
+                            <a href="closure-python.html" class="closed">Python Closure</a>
+                        </li>
+                        <li>
+                            <a href="decorator-python.html" class="closed">Python Decorators</a>
+                        </li>
+                        <li>
+                            <a href="properties-python.html" class="closed">Python Properties</a>
+                        </li>
+                        <li>
+                            <a href="regex-python.html" class="closed">Python RegEx</a>
+                        </li>
+                        
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Date and Time<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="datetime-python.html" class="closed">Python datetime Module</a>
+                         </li>
+                         <li>
+                            <a href="datetime.strftime()-python.html" class="closed">Python datetime.strftime()</a>
+                        </li>
+                        <li>
+                            <a href="datetime.strptime()-python.html" class="closed">Python datetime.strptime()</a>
+                        </li>
+                        <li>
+                            <a href="current-date-and-time-python.html" class="closed">Current Date and Time</a>
+                        </li>
+                        <li>
+                            <a href="get-current-time-python.html" class="closed">Get current time</a>
+                        </li>
+                        <li>
+                            <a href="timestamp-to-datetime-python.html" class="closed">Timestamp to datetime</a>
+                        </li>
+                        <li>
+                            <a href="time-module-python.html" class="closed">Python Time Module</a>
+                        </li>
+                        <li>
+                            <a href="time.sleep-python.html" class="closed">Python time.sleep</a>
+                        </li>
+                        
+                </ul>
+            </li>
+
+        </ul>
+
+    </section>
+    
+     <br>
+    <section class="para">
+        <!-- <div class="but mt-4">
+            &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-md btn-primary "><a href="../dsa.html"><i
+                        class="fas fa-arrow-left "></i>&nbsp;Back to Index</a></button>
+        </div> -->
+
+        <!-- breadcrumb -->
+
+        <nav class="bdcrumb" id="bdcrumb" aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a  href="../tutorials.html"><i class="fas fa-home"></i></a></li>
+                <li class="breadcrumb-item"><a  href="../python.html#languages">Python Index</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Variable Scopes</li>
+            </ul>
+        </nav>
+
+        <!-- breadcrumb ending -->
+    <!-- HEADING -->
+
+
+
+    <br>
+        <div class="wrapper">
+            <h4>Variable Scopes</h4>
+            <p>The scope of a variable refers to the places from where we can see or access a variable. <br>In Python , there are 4 types of scopes: <br>1. Local : Inside a function body
+<br>2. Enclosing: Inside an outer function’s body . We will discuss it later
+<br>3. Global: At the module level
+<br>4. Built In: At the interpreter level <br>In short we pronounce it as LEGB
+</p>
+<hr>
+<h4>Global Variable</h4>
+<p>
+
+A variable which is defined in the main body of a file is called a global variable. <br>It will be visible throughout the file
+</p>
+<h4>Local Variable</h4>
+<p>
+A variable which is defined inside a function is local to that function. 
+
+<br>It is accessible from the point at which it is defined until the end of the function. 
+
+<br>It exists for as long as the function is executing. 
+
+<br>Even the parameter in the function definition behave like local variables
+
+<br>When we use the assignment operator (=) inside a function, it’s default behaviour is to create a new local variable – unless a variable with the same name is already defined in the local scope. <br>
+<b>Example:</b>
+<pre><code>
+s="I love Python"
+def f():
+    global s
+    s="I love C"
+    print(s)
+f()
+print(s)
+
+</code></pre>
+<b>Output:</b>
+<pre><code>
+    I love C
+    I love C
+
+</code></pre>
+<b>Example:</b>
+<pre><code>
+s="I love Python"
+def f():
+    print(s)
+    s="I love C"
+    print(s)
+f()
+print(s)
+
+</code></pre>
+<b>Output:</b>
+<pre><code>
+UnboundLocalError!: 
+Local variable s referenced before assignment
+
+</code></pre>
+Now , this is a special case! . In Python any variable which is changed or created inside of a function is local, if it hasn't been declared as a global variable. To tell Python, that we want to use the global variable, we have to explicitly state this by using the keyword "global" <br>
+<b>Example:</b>
+<pre><code>
+a=1
+def f():
+    print ('Inside f() : ', a)
+def g():    
+    a = 2
+    print ('Inside g() : ',a)
+def h():    
+    global a
+    a = 3
+    print ('Inside h() : ',a)
+ 
+print ('global : ',a)
+f()
+print ('global : ',a)
+g()
+print ('global : ',a)
+h()
+print ('global : ',a)
+
+</code></pre>
+<b>Output:</b>
+<pre><code>
+global : 1
+inside f( ):1
+global: 1
+inside g( ): 2
+global : 1
+inside h( ): 3
+global : 3
+
+</code></pre>
+</p>
+
+</div>
+<div class="but text-right">
+    <button class="btn btn-primary pull-right"><a href="modules-python.html">Next Topic&nbsp;<i
+                class="fas fa-arrow-right "></i><br/>Python Modules</a></button>
+</div><br>
+</section>
+
+<!-- footer -->
+
+<footer >
+<div class="row footer" >
+    <div class="logo">
+        <img src="../image.png" alt="" class="f-img">
+        <h5>LEARN CODE DISCUSS</h5>
+    </div>
+    
+        <div class="footer-column ">
+            
+            <ul class="footer-ul">
+                <li class="foot-header"><strong>CodeMistic</strong></li>
+                
+                    <li class="f-li"><a href="../index.html" class="f-links">Home</a></li>
+                
+                
+                    <li class="f-li"><a href="../team.html" class="f-links">Our Team</a></li>
+                
+                
+                    <li class="f-li"><a href="../terms-and-conditions.html" class="f-links">Terms of Service</a></li>
+                
+                
+                    <li class="f-li"><a href="../privacy-policy.html" class="f-links">Privacy Policy</a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-column ">
+          
+            <ul class="footer-ul ">
+                <li class="foot-header"><strong>LEARN</strong></li>
+                
+                    <li class="f-li"><a href="../cpp.html" class="f-links">C++</a></li>
+                
+                
+                    <li class="f-li"><a href="../java.html" class="f-links">Java</a></li>
+                
+                
+                    <li class="f-li"><a href="../python.html" class="f-links">Python</a></li>
+                
+                
+                    <li class="f-li"><a href="../dsa.html" class="f-links">DSA</a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-column ">
+            
+            <ul class="footer-ul ">
+                <li class="foot-header"><strong>CONTRIBUTE</strong></li>
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSduxk_aP9M1lqUAebQJwRXiVm2ukmdgv3T7gjBpOsr_gdeOcQ/viewform?usp=sf_link" class="f-links" target="_blank">Write an Article/Blog</a></li>
+                
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" class="f-links" target="_blank">Internships</a></li>
+                
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe9nr_Aw0fGIqm3_xWhqEzTr3UWdOFz-pvKpQvkAsosORYq9w/viewform?usp=sf_link" class="f-links" target="_blank">Videos</a></li>
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLScOW3hJjxxwzPYL4u51oboc4T1aDtIUEIRa20hKPKu4UlcZAA/viewform?usp=sf_link" class="f-links" target="_blank">Donations/Funds</a></li>
+                
+            </ul>
+        </div>
+    
+</div>
+<div class="footer-links" style="text-align: center;">
+    <!-- <h7>Connect With Us</h7><br><br> -->
+    <a href="https://www.facebook.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-facebook "
+            style="color:#3b5998; "></i></a>
+    <a href="https://www.instagram.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-instagram "
+            style="color:#e95950; "></i></a>
+    <a href="https://www.twitter.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-twitter "
+            style="color:#8accf5; "></i></a>
+    <a href="https://www.linkedin.com/company/codemistic " target="_blank "><i
+            class="icons fa-2x fab fa-linkedin " style="color:#88b3ee; "></i></a>
+    <a href="https://t.me/codemistic " target="_blank "><i class="icons fa-2x fab fa-telegram "
+            style="color:#65adda; "></i></a>
+
+    <a href="https://www.youtube.com/channel/UCS1Iv_kkgQGDwoXtvrlwlag " target="_blank "><i
+            class="icons fa-2x fab fa-youtube " style="color:red; "></i></a>
+    <p class="foot mt-3">&#169 Copyright : <strong>CodeMistic</strong> All Rights Reserved.</p>
+</div>
+</footer>
+
+
+
+<!-- CSS Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
+integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
+crossorigin="anonymous "></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='../side.js'></script>
+</body>
+
+</html>

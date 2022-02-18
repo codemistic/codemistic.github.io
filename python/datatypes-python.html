@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Keywords are the reserved words in Python.We cannot use a keyword as a variable name, function name or any other identifier. They are used to define the syntax and structure of the Python language.In Python, keywords are case sensitive.There are 33 keywords in Python 3.7."/>
+<meta name="keywords" content="Python Datatypes,datatypes in Python,C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+    <title>DataTypes Python | Python Tutorials | CodeMistic</title>
+    <script data-ad-client="ca-pub-5352867889640158" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MCNC43J');</script>
+    <!-- End Google Tag Manager -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTQSLH0XW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-YPTQSLH0XW');
+    </script>
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="img/png" href="../favicon.png"/>
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous"/>
+
+    <!-- FONTS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Ubuntu&family=Varela+Round&display=swap"
+        rel="stylesheet"/>
+
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity=""
+        crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity=""
+        crossorigin="anonymous"/>
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../lang_styles.css"/>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCNC43J"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- NAVIGATION BAR -->
+
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark">
+        <a class="navbar-brand" href="../index.html">CODEMISTIC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tutorials
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        <a class="dropdown-item" href="../cpp.html">C++</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../python.html">Python</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../java.html">Java</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../dsa.html">Data Structure and Algorithms</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../tutorials.html">All Tutorials</a>
+                        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../teen-code.html">Teen-Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../campus.html">Campus Programme</a>
+                </li>
+                <!-- <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" target="_blank">Contribute</a>
+                    </li> -->
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="../register.html">Join Our Community</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+
+    
+    <!-- Accordion -->
+
+    <section class="lbar">
+        <div class="lang-img col-md-2">
+            <img src="../logo/python.png" alt="python" class="imghome" >
+        </div>
+        <ul id="accordion" class="accordion ml-5">
+            <li class=" collape in">
+                <div class="link">Python Introduction<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse show">
+                    <li>
+                        <a href="start-python.html " class="closed">Getting Started</a>
+                    </li>
+                    <li>
+                        <a href="keyword-and-identifiers-python.html" class="closed">Keyword and Identifiers</a>
+                    </li>
+                    <li>
+                        <a href="statements-and-comments-python.html" class="closed">Statements & Comments</a>
+                    </li>
+                    <li>
+                        <a href="variables-python.html" class="closed">Python Variables</a>
+                    </li>
+                    <li>
+                        <a href="datatypes-python.html" class="opened">Python Datatypes</a>
+                    </li>
+                    <li>
+                        <a href="type-conversion-python.html" class="closed">Python Type Conversion</a>
+                    </li>
+                    <li>
+                        <a href="input-output-import-python.html" class="closed">Python I/O and import</a>
+                    </li>
+                    <li>
+                        <a href="operators-python.html" class="closed">Python Operators</a>
+                    </li>
+                    <li>
+                        <a href="namespace-python.html" class="closed">Python Namespace</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Flow Control<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                                <a href="if-else-python.html" class="closed">Getting if...else</a>
+                            </li>
+                            <li>
+                                <a href="keyword-for-loop-python.html" class="closed">Python for Loop</a>
+                            </li>
+                            <li>
+                            <a href="while-loop-python.html" class="closed">Python while Loop</a>
+                        </li>
+                        <li>
+                            <a href="break-and-continue-python.html" class="closed">Python break and continue</a>
+                        </li>
+                        <li>
+                            <a href="pass-python.html" class="closed">Python Pass</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Function<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="functions-python.html" class="closed">Getting Functions</a>
+                         </li>
+                         <li>
+                            <a href="keyword-and-arguments-python.html" class="closed">Keyword and Arguments</a>
+                        </li>
+                        <li>
+                            <a href="recursion-python.html" class="closed">Python Recursions</a>
+                        </li>
+                        <li>
+                            <a href="anonymous-python.html" class="closed">Anonymous Function</a>
+                        </li>
+                        <li>
+                            <a href="global-local-and-nonlocal-python.html" class="closed">Global, Local and Nonlocal</a>
+                        </li>
+                        
+                        <li>
+                            <a href="modules-python.html" class="closed">Python Modules</a>
+                        </li>
+                        <li>
+                            <a href="package-python.html" class="closed">Python Packages</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Data Types<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                                <a href="numbers-python.html" class="closed">Python Numbers</a>
+                            </li>
+                            <li>
+                                <a href="list-python.html" class="closed">Python List</a>
+                            </li>
+                            <li>
+                                <a href="tuple-python.html" class="closed">Python Tuple</a>
+                            </li>
+                            <li>
+                                <a href="string-python.html" class="closed">Python String</a>
+                            </li>
+                            <li>
+                                <a href="set-python.html" class="closed">Python Set</a>
+                            </li>
+                            <li>
+                                <a href="dictionary-python.html" class="closed">Python Dictionary</a>
+                            </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python File Handeling<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="file-operation-python.html" class="closed">Python File Operation</a>
+                         </li>
+                         <li>
+                            <a href="directory-and-file-management-python.html" class="closed">Python Dictionary</a>
+                        </li>
+                        <li>
+                            <a href="exception-python.html" class="closed">Python Exception</a>
+                        </li>
+                        <li>
+                            <a href="exception-handling-python.html" class="closed">Python Exception Handling</a>
+                        </li>
+                        <li>
+                            <a href="user-defined-exception-python.html" class="closed">Python User-defined Exception</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Object and Class<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="oop-python.html" class="closed">Python OOP</a>
+                         </li>
+                         <li>
+                            <a href="class-python.html" class="closed">Python Class</a>
+                        </li>
+                        <li>
+                            <a href="inheritance-python.html" class="closed">Python Inheritance</a>
+                        </li>
+                        <li>
+                            <a href="multiple-inheritance-python.html" class="closed">Multiple Inheritance</a>
+                        </li>
+                        <li>
+                            <a href="operator-overloading-python.html" class="closed">Operator Overloading</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Advance Topics<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="iterator-python.html" class="closed">Python Iterator</a>
+                         </li>
+                         <li>
+                            <a href="generator-python.html" class="closed">Python Generator</a>
+                        </li>
+                        <li>
+                            <a href="closure-python.html" class="closed">Python Closure</a>
+                        </li>
+                        <li>
+                            <a href="decorator-python.html" class="closed">Python Decorators</a>
+                        </li>
+                        <li>
+                            <a href="properties-python.html" class="closed">Python Properties</a>
+                        </li>
+                        <li>
+                            <a href="regex-python.html" class="closed">Python RegEx</a>
+                        </li>
+                        
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Date and Time<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="datetime-python.html" class="closed">Python datetime Module</a>
+                         </li>
+                         <li>
+                            <a href="datetime.strftime()-python.html" class="closed">Python datetime.strftime()</a>
+                        </li>
+                        <li>
+                            <a href="datetime.strptime()-python.html" class="closed">Python datetime.strptime()</a>
+                        </li>
+                        <li>
+                            <a href="current-date-and-time-python.html" class="closed">Current Date and Time</a>
+                        </li>
+                        <li>
+                            <a href="get-current-time-python.html" class="closed">Get current time</a>
+                        </li>
+                        <li>
+                            <a href="timestamp-to-datetime-python.html" class="closed">Timestamp to datetime</a>
+                        </li>
+                        <li>
+                            <a href="time-module-python.html" class="closed">Python Time Module</a>
+                        </li>
+                        <li>
+                            <a href="time.sleep-python.html" class="closed">Python time.sleep</a>
+                        </li>
+                        
+                </ul>
+            </li>
+
+        </ul>
+
+    </section>
+    
+
+
+    
+
+    <br>
+    <section class="para">
+        <!-- <div class="but mt-4">
+            &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-md btn-primary "><a href="../dsa.html"><i
+                        class="fas fa-arrow-left "></i>&nbsp;Back to Index</a></button>
+        </div> -->
+
+        <!-- breadcrumb -->
+
+        <nav class="bdcrumb" id="bdcrumb" aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a  href="../tutorials.html"><i class="fas fa-home"></i></a></li>
+                <li class="breadcrumb-item"><a  href="../python.html#languages">Python Index</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Python Datatypes</li>
+            </ul>
+        </nav>
+
+        <!-- breadcrumb ending -->
+    <!-- HEADING -->
+
+
+
+    
+        <div class="wrapper">
+             <h3>Python Datatypes</h3>
+             <p>In this tutorial we will learn about the different Datatypes in Python and some important facts about them.</p><hr>
+
+             <h4>What is Datatypes?</h4>
+             <p>A data type, in programming, is a classification that specifies which type of value a variable has and what type of mathematical, relational or logical operations can be applied to it without causing an error.<br> A string, for example, is a data type that is used to classify text and an integer is a data type used to classify whole numbers.</p><br>
+
+             <img src="pythonphoto\pic1.jpg"><br>
+
+             
+             <h4>Numeric type data type:</h4>
+
+             <p>Any number you enter in Python will be interpreted as a number; you are not required to declare what kind of data type you are entering. Python will consider any number written without decimals as an integer(as in 138) and any number written with decimals as a float (as in 138.0).</p>
+             
+             <ul>
+                <li>Int</li>
+                <li>Float</li>
+                <li>Complex</li>
+             </ul>
+             <h5>1.Integer data type:</h5>
+             <p>Like in math, integers in computer programming are whole numbers that can be positive, negative, or 0 (…, -1, 0, 1, …). An integer can also be known as an int. As with other programming languages, you should not use commas in numbers of four digits or more, so when you write 1,000 in your program, write it as 1000.</p>
+
+             <p>We can print out an integer in a simple way like this:</p>
+            <img src="pythonphoto\capture2.jpg"><br>
+
+            <p>Or, we can declare a variable, which in this case is essentially a symbol of the number we are using or manipulating, like so:</p>
+            <img src="pythonphoto\Capture3.JPG"><br>
+
+            <p>We can do math with integers in Python, too:</p>
+            <img src="pythonphoto\Capture4.JPG"><br>
+
+            <p>Integers can be used in many ways within Python programs, and as you continue to learn more about the language you will have a lot of opportunities to work with integers and understand more about this data type.</p>
+
+            <h5>2. Float data type:</h5>
+            <ul>
+                <li>Python also supports floating-point real values.</li>
+                <li>Float values are specified with a decimal point.</li>
+                <li>So 2.5,3.14.6.8 etc are all examples of float data type.</li>
+                <li>Just like double data types of other languages like java/c, float in Python has a precision of 16 digits.</li>
+            </ul>
+            <img src="pythonphoto\Capture5.JPG"><br>
+<br>
+    
+            <p>Some more important facts about float data type:</p>
+            <ul>
+                <li>For float , we can only assign values in the decimal number system and not in binary, octal or hexadecimal number system.</li><br>
+                <img src="pythonphoto\Capture6.JPG"><br>
+                <li>Float values can also be represented as exponential values.</li>
+                <li>Exponential notation is a scientific notation which is represented using e or E followed by an integer and it means to the power of 10.</li>
+            </ul>
+
+
+            <h4>3. Complex data type:</h4><br>
+            <ul>
+                <li>Complex numbers are written in the form, x+yj,where x is the
+                    real part and y is the imaginary part.</li>
+                <li>For example : 4+5j,12+1j etc.</li>
+                <li>The letter j is called unit imaginary number.</li>
+                <li>It denotes the value of √-1 , i.e. j ²</li>
+            </ul><br>
+            <img src="pythonphoto\Capture7.JPG"><br>
+
+            <p>Some important points about complex data type:</p><br>
+            <ul>
+                <li>For representing the unit imaginary number we are only allowed to use the letter j(both upper and lower case are allowed).</li>
+                <li>Any other letter if used will generate errors.</li><br>
+                <img src="pythonphoto\Capture8.JPG"><br>
+
+                <li>The letter j, should only appear in suffix, notion prefix.</li><br>
+                <img src="pythonphoto\Capture9.JPG"><br>
+
+                <li>The real and imaginary parts are allowed to be integers as well as floats.</li><br>
+                <img src="pythonphoto\Capture10.JPG"><br>
+
+                <li>The real part can be specified in any int form i.e.decimal,binary,octal or hexadecimal but the imaginary part should only be in decimal form.</li><br>
+                <img src="pythonphoto\Capture11.JPG"><br><br>
+                <img src="pythonphoto\Capture12.JPG"><br><br>
+
+                <li>We can display real and imaginary parts separately by using the attributes of complex types called “real” and “imag”.</li><br>
+                <img src="pythonphoto\Capture13.JPG"><br>
+
+                <li>Don’t think real and imag are functions ,rather they are attributes/properties of complex data types.</li>
+            </ul>
+           
+            <h3>Sequence Data Types in Python</h3>
+
+            <h4>1. String data type:</h4><br>
+            <p>String is a sequence of Unicode characters. We can use single quotes or double quotes to represent strings. Multi-line strings can be denoted using triple quotes, ''' or """ .Python does not  have a char data type , unlike C/C++ or Java. Unlike C language , Pyhton does not uses ASCII number system for character.It uses UNICODE number system.UNICODE is a number system which supports wider range of character compared to ASCII. As far as Python is concerned, it uses UNICODE supports 655536 characters with their numeric values ranging from 0 yo 65535 which covers almost every spoken language in the world like English,Greek,Germen,Korean,Chinese etc.</p>
+            <p>Whenever we display a string value directly on python's shell i.e. without using the functio print(), python's shell automatically encloses it in single quotes.</p><br>
+            <img src="pythonphoto\Capture29.JPG"><br>
+            <p> However this does not happen when we use print() function to print a string value</p><br>                                                                
+            <img src="pythonphoto\Capture30.JPG"><br>      
+
+            <p> If a string with double quotes , it must end with <b>double quotes </b> only.<br> Similarly if it starts with single quotes , it must end with <b>Single quotes</b> only.<br>Otherwise python will generate error.</p>
+            <img src="pythonphoto\Capture31.JPG"><br>   
+            <p>If the string contains single quotes in between then it must be enclosed in double quotes and vice versa.<br> For example:<br><br>To print CodeMistic Python Tutorials we would write:<br>
+            <code> msg="CodeMistic Python Tutorials"</code><br>Similarly to print Capital of "MP" is "Bhopal", we would write:<br><code>msg='Capital of "MP" is "Bhopal"'</code><br></p><br>
+            <!-- <img src="pythonphoto\Capture32.jpg"  width="600"><br>    -->
+            <img src="pythonphoto\Capture33.JPG" height="350" width="600"><br>   
+            <img src="pythonphoto\Capture34.JPG" height="250" width="600"><br>   
+            <img src="pythonphoto\Capture35.JPG" height="150" width="600"><br>   
+                                                                   
+            <p>Just like a list and tuple, the slicing operator [ ] can be used with strings.Strings, however, are immutable.</p>
+            <img src="pythonphoto\Capture15.JPG"><br>
+
+
+            <h4>2.List data type:</h4>
+            <p>List is an ordered sequence of items. It is one of the most used datatype in Python and is very flexible. All the items in a list do not need to be of the same type.</p>
+            <p>Declaring a list is pretty straight forward. Items separated by commas are enclosed within brackets [ ] .<br>
+            <code>a = [1, 2.2, 'python']</code><br>
+            We can use the slicing operator [ ] to extract an item or a range of items from a list. The index starts from 0 in Python.</p>
+            <img src="pythonphoto\Capture16.JPG"><br>
+
+            <h4>3.Tuple data type:</h4>
+            <p>Tuple is an ordered sequence of items the same as a list. The only difference is that tuples are immutable. Tuples once created cannot be
+            modified.<br>
+            Tuples are used to write-protect data and are usually faster than lists as they cannot change dynamically.<br>
+            It is defined within parentheses () where items are separated by commas.<br>
+            <code>t = (5,'program', 1+3j)</code><br>
+            We can use the slicing operator [] to extract items but we cannot change its value.</p>
+                <img src="pythonphoto\Capture17.JPG"><br>
+
+            <h4> Bool data type:</h4>
+            <ul>
+                <li>In python , to represent boolean values we have bool data type.</li>
+                <li>The bool data type can be one of two values, either true or false .</li>
+                <li>We use Booleans in programming to make comparisons and to control the flow of the program.</li>
+                <img src="pythonphoto\Capture18.JPG"><br>
+
+            </ul>
+            <p>Some important points about data type:</p><br>
+            <li>True and False are keywords , so case sensitivity must be
+            remembered while assigning them otherwise Python will give error.</li>
+                <img src="pythonphoto\Capture19.JPG"><br>
+
+            <li>All test conditions in python return the result as boll which could be either True or False.</li>
+                <img src="pythonphoto\Capture20.JPG"><br>
+                <img src="pythonphoto\Capture21.JPG"><br>
+
+            <li>To understands the next point , try to guess output of the following</li>
+                <img src="pythonphoto\Capture22.JPG"><br>
+
+
+            <h4>Set data type:</h4><br>
+            <p>Set is an unordered collection of unique items. Set is defined by values separated by comma inside braces { } . Items in a set are not ordered.</p>
+                <img src="pythonphoto\Capture23.JPG"><br>
+
+            <p>We can perform set operations like union, intersection on two sets. Sets have unique values. They eliminate duplicates.</p>
+                <img src="pythonphoto\Capture24.JPG"><br>
+
+            <p>Since set are unordered collection, indexing has no meaning. Hence, the slicing operator [] does not work.</p>
+                <img src="pythonphoto\Capture25.JPG"><br>
+
+            <h4>Dictionary data type:</h4><br>
+            <p>Dictionary is an unordered collection of key-value pairs.<br>
+            It is generally used when we have a huge amount of data. Dictionaries are optimized for retrieving data. We must know the key to retrieve the value.<br>
+            In Python, dictionaries are defined within braces {} with each item being a pair in the form key:value . Key and value can be of any type.</p><br>
+                <img src="pythonphoto\Capture26.JPG"><br>
+
+            <p>We use a key to retrieve the respective value. But not the other way around.</p>
+            <img src="pythonphoto\Capture27.JPG">
+
+        </div>
+        <div class="but text-right">
+            <button class="btn btn-primary pull-right"><a href="type-conversion-python.html">Next Topic&nbsp;<i
+                        class="fas fa-arrow-right "></i><br/>Python Type Conversion</a></button>
+        </div><br>
+    </section>
+    
+    <!-- footer -->
+    
+    <footer >
+        <div class="row footer" >
+            <div class="logo">
+                <img src="../image.png" alt="" class="f-img">
+                <h5>LEARN CODE DISCUSS</h5>
+            </div>
+            
+                <div class="footer-column ">
+                    
+                    <ul class="footer-ul">
+                        <li class="foot-header"><strong>CodeMistic</strong></li>
+                        
+                            <li class="f-li"><a href="../index.html" class="f-links">Home</a></li>
+                        
+                        
+                            <li class="f-li"><a href="../team.html" class="f-links">Our Team</a></li>
+                        
+                        
+                            <li class="f-li"><a href="../terms-and-conditions.html" class="f-links">Terms of Service</a></li>
+                        
+                        
+                            <li class="f-li"><a href="../privacy-policy.html" class="f-links">Privacy Policy</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-column ">
+                  
+                    <ul class="footer-ul ">
+                        <li class="foot-header"><strong>LEARN</strong></li>
+                        
+                            <li class="f-li"><a href="../cpp.html" class="f-links">C++</a></li>
+                        
+                        
+                            <li class="f-li"><a href="../java.html" class="f-links">Java</a></li>
+                        
+                        
+                            <li class="f-li"><a href="../python.html" class="f-links">Python</a></li>
+                        
+                        
+                            <li class="f-li"><a href="../dsa.html" class="f-links">DSA</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-column ">
+                    
+                    <ul class="footer-ul ">
+                        <li class="foot-header"><strong>CONTRIBUTE</strong></li>
+                        
+                            <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSduxk_aP9M1lqUAebQJwRXiVm2ukmdgv3T7gjBpOsr_gdeOcQ/viewform?usp=sf_link" class="f-links" target="_blank">Write an Article/Blog</a></li>
+                        
+                        
+                            <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" class="f-links" target="_blank">Internships</a></li>
+                        
+                        
+                            <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe9nr_Aw0fGIqm3_xWhqEzTr3UWdOFz-pvKpQvkAsosORYq9w/viewform?usp=sf_link" class="f-links" target="_blank">Videos</a></li>
+                        
+                            <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLScOW3hJjxxwzPYL4u51oboc4T1aDtIUEIRa20hKPKu4UlcZAA/viewform?usp=sf_link" class="f-links" target="_blank">Donations/Funds</a></li>
+                        
+                    </ul>
+                </div>
+            
+        </div>
+        <div class="footer-links" style="text-align: center;">
+            <!-- <h7>Connect With Us</h7><br><br> -->
+            <a href="https://www.facebook.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-facebook "
+                    style="color:#3b5998; "></i></a>
+            <a href="https://www.instagram.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-instagram "
+                    style="color:#e95950; "></i></a>
+            <a href="https://www.twitter.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-twitter "
+                    style="color:#8accf5; "></i></a>
+            <a href="https://www.linkedin.com/company/codemistic " target="_blank "><i
+                    class="icons fa-2x fab fa-linkedin " style="color:#88b3ee; "></i></a>
+            <a href="https://t.me/codemistic " target="_blank "><i class="icons fa-2x fab fa-telegram "
+                    style="color:#65adda; "></i></a>
+    
+            <a href="https://www.youtube.com/channel/UCS1Iv_kkgQGDwoXtvrlwlag " target="_blank "><i
+                    class="icons fa-2x fab fa-youtube " style="color:red; "></i></a>
+            <p class="foot mt-3">&#169 Copyright : <strong>CodeMistic</strong> All Rights Reserved.</p>
+        </div>
+    </footer>
+       
+    
+    
+    <!-- CSS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+    crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+    crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
+    crossorigin="anonymous "></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='../side.js'></script>
+</body>
+    
+</html>

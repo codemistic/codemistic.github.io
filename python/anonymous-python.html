@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="An anonymous function is a function that is defined without a name. While normal functions are defined using the def keyword, we define anonymous functions using the lambda keyword. Hence, anonymous functions are also called lambda functions"/>
+<meta name="keywords" content="Python Anonymous,Lamda in Python,Lambda Anonymous,C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+    <title>Lambda (Anonymous) Function Python | Python Tutorials | CodeMistic</title>
+    <script data-ad-client="ca-pub-5352867889640158" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MCNC43J');</script>
+        <!-- End Google Tag Manager -->
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTQSLH0XW"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-YPTQSLH0XW');
+        </script>
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="img/png" href="../favicon.png"/>
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous"/>
+
+    <!-- FONTS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Ubuntu&family=Varela+Round&display=swap"
+        rel="stylesheet"/>
+
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity=""
+        crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity=""
+        crossorigin="anonymous"/>
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../lang_styles.css"/>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCNC43J"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- NAVIGATION BAR -->
+
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark">
+        <a class="navbar-brand" href="../index.html">CODEMISTIC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tutorials
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        <a class="dropdown-item" href="../cpp.html">C++</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../python.html">Python</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../java.html">Java</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../dsa.html">Data Structure and Algorithms</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../tutorials.html">All Tutorials</a>
+                        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../teen-code.html">Teen-Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../campus.html">Campus Programme</a>
+                </li>
+                <!-- <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" target="_blank">Contribute</a>
+                    </li> -->
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="../register.html">Join Our Community</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+
+    
+    <!-- Accordion -->
+
+    <section class="lbar">
+        <div class="lang-img col-md-2">
+            <img src="../logo/python.png" alt="python" class="imghome" >
+        </div>
+        <ul id="accordion" class="accordion ml-5">
+            <li class=" collape in">
+                <div class="link">Python Introduction<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="start-python.html " class="closed">Getting Started</a>
+                    </li>
+                    <li>
+                        <a href="keyword-and-identifiers-python.html" class="closed">Keyword and Identifiers</a>
+                    </li>
+                    <li>
+                        <a href="statements-and-comments-python.html" class="closed">Statements & Comments</a>
+                    </li>
+                    <li>
+                        <a href="variables-python.html" class="closed">Python Variables</a>
+                    </li>
+                    <li>
+                        <a href="datatypes-python.html" class="closed">Python Datatypes</a>
+                    </li>
+                    <li>
+                        <a href="type-conversion-python.html" class="closed">Python Type Conversion</a>
+                    </li>
+                    <li>
+                        <a href="input-output-import-python.html" class="closed">Python I/O and import</a>
+                    </li>
+                    <li>
+                        <a href="operators-python.html" class="closed">Python Operators</a>
+                    </li>
+                    <li>
+                        <a href="namespace-python.html" class="closed">Python Namespace</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Flow Control<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                                <a href="if-else-python.html" class="closed">Getting if...else</a>
+                            </li>
+                            <li>
+                                <a href="keyword-for-loop-python.html" class="closed">Python for Loop</a>
+                            </li>
+                            <li>
+                            <a href="while-loop-python.html" class="closed">Python while Loop</a>
+                        </li>
+                        <li>
+                            <a href="break-and-continue-python.html" class="closed">Python break and continue</a>
+                        </li>
+                        <li>
+                            <a href="pass-python.html" class="closed">Python Pass</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Function<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse show">
+                    <li>
+                             <a href="functions-python.html" class="closed">Getting Functions</a>
+                         </li>
+                         <li>
+                            <a href="keyword-and-arguments-python.html" class="closed">Keyword and Arguments</a>
+                        </li>
+                        <li>
+                            <a href="recursion-python.html" class="closed">Python Recursions</a>
+                        </li>
+                        <li>
+                            <a href="anonymous-python.html" class="opened">Anonymous Function</a>
+                        </li>
+                        <li>
+                            <a href="global-local-and-nonlocal-python.html" class="closed">Global, Local and Nonlocal</a>
+                        </li>
+                        
+                        <li>
+                            <a href="modules-python.html" class="closed">Python Modules</a>
+                        </li>
+                        <li>
+                            <a href="package-python.html" class="closed">Python Packages</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Data Types<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                                <a href="numbers-python.html" class="closed">Python Numbers</a>
+                            </li>
+                            <li>
+                                <a href="list-python.html" class="closed">Python List</a>
+                            </li>
+                            <li>
+                                <a href="tuple-python.html" class="closed">Python Tuple</a>
+                            </li>
+                            <li>
+                                <a href="string-python.html" class="closed">Python String</a>
+                            </li>
+                            <li>
+                                <a href="set-python.html" class="closed">Python Set</a>
+                            </li>
+                            <li>
+                                <a href="dictionary-python.html" class="closed">Python Dictionary</a>
+                            </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python File Handeling<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="file-operation-python.html" class="closed">Python File Operation</a>
+                         </li>
+                         <li>
+                            <a href="directory-and-file-management-python.html" class="closed">Python Dictionary</a>
+                        </li>
+                        <li>
+                            <a href="exception-python.html" class="closed">Python Exception</a>
+                        </li>
+                        <li>
+                            <a href="exception-handling-python.html" class="closed">Python Exception Handling</a>
+                        </li>
+                        <li>
+                            <a href="user-defined-exception-python.html" class="closed">Python User-defined Exception</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Object and Class<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="oop-python.html" class="closed">Python OOP</a>
+                         </li>
+                         <li>
+                            <a href="class-python.html" class="closed">Python Class</a>
+                        </li>
+                        <li>
+                            <a href="inheritance-python.html" class="closed">Python Inheritance</a>
+                        </li>
+                        <li>
+                            <a href="multiple-inheritance-python.html" class="closed">Multiple Inheritance</a>
+                        </li>
+                        <li>
+                            <a href="operator-overloading-python.html" class="closed">Operator Overloading</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Advance Topics<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="iterator-python.html" class="closed">Python Iterator</a>
+                         </li>
+                         <li>
+                            <a href="generator-python.html" class="closed">Python Generator</a>
+                        </li>
+                        <li>
+                            <a href="closure-python.html" class="closed">Python Closure</a>
+                        </li>
+                        <li>
+                            <a href="decorator-python.html" class="closed">Python Decorators</a>
+                        </li>
+                        <li>
+                            <a href="properties-python.html" class="closed">Python Properties</a>
+                        </li>
+                        <li>
+                            <a href="regex-python.html" class="closed">Python RegEx</a>
+                        </li>
+                        
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Date and Time<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="datetime-python.html" class="closed">Python datetime Module</a>
+                         </li>
+                         <li>
+                            <a href="datetime.strftime()-python.html" class="closed">Python datetime.strftime()</a>
+                        </li>
+                        <li>
+                            <a href="datetime.strptime()-python.html" class="closed">Python datetime.strptime()</a>
+                        </li>
+                        <li>
+                            <a href="current-date-and-time-python.html" class="closed">Current Date and Time</a>
+                        </li>
+                        <li>
+                            <a href="get-current-time-python.html" class="closed">Get current time</a>
+                        </li>
+                        <li>
+                            <a href="timestamp-to-datetime-python.html" class="closed">Timestamp to datetime</a>
+                        </li>
+                        <li>
+                            <a href="time-module-python.html" class="closed">Python Time Module</a>
+                        </li>
+                        <li>
+                            <a href="time.sleep-python.html" class="closed">Python time.sleep</a>
+                        </li>
+                        
+                </ul>
+            </li>
+
+        </ul>
+
+    </section>
+    
+     <br>
+    <section class="para">
+        <!-- <div class="but mt-4">
+            &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-md btn-primary "><a href="../dsa.html"><i
+                        class="fas fa-arrow-left "></i>&nbsp;Back to Index</a></button>
+        </div> -->
+
+        <!-- breadcrumb -->
+
+        <nav class="bdcrumb" id="bdcrumb" aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a  href="../tutorials.html"><i class="fas fa-home"></i></a></li>
+                <li class="breadcrumb-item"><a  href="../python.html#languages">Python Index</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Python Anonymous Functions</li>
+            </ul>
+        </nav>
+
+        <!-- breadcrumb ending -->
+    <!-- HEADING -->
+
+
+
+    <br>
+        <div class="wrapper">
+            <h3>Python Anonymous Functions</h3>
+            <hr>
+            <h4>What Are Anonymous Functions ?</h4>
+            <p>An anonymous function can be defined as  function that is which is without a name that means the function name is empty. <br>While normal functions are defined using the def keyword, we define anonymous functions using the lambda keyword. <br>Hence, anonymous functions are also called lambda functions <br>
+               <b> Syntax:</b>
+               <pre><code>
+lambda [arg1,arg2,..]:[expression]
+               </code></pre>
+    
+
+lambda is a keyword/operator and can have any number of arguments. <br>
+
+But it can have only one expression.  <br>
+
+Python evaluates the expression and returns the result automatically.
+
+</p>
+<hr>
+<h4>What is an Expressions?</h4>
+<p>
+An expression here is anything that can return some value. <br>
+
+The following items qualify as expressions. <br>
+
+Arithmetic operations like a+b and a**b <br>
+
+Function calls like sum(a,b) <br>
+
+A print statement like print(“Hello”) <br> </p>
+<hr>
+<h4>So what can be written in lambda expressions?</h4>
+<p>
+    Assignment statements cannot be used in lambda , because they don’t return anything, not even None (null). <br>Simple things such as mathematical operations, string operations etc. are OK in a lambda.
+
+<br>Function calls are expressions, so it’s OK to put a function call in a lambda, and to pass arguments to that function. 
+
+<br>Even functions that return None, like the print function in Python  version3, can be used in a lambda.
+
+<br>Single line if – else is also allowed as it also evaluates the condition and returns the result of true or false expression
+
+</p>
+<hr>
+<h4>How to create lambda functions?</h4>
+<p>Suppose, we want to make a function which will calculate sum of two numbers. <br>
+
+In normal approach we will do as shown below: <br>
+
+<pre><code>
+def add(a,b): 
+        return a+b
+</code></pre>
+
+In case of lambda function we will write it as:
+
+<pre><code>
+lambda a,b: a+b
+</code></pre>
+</p>
+<hr>
+<h4>Why to create lambda functions?</h4>
+<p>A very common doubt is that when we can define our functions using def keyword , then why we require lambda functions ?
+
+<br>The most common use for lambda functions is in code that requires a simple one-line function, where it would be an overkill to write a complete normal function.
+
+<br>We will explore it in more detail when we will discuss two very important functions in Python called map( ) and filter( )
+</p>
+<hr>
+<h4>How to use lambda functions?</h4>
+<p>There are 2 ways to use a Lambda Function. <br>1. Using it anonymously in inline mode
+
+<br>2. Using it by assigning it to a variable <br> <hr>
+<b>Using it as anonymous function</b>
+
+<pre><code>
+print((lambda a,b: a+b)(2,3))
+</code></pre>
+<b>Output:</b>
+<pre><code>
+5
+</code></pre>
+<hr>
+<b>Using it by assigning it to a variable</b>
+
+<pre><code>
+sum=lambda a,b: a+b
+
+print(sum(2,3))
+print(sum(5,9))
+</code></pre>
+<b>Output:</b>
+<pre><code>
+5
+14
+</code></pre>
+<b>What is happening in this code ?</b> <br>
+
+The statement lambda a,b:a+b , is creating a FUNCTION OBJECT and returning that object . The variable sum is referring to that object. Now when we write sum(2,3), it behaves like function call <br>
+<b>Example:</b>
+<pre><code>
+import math
+sqrt=lambda a: math.sqrt(a)
+
+print(sqrt(25))
+print(sqrt(10))
+
+</code></pre>
+<b>Output:</b>
+<pre><code>
+5.0
+3.1622776601683795
+</code></pre>
+<b>Example:</b>
+<b>lambda function that accepts 2 arguments and returns the greater amongst them</b>
+<pre><code>
+maxnum=lambda a,b: a if a>b else b
+print("max amongst 10 and 20 :",maxnum(10,20))
+print("max amongst 15 and 5 :",maxnum(15,5))
+
+</code></pre>
+<b>Output:</b>
+<pre><code>
+max amongst 10 and 20 : 20
+max amongst 15 and 5 : 15
+</code></pre>
+
+
+</p>
+<h4>What is Map Function?</h4>
+<p>
+<code>
+map() </code>is a function which takes two arguments: <br>
+<pre><code>
+r = map(func, iterable)
+</code></pre>
+The first argument func is the name of a function and the second argument  , iterable  ,should be a sequence (e.g. a list , tuple ,string etc) or anything that can be used with for loop. <br>
+
+<code>map()</code> applies the function func to all the elements of the sequence iterable
+</p>
+<p><b>Example: <br>Write a function called inspect( ) that accepts a string as argument and returns the word EVEN if the string is of even length and returns it’s first character if the string is of odd length. <br>Now call this function for first 3 month names
+</b>
+<pre><code>
+def inspect(mystring):
+    if len(mystring)%2==0:
+        return "EVEN"
+    else:
+        return mystring[0]
+
+months=["January","February","March"]
+print(list(map(inspect,months))) 
+
+</code></pre>
+<b>Output:</b>
+<pre><code>
+['J', 'EVEN', 'M']
+</code></pre>
+</p>
+<hr>
+<h4>The filter() function</h4>
+<p>
+    Like map( ) , filter( ) is also a function that is very commonly used in Python . <br>
+
+The function filter ( ) takes 2 arguments:<pre><code>
+filter(function, sequence)
+</code></pre>
+
+The first argument should be a function which must return a boolean value <br>
+
+The second argument should be a sequence of items. <br>
+
+
+Now the function filter( ) applies the function passed as argument to every item of the sequence passed as second argument. <br>
+
+If the function returned True for that item , filter( ) returns that item as part of it’s return value otherwise the item is not returned <br>
+<b>Example:</b>
+<pre><code>
+def f1(num):
+    return num*num
+
+mynums=[1,2,3,4,5]
+print(list(filter(f1,mynums)))
+</code></pre>
+
+<b>Output:</b>
+<pre><code>
+[1,2,3,4,5]
+</code></pre>
+Ideally , the function passed to filter( ) should return a boolean value. But if it doesn’t return boolean value , then whatever value it returns Python converts it to boolean . In our case for each value in mynums the return value will be it’s square which is a non-zero value and thus assumed to be True. So all the elements are returned by filter() 
+</p>
+<hr>
+<h4>Using Lambda Expression With map( ) And filter( )</h4>
+<p>The best use of Lambda Expression is to use it with map( ) and filter( ) functions <br>Recall that the keyword lambda creates an anonymous function and returns it’s address. <br>So , we can pass this lambda expression as first argument to map( ) and filter() functions , since their first argument is the a function object reference <br>
+
+
+In this way , we wouldn’t be required to specially create a separate function using the keyword def
+<b>Example: <br>
+Write a lambda expression that accepts a string as argument and returns it’s first character <br>Now use this lambda expression in map( ) function 
+to work on for first 3 month names
+</b>
+<pre><code>
+months=["January","February","March"]
+print(list(map(lambda mystring: mystring[0],months)))
+
+</code></pre>
+<b>Output:</b>
+<pre><code>
+['J', 'F', 'M']
+</code></pre>
+
+
+</p>
+<hr>
+<h4>Using Lambdas With filter( )</h4>
+<b>Example: <br>
+Write a lambda expression that accepts a character as argument and returns True if it is a vowel otherwise False <br>Now ask the user to input his/her name and display 
+only the vowels in the name . In case the name does 
+not contain any vowel display the message No vowels 
+in your name
+<pre><code>
+name=input("Enter your name:")
+vowels=list(filter(lambda ch: ch in "aeiou" ,name))
+if len(vowels)==0:
+    print("No vowels in your name")
+else:
+    print("Vowels in your name are:",vowels)
+
+</code></pre>
+<b>Output:</b>
+<pre><code>
+Enter your name: Chitranshi
+Vowels in your name are: ['i', 'a', 'i'] 
+</code></pre>
+</b>
+            
+
+</div>
+<div class="but text-right">
+    <button class="btn btn-primary pull-right"><a href="global-local-and-nonlocal-python.html">Next Topic&nbsp;<i
+                class="fas fa-arrow-right "></i><br/>Global, Local and Nonlocal</a></button>
+</div><br>
+</section>
+
+<!-- footer -->
+
+<footer >
+<div class="row footer" >
+    <div class="logo">
+        <img src="../image.png" alt="" class="f-img">
+        <h5>LEARN CODE DISCUSS</h5>
+    </div>
+    
+        <div class="footer-column ">
+            
+            <ul class="footer-ul">
+                <li class="foot-header"><strong>CodeMistic</strong></li>
+                
+                    <li class="f-li"><a href="../index.html" class="f-links">Home</a></li>
+                
+                
+                    <li class="f-li"><a href="../team.html" class="f-links">Our Team</a></li>
+                
+                
+                    <li class="f-li"><a href="../terms-and-conditions.html" class="f-links">Terms of Service</a></li>
+                
+                
+                    <li class="f-li"><a href="../privacy-policy.html" class="f-links">Privacy Policy</a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-column ">
+          
+            <ul class="footer-ul ">
+                <li class="foot-header"><strong>LEARN</strong></li>
+                
+                    <li class="f-li"><a href="../cpp.html" class="f-links">C++</a></li>
+                
+                
+                    <li class="f-li"><a href="../java.html" class="f-links">Java</a></li>
+                
+                
+                    <li class="f-li"><a href="../python.html" class="f-links">Python</a></li>
+                
+                
+                    <li class="f-li"><a href="../dsa.html" class="f-links">DSA</a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-column ">
+            
+            <ul class="footer-ul ">
+                <li class="foot-header"><strong>CONTRIBUTE</strong></li>
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSduxk_aP9M1lqUAebQJwRXiVm2ukmdgv3T7gjBpOsr_gdeOcQ/viewform?usp=sf_link" class="f-links" target="_blank">Write an Article/Blog</a></li>
+                
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" class="f-links" target="_blank">Internships</a></li>
+                
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe9nr_Aw0fGIqm3_xWhqEzTr3UWdOFz-pvKpQvkAsosORYq9w/viewform?usp=sf_link" class="f-links" target="_blank">Videos</a></li>
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLScOW3hJjxxwzPYL4u51oboc4T1aDtIUEIRa20hKPKu4UlcZAA/viewform?usp=sf_link" class="f-links" target="_blank">Donations/Funds</a></li>
+                
+            </ul>
+        </div>
+    
+</div>
+<div class="footer-links" style="text-align: center;">
+    <!-- <h7>Connect With Us</h7><br><br> -->
+    <a href="https://www.facebook.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-facebook "
+            style="color:#3b5998; "></i></a>
+    <a href="https://www.instagram.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-instagram "
+            style="color:#e95950; "></i></a>
+    <a href="https://www.twitter.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-twitter "
+            style="color:#8accf5; "></i></a>
+    <a href="https://www.linkedin.com/company/codemistic " target="_blank "><i
+            class="icons fa-2x fab fa-linkedin " style="color:#88b3ee; "></i></a>
+    <a href="https://t.me/codemistic " target="_blank "><i class="icons fa-2x fab fa-telegram "
+            style="color:#65adda; "></i></a>
+
+    <a href="https://www.youtube.com/channel/UCS1Iv_kkgQGDwoXtvrlwlag " target="_blank "><i
+            class="icons fa-2x fab fa-youtube " style="color:red; "></i></a>
+    <p class="foot mt-3">&#169 Copyright : <strong>CodeMistic</strong> All Rights Reserved.</p>
+</div>
+</footer>
+
+
+
+<!-- CSS Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
+integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
+crossorigin="anonymous "></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='../side.js'></script>
+</body>
+
+</html>

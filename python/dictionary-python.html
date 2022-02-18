@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Python dictionary is an unordered collection of items.
+    The collections we have studied till now like list , tuple and string are all ordered collections as well as can hold only one value as their element
+    On the other hand dictionary is an unordered collection which holds the data in a key: value pair.
+    Sometimes we need to store the data so that one piece of information is connected to another piece of information."/>
+<meta name="keywords" content="Python dictionary,dictionary in Python,C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+    <title>Dictionary Python | Python Tutorials | CodeMistic</title>
+    <script data-ad-client="ca-pub-5352867889640158" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MCNC43J');</script>
+    <!-- End Google Tag Manager -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTQSLH0XW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-YPTQSLH0XW');
+    </script>
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="img/png" href="../favicon.png"/>
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous"/>
+
+    <!-- FONTS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Ubuntu&family=Varela+Round&display=swap"
+        rel="stylesheet"/>
+
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity=""
+        crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity=""
+        crossorigin="anonymous"/>
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../lang_styles.css"/>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCNC43J"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- NAVIGATION BAR -->
+
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark">
+        <a class="navbar-brand" href="../index.html">CODEMISTIC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tutorials
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        <a class="dropdown-item" href="../cpp.html">C++</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../python.html">Python</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../java.html">Java</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../dsa.html">Data Structure and Algorithms</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../tutorials.html">All Tutorials</a>
+                        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../teen-code.html">Teen-Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../campus.html">Campus Programme</a>
+                </li>
+                <!-- <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" target="_blank">Contribute</a>
+                    </li> -->
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="../register.html">Join Our Community</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+
+    
+    <!-- Accordion -->
+
+    <section class="lbar">
+        <div class="lang-img col-md-2">
+            <img src="../logo/python.png" alt="python" class="imghome" >
+        </div>
+        <ul id="accordion" class="accordion ml-5">
+            <li class=" collape in">
+                <div class="link">Python Introduction<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="start-python.html " class="closed">Getting Started</a>
+                    </li>
+                    <li>
+                        <a href="keyword-and-identifiers-python.html" class="closed">Keyword and Identifiers</a>
+                    </li>
+                    <li>
+                        <a href="statements-and-comments-python.html" class="closed">Statements & Comments</a>
+                    </li>
+                    <li>
+                        <a href="variables-python.html" class="closed">Python Variables</a>
+                    </li>
+                    <li>
+                        <a href="datatypes-python.html" class="closed">Python Datatypes</a>
+                    </li>
+                    <li>
+                        <a href="type-conversion-python.html" class="closed">Python Type Conversion</a>
+                    </li>
+                    <li>
+                        <a href="input-output-import-python.html" class="closed">Python I/O and import</a>
+                    </li>
+                    <li>
+                        <a href="operators-python.html" class="closed">Python Operators</a>
+                    </li>
+                    <li>
+                        <a href="namespace-python.html" class="closed">Python Namespace</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Flow Control<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                                <a href="if-else-python.html" class="closed">Getting if...else</a>
+                            </li>
+                            <li>
+                                <a href="keyword-for-loop-python.html" class="closed">Python for Loop</a>
+                            </li>
+                            <li>
+                            <a href="while-loop-python.html" class="closed">Python while Loop</a>
+                        </li>
+                        <li>
+                            <a href="break-and-continue-python.html" class="closed">Python break and continue</a>
+                        </li>
+                        <li>
+                            <a href="pass-python.html" class="closed">Python Pass</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Function<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="functions-python.html" class="closed">Getting Functions</a>
+                         </li>
+                         <li>
+                            <a href="keyword-and-arguments-python.html" class="closed">Keyword and Arguments</a>
+                        </li>
+                        <li>
+                            <a href="recursion-python.html" class="closed">Python Recursions</a>
+                        </li>
+                        <li>
+                            <a href="anonymous-python.html" class="closed">Anonymous Function</a>
+                        </li>
+                        <li>
+                            <a href="global-local-and-nonlocal-python.html" class="closed">Global, Local and Nonlocal</a>
+                        </li>
+                        
+                        <li>
+                            <a href="modules-python.html" class="closed">Python Modules</a>
+                        </li>
+                        <li>
+                            <a href="package-python.html" class="closed">Python Packages</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Data Types<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse show">
+                    <li>
+                                <a href="numbers-python.html" class="closed">Python Numbers</a>
+                            </li>
+                            <li>
+                                <a href="list-python.html" class="closed">Python List</a>
+                            </li>
+                            <li>
+                                <a href="tuple-python.html" class="closed">Python Tuple</a>
+                            </li>
+                            <li>
+                                <a href="string-python.html" class="closed">Python String</a>
+                            </li>
+                            <li>
+                                <a href="set-python.html" class="closed">Python Set</a>
+                            </li>
+                            <li>
+                                <a href="dictionary-python.html" class="opened">Python Dictionary</a>
+                            </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python File Handeling<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="file-operation-python.html" class="closed">Python File Operation</a>
+                         </li>
+                         <li>
+                            <a href="directory-and-file-management-python.html" class="closed">Python Dictionary</a>
+                        </li>
+                        <li>
+                            <a href="exception-python.html" class="closed">Python Exception</a>
+                        </li>
+                        <li>
+                            <a href="exception-handling-python.html" class="closed">Python Exception Handling</a>
+                        </li>
+                        <li>
+                            <a href="user-defined-exception-python.html" class="closed">Python User-defined Exception</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Object and Class<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="oop-python.html" class="closed">Python OOP</a>
+                         </li>
+                         <li>
+                            <a href="class-python.html" class="closed">Python Class</a>
+                        </li>
+                        <li>
+                            <a href="inheritance-python.html" class="closed">Python Inheritance</a>
+                        </li>
+                        <li>
+                            <a href="multiple-inheritance-python.html" class="closed">Multiple Inheritance</a>
+                        </li>
+                        <li>
+                            <a href="operator-overloading-python.html" class="closed">Operator Overloading</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Advance Topics<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="iterator-python.html" class="closed">Python Iterator</a>
+                         </li>
+                         <li>
+                            <a href="generator-python.html" class="closed">Python Generator</a>
+                        </li>
+                        <li>
+                            <a href="closure-python.html" class="closed">Python Closure</a>
+                        </li>
+                        <li>
+                            <a href="decorator-python.html" class="closed">Python Decorators</a>
+                        </li>
+                        <li>
+                            <a href="properties-python.html" class="closed">Python Properties</a>
+                        </li>
+                        <li>
+                            <a href="regex-python.html" class="closed">Python RegEx</a>
+                        </li>
+                        
+                </ul>
+            </li>
+            <li>
+                <div class="link">Python Date and Time<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="datetime-python.html" class="closed">Python datetime Module</a>
+                         </li>
+                         <li>
+                            <a href="datetime.strftime()-python.html" class="closed">Python datetime.strftime()</a>
+                        </li>
+                        <li>
+                            <a href="datetime.strptime()-python.html" class="closed">Python datetime.strptime()</a>
+                        </li>
+                        <li>
+                            <a href="current-date-and-time-python.html" class="closed">Current Date and Time</a>
+                        </li>
+                        <li>
+                            <a href="get-current-time-python.html" class="closed">Get current time</a>
+                        </li>
+                        <li>
+                            <a href="timestamp-to-datetime-python.html" class="closed">Timestamp to datetime</a>
+                        </li>
+                        <li>
+                            <a href="time-module-python.html" class="closed">Python Time Module</a>
+                        </li>
+                        <li>
+                            <a href="time.sleep-python.html" class="closed">Python time.sleep</a>
+                        </li>
+                        
+                </ul>
+            </li>
+
+        </ul>
+
+    </section>
+    
+
+     <br>
+    <section class="para">
+        <!-- <div class="but mt-4">
+            &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-md btn-primary "><a href="../dsa.html"><i
+                        class="fas fa-arrow-left "></i>&nbsp;Back to Index</a></button>
+        </div> -->
+
+        <!-- breadcrumb -->
+
+        <nav class="bdcrumb" id="bdcrumb" aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a  href="../tutorials.html"><i class="fas fa-home"></i></a></li>
+                <li class="breadcrumb-item"><a  href="../python.html#languages">Python Index</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Dictionary</li>
+            </ul>
+        </nav>
+
+        <!-- breadcrumb ending -->
+    <!-- HEADING -->
+
+
+
+    <br>
+        <div class="wrapper">
+            <h3>Dictionary</h3>
+            <hr>
+            <p>Python dictionary is an unordered collection of items. <br>The collections we have studied till now like list , tuple and string are all ordered collections as well as can hold only one value as their element <br>On the other hand dictionary is an unordered collection which holds the data in a key: value pair. <br>
+                Sometimes we need to store the data so that one piece of information is connected to another piece of information. <br>For example <br>RollNo &gt;Student Name or <br>          Customer Name &gt;Mobile Number <br>
+
+In these examples RollNo will be called a key while it’s associated Student Name will be called value
+
+To store such paired data Python provides us the data type called dictionary
+
+</p>
+<hr>
+<h4>How to create a dictionary?</h4>
+<p>Creating a dictionary is as simple as placing items inside curly braces { } separated by comma.
+
+<br>Every item has a key and the corresponding value expressed as a pair, key: value.
+
+
+<br>While values can be of any data type and can repeat, but keys must be of immutable type and must be unique.
+</p>
+<hr>
+<h4>General Syntax for creating a dictionary</h4>
+<b>Syntax:</b>
+<pre><code>
+d = { 
+        &lt;key>: &lt;value>, 
+        &lt;key>: &lt;value>, 
+        . . . 
+        &lt;key>: &lt;value> 
+       }
+
+</code></pre>
+</p>
+      <hr>
+      <h4>How to create a dictionary?</h4>  
+      <p>
+        <pre><code>
+# empty dictionary 
+my_dict = { } 
+
+# dictionary with integer keys 
+my_dict = {1: 'Chitranshi', 2: 'Aditi',3:'Akansha'}
+
+# dictionary with mixed keys 
+my_dict = {1: 'Adarsh', 'a':'vowel'} 
+
+# dictionary with list as values
+my_dict = {'Rahul':['C', 'C++'], 'Ajay':['Java', 'C', 'Python'], 'Neeraj':['Oracle', 'Python']}
+
+        </code></pre>
+        <b>Important points</b> <br>
+        The important characteristics of Python dictionaries are as follows:
+
+
+<br>They can be nested.
+
+<br>They are mutable.
+
+<br>They are dynamic. 
+
+<br>They are unordered. <br>
+
+Unlike Lists and tuples , a dictionary item is accessed by it’s corresponding key not index
+
+      </p>    
+      <hr>
+      <h4>Other ways of creating a dictionary</h4>
+      <p>We also can create a list by using the dict( ) function</p>
+
+<pre><code>
+# Create an empty dictionary
+my_dict = dict()
+
+# Create a dictionary with elements
+my_dict = dict({1:'apple', 2:'ball'}) 
+
+# Create a dictionary with other sequences
+my_dict = dict([(1,'apple'), (2,'ball')])
+
+</code></pre>
+<hr>
+<h4>Printing the dictionary</h4>
+<p>We can print a dictionary in four ways:
+
+<br>1. Directly passing it to the print( ) function
+
+<br>2. Accessing individual values by passing keys to subscript operator [ ]
+
+<br>3. Accessing individual values by passing keys to the method   get( )
+
+<br>4. Traversing using loop
+</p>
+<hr>
+<h4>Printing the entire dictionary</h4>
+<pre><code>
+student_data = {1:'Chitranshi', 2:'Aditi',3:'Akansha', 4:'Supriya',5:'Adarsh'}
+
+print(student_data)
+
+</code></pre>
+<b>Output:</b>
+<pre><code>
+{1: 'Chitranshi', 2: 'Aditi', 3: 'Akansha', 4: 'Supriya', 5: 'Adarsh'}
+</code></pre>
+<hr>
+<h4>Accessing Individual Element</h4>
+<p>As mentioned previously, keys are used to retrieve their corresponding values in Python dictionary. <br>Keys can be used inside subscript operator [  ] or we can use Python built-in method get() to access the values in the dictionary using keys. <br>
+    <b>Accessing individual element:</b>
+<pre><code>
+student_data = {1: 'Chitranshi', 2: 'Aditi', 3: 'Akansha', 4: 'Supriya', 5: 'Adarsh'}
+
+print(student_data[3])
+
+print(student_data.get(3)) 
+
+</code></pre>
+<b>Output</b>
+<pre><code>
+Akansha
+Akansha
+</code></pre>
+<b>Difference between [] and get()</b> <br>
+Although both subscript operator and get( ) method allow us to access individual element using it’s key , but there is an important difference in them. <br>
+
+The difference is that when we try to access a value whose key doesn’t exist in the dictionary using subscript operator , it throws a KeyError. 
+<br>
+
+But when we try to access using get() method, instead of throwing KeyError, it returns nothing which in Python is None.
+
+</p>
+<hr>
+<h4>Traversing a dictionary</h4>
+<p>Python allows us three ways to traverse over a dictionary: <br>
+
+Iterate only on keys <br>
+
+Iterate on both , keys and values <br>
+
+Iterate only on values <br>
+</p>
+<hr>
+<h4>Updating a dictionary</h4>
+<p>Since dictionary is mutable, so we can add new items or change the value of existing items using either of two ways. <br>
+
+These are: <br>
+
+assignment operator or  <br>
+
+update( ) method of dictionary object <br>
+<b>Updating using assignment operator</b> <br>
+<b>Syntax Of Assigment Operator:</b> <br>
+<pre><code>
+dict_var[key]=value
+</code></pre>
+
+When we use assignment operator , Python simply searches for the key in the dictionary object. <br>
+
+If the key is found , it’s value is replaced with the value we have passed, otherwise a new key-value pair entry is created <br>
+<b>Updating using update() method</b>
+<b>Syntax Of  update( ) Method:</b>
+
+<pre><code>
+dict_var.update( dict_var2)
+</code></pre>
+
+
+The update( ) method merges the keys and values of one dictionary into another, overwriting values of the same key
+
+
+
+
+</p>
+<hr>
+<h4>Removing data from dictionary</h4>
+Since dictionary is mutable, so we can remove items from the dictionary. <br>
+
+There are certain methods available in Python to delete the items or delete entire dictionary. <br>
+
+These are: <br>
+
+<b>pop(key):</b> removes the entry with provided key and returns it’s valueb   <br>
+
+<b>del:</b> deletes a single item or the dictionary entirely <br>
+
+<b>clear():</b> clears all the items in the dictionary and returns an empty dictionary <br>
+<b>The pop() method</b> <br>
+<b>Syntax Of pop( ) Method:</b>
+
+<pre><code>
+dict_var.pop(key,[default])
+</code></pre>
+
+The pop() method takes two parameters:  <br>
+key - key which is to be searched for removal <br>
+default - (optional) value which is to be returned when the key is not in the dictionary
+Return Value From pop( ) <br>
+If key is found – it returns value of removed/popped element from the dictionary <br>
+If key is not found – it returns the value specified as the second argument (default) <br>
+If key is not found and default argument is not specified – it raises  KeyError exception <br>
+<b>The del Operator</b>
+<p>
+    Just like list , Python also allows us to delete an item from the dictionary by calling the operator/keyword del <br>
+
+<b>Syntax Of del Operator:</b>
+
+<pre><code>
+del dict_var[key]
+</code></pre>
+
+It removes the entry from the dictionary whose key is passed as argument <br>
+
+If the key is not found or dictionary is empty it raises KeyError exception <br>
+
+If we do not pass the key then del deletes the entire dictionary object <br>
+<b>The clear() method</b> <br>
+The clear() method removes all items from the dictionary. <br>
+
+<b>Syntax Of clear( ) Method:</b>
+
+<pre><code>
+dict_var.clear( )
+</code></pre>
+
+The clear() method doesn’t take any argument <br>
+
+It returns nothing ( None ) <br>
+
+
+</p>
+<hr>
+<h4>Functions used with dictionary</h4>
+<p>
+    Like list , Python allows us to use the following functions with dictionary object <br>
+
+len() <br>
+max() <br>
+min() <br>
+any() <br>
+all() <br>
+sorted() <br>
+dict() <br>
+<table>
+    <tr>
+        <th>len()</th>
+        <th>returns the number of items in the dictionary</th>
+    </tr>
+    <tr>
+        <th>max()</th>
+        <th>Returns the greatest key present in the dictionary
+</th>
+    </tr>
+    <tr>
+        <th>min()</th>
+        <th>Returns the least item present in the dictionary
+</th>
+    </tr>
+        <tr>
+        <th>any()</th>
+        <th>Like list and tuple ,  any( ) function accepts a dict as argument and returns True if atleast one element of the dict is True. If not, this method returns False. If the dict is empty, then also it returns False
+
+</th>
+    </tr>
+        <tr>
+        <th>all()</th>
+        <th>The all( ) function accepts a dict as argument and returns True if  all the keys of the dict are True or if the List is empty .If not, this method returns False.
+
+</th>
+    </tr>
+        <tr>
+        <th>sorted()</th>
+        <th>Like it is with lists and tuples, the sorted() function returns a sorted sequence of the keys in the dictionary. The sorting is in ascending order, and doesn’t modify the original Python dictionary.
+</th>
+    </tr>
+    <tr>
+        <th>dict()</th>
+        <th>dict( ) function can be used to create dictionaries . It can accept key-value pairs or iterable or mappings as argument and converts them into dictionaries</th>
+    </tr>
+</table>
+
+</p>
+<hr>
+<h4>Dictionary Methods</h4>
+<p>Python provides us following methods to work upon dictionary object: <br>
+
+clear() <br>
+copy() <br>
+get() <br>
+items() <br>
+keys() <br>
+pop() <br>
+update() <br>
+values() <br>
+<b>The copy() method</b> <br>
+This method returns a shallow copy of the dictionary. <br>
+
+<b>Syntax:</b> <br>
+<pre><code>
+dict.copy()
+</code></pre>
+
+</p>
+<hr>
+<h4>Dictionary Comprehension</h4>
+<p>Dictionary Comprehension is a mechanism for transforming one dictionary into another dictionary.
+
+ During this transformation, items within the original dictionary can be conditionally included in the new dictionary and each item can be transformed as needed. <br>
+<b>Syntax:</b> <br>
+
+<pre><code>
+dict_variable = { key:value for (key,value) in iterable}
+
+</code></pre>
+<b>Explanation</b> <br>
+
+Iterable can be any object on which iteration is possible <br>
+
+(key,value) is the tuple which will receive these key-value pairs one at a time <br>
+
+key:value  is the expression or key-value pair which will be assigned to new dictionary <br>
+<b>Example:</b>
+<b>program to produce a copy of the dictionary cars using dictionary comprehension 
+
+</b>
+<pre><code>
+cars = {"Maruti":"Ciaz","Hyundai":"Verna","Honda":"Amaze"}
+newcars={ k:v for (k,v) in cars.items()}
+print(newcars)
+
+</code></pre>
+<b>Output:</b>
+<pre><code>
+{'Maruti': 'Ciaz', 'Hyundai': 'Verna', 'Honda': 'Amaze'}
+</code></pre>
+</p>
+<hr>
+<h4>Adding conditions to dictionary comprehensions</h4>
+<p>Like list comprehension , dictionary comprehension also allows us to add conditionals to make it more powerful.
+
+<br><b>Syntax:</b>
+<pre><code>
+dict_variable = { key:value for (key,value) in iterable &lt;test_cond>}
+</code></pre>
+
+
+As usual , only those key-value pairs will be returned by dictionary comprehension which satisfy the condition <br>
+<b>Example:</b>
+<b>
+Write a program to produce a new dictionary from the given dictionary but with the values that are greater than 2 and store their doubles
+
+</b>
+<pre><code>
+dict1 = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
+dict2 = {k:v*2 for (k,v) in dict1.items() if v>2}
+print(dict2)
+
+</code></pre>
+<b>Output:</b>
+<pre><code>
+{'c': 6, 'd': 8, 'e': 10}
+</code></pre>
+</p>
+<hr>
+<h4>Restrictions on dictionary keys</h4>
+<p>Almost any type of value can be used as a dictionary key in Python , like integer, float,  Boolean etc <br>
+    We can even use built-in objects like types and functions <br>
+    Duplicate keys are not allowed. If we assign a value to an already existing dictionary key, it does not add the key a second time, but replaces the existing value <br>If we specify a key a second time during the initial creation of a dictionary, the second occurrence will override the first <br>A dictionary key must be of a type that is immutable. Like  integer, float, string and Boolean—can serve as dictionary keys. Even a tuple can also be a dictionary key, because tuples are immutable <br>However, neither a list nor another dictionary can serve as a dictionary key, because lists and dictionaries are mutable <br>
+</p>
+<hr>
+<h4>Restrictions on dictionary values</h4>
+<p>There are no restrictions on dictionary values. 
+<br>
+
+A dictionary value can be any type of object Python supports, including mutable types like lists and dictionaries, and user-defined objects
+<br>
+
+There is also no restriction against a particular value appearing in a dictionary multiple times <br>
+</p>
+
+
+
+
+</div>
+<div class="but text-right">
+    <button class="btn btn-primary pull-right"><a href="file-operation-python.html">Next Topic&nbsp;<i
+                class="fas fa-arrow-right "></i><br/>Python File Operation</a></button>
+</div><br>
+</section>
+
+<!-- footer -->
+
+<footer >
+<div class="row footer" >
+    <div class="logo">
+        <img src="../image.png" alt="" class="f-img">
+        <h5>LEARN CODE DISCUSS</h5>
+    </div>
+    
+        <div class="footer-column ">
+            
+            <ul class="footer-ul">
+                <li class="foot-header"><strong>CodeMistic</strong></li>
+                
+                    <li class="f-li"><a href="../index.html" class="f-links">Home</a></li>
+                
+                
+                    <li class="f-li"><a href="../team.html" class="f-links">Our Team</a></li>
+                
+                
+                    <li class="f-li"><a href="../terms-and-conditions.html" class="f-links">Terms of Service</a></li>
+                
+                
+                    <li class="f-li"><a href="../privacy-policy.html" class="f-links">Privacy Policy</a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-column ">
+          
+            <ul class="footer-ul ">
+                <li class="foot-header"><strong>LEARN</strong></li>
+                
+                    <li class="f-li"><a href="../cpp.html" class="f-links">C++</a></li>
+                
+                
+                    <li class="f-li"><a href="../java.html" class="f-links">Java</a></li>
+                
+                
+                    <li class="f-li"><a href="../python.html" class="f-links">Python</a></li>
+                
+                
+                    <li class="f-li"><a href="../dsa.html" class="f-links">DSA</a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-column ">
+            
+            <ul class="footer-ul ">
+                <li class="foot-header"><strong>CONTRIBUTE</strong></li>
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSduxk_aP9M1lqUAebQJwRXiVm2ukmdgv3T7gjBpOsr_gdeOcQ/viewform?usp=sf_link" class="f-links" target="_blank">Write an Article/Blog</a></li>
+                
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" class="f-links" target="_blank">Internships</a></li>
+                
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe9nr_Aw0fGIqm3_xWhqEzTr3UWdOFz-pvKpQvkAsosORYq9w/viewform?usp=sf_link" class="f-links" target="_blank">Videos</a></li>
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLScOW3hJjxxwzPYL4u51oboc4T1aDtIUEIRa20hKPKu4UlcZAA/viewform?usp=sf_link" class="f-links" target="_blank">Donations/Funds</a></li>
+                
+            </ul>
+        </div>
+    
+</div>
+<div class="footer-links" style="text-align: center;">
+    <!-- <h7>Connect With Us</h7><br><br> -->
+    <a href="https://www.facebook.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-facebook "
+            style="color:#3b5998; "></i></a>
+    <a href="https://www.instagram.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-instagram "
+            style="color:#e95950; "></i></a>
+    <a href="https://www.twitter.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-twitter "
+            style="color:#8accf5; "></i></a>
+    <a href="https://www.linkedin.com/company/codemistic " target="_blank "><i
+            class="icons fa-2x fab fa-linkedin " style="color:#88b3ee; "></i></a>
+    <a href="https://t.me/codemistic " target="_blank "><i class="icons fa-2x fab fa-telegram "
+            style="color:#65adda; "></i></a>
+
+    <a href="https://www.youtube.com/channel/UCS1Iv_kkgQGDwoXtvrlwlag " target="_blank "><i
+            class="icons fa-2x fab fa-youtube " style="color:red; "></i></a>
+    <p class="foot mt-3">&#169 Copyright : <strong>CodeMistic</strong> All Rights Reserved.</p>
+</div>
+</footer>
+
+
+
+<!-- CSS Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
+integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
+crossorigin="anonymous "></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='../side.js'></script>
+</body>
+
+</html>
