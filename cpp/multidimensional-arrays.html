@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A multidimensional array is an array that is more than just a single row of
+        elements. It may have rows & columns, as in a 2D array, or may have 3D . All
+        elements must be of the same data type. C++ starts counting at zero for the
+        indexes of arrays.I" />
+    <meta name="keywords"
+        content="multidimensional arrays, multidimensional array,multidimensional arrays in cpp, multidimensional arrays in c++, multidimensional array in cpp, multidimensional array in c++, what is a multidimensional array, what are multidimensional arrays, what is a multidimensional array in cpp,what is a multidimensional array in c++,what are multidimensional arrays in cpp, what are multidimensional arrays in c++" />
+    <title>C++ Multidimensional Arrays | C++ Tutorials | CodeMistic</title>
+
+    
+    <!-- Google Ad -->
+
+    <script data-ad-client="ca-pub-5352867889640158" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+    <!-- Google Tag Manager -->
+
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MCNC43J');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTQSLH0XW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YPTQSLH0XW');
+    </script>
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="img/png" href="../favicon.png" />
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous" />
+
+    <!-- FONTS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Ubuntu&family=Varela+Round&display=swap"
+        rel="stylesheet" />
+
+    <!-- Animate on scroll -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../lang_styles.css" />
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCNC43J" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- NAVIGATION BAR -->
+
+    <!-- <div class="container-fluid"> -->
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark">
+        <a class="navbar-brand" href="../index.html">CODEMISTIC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tutorials
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                        <a class="dropdown-item" href="../cpp.html">C++</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../python.html">Python</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../java.html">Java</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../dsa.html">Data Structure and Algorithms</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../tutorials.html">All Tutorials</a>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../teen-code.html">Teen-Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../campus.html">Campus Programme</a>
+                </li>
+                <!-- <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" target="_blank">Contribute</a>
+                    </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../register.html">Join Our Community</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Accordion -->
+
+    <section class="lbar">
+        <div class="lang-img col-md-2">
+            <img src="../logo/cpp.png" alt="c++" class="cpp-img" style="margin-left: -25px;">
+        </div>
+        <ul id="accordion" class="accordion ml-5">
+            <li class=" collape in">
+                <div class="link">C++ Introduction<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="getting-started.html" class="closed">Getting Started</a>
+                    </li>
+                    <li>
+                        <a href="variables-and-literals.html " class="closed">C++ Variables and Literals</a>
+                    </li>
+                    <li>
+                        <a href="data-types.html" class="closed">C++ Data Types</a>
+                    </li>
+                    <li>
+                        <a href="input-output.html" class="closed">C++ Basic I/O</a>
+                    </li>
+                    <li>
+                        <a href="type-conversion.html" class="closed">C++ Type Conversion</a>
+                    </li>
+                    <li>
+                        <a href="operators.html" class="closed">C++ Operators</a>
+                    </li>
+                    <li>
+                        <a href="comments.html" class="closed">C++ Comments</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Flow Control<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="if-else.html" class="closed">C++ if...else</a>
+                    </li>
+                    <li>
+                        <a href="for-loop.html" class="closed">C++ for Loop</a>
+                    </li>
+                    <li>
+                        <a href="do-while.html" class="closed">C++ do...while Loop</a>
+                    </li>
+                    <li>
+                        <a href="break-and-continue.html" class="closed">C++ break & continue</a>
+                    </li>
+                    <li>
+                        <a href="switch-statement.html" class="closed">C++ switch Statement</a>
+                    </li>
+                    <li>
+                        <a href="goto-statement.html" class="closed">C++ goto Statement</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Function<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="functions.html" class="closed">C++ Functions</a>
+                    </li>
+                    <li>
+                        <a href="function-types.html" class="closed">C++ Function Types</a>
+                    </li>
+                    <li>
+                        <a href="function-overloading.html" class="closed">C++ Function Overloading</a>
+                    </li>
+                    <li>
+                        <a href="default-argument.html" class="closed">C++ Default Argument</a>
+                    </li>
+                    <li>
+                        <a href="storage-class.html" class="closed">C++ Storage Class</a>
+                    </li>
+                    <li>
+                        <a href="recursion.html" class="closed">C++ Recursion</a>
+                    </li>
+                    <li>
+                        <a href="return-reference.html" class="closed">C++ Return Reference</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Arrays & String<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse show">
+                    <li>
+                        <a href="arrays.html" class="closed">C++ Arrays</a>
+                    </li>
+                    <li>
+                        <a href="multidimensional-arrays.html" class="opened">C++ Multidimensional Arrays</a>
+                    </li>
+                    <li>
+                        <a href="function-arrays.html" class="closed">C++ Function and Array</a>
+                    </li>
+                    <li>
+                        <a href="string.html" class="closed">C++ String</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Structures<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="structures.html" class="closed">C++ Structures</a>
+                    </li>
+                    <li>
+                        <a href="structure-fuction.html" class="closed">Structure and Function</a>
+                    </li>
+                    <li>
+                        <a href="pointers-structures.html" class="closed">C++ Pointers to Structure</a>
+                    </li>
+                    <li>
+                        <a href="enumeration.html" class="closed">C++ Enumeration</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Object & Class<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="object-class.html" class="closed">C++ Objects and Class</a>
+                    </li>
+                    <li>
+                        <a href="constructors.html" class="closed">C++ Constructors</a>
+                    </li>
+                    <li>
+                        <a href="objects-fuctions.html" class="closed">C++ Objects & Function</a>
+                    </li>
+                    <li>
+                        <a href="operator-overloading.html" class="closed">C++ Operator Overloading</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Pointers<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="pointers.html" class="closed">C++ Pointers</a>
+                    </li>
+                    <li>
+                        <a href="pointers-arrays.html" class="closed">C++ Pointers and Arrays</a>
+                    </li>
+                    <li>
+                        <a href="pointers-functions.html" class="closed">C++ Pointers and Functions</a>
+                    </li>
+                    <li>
+                        <a href="memory-management.html" class="closed">C++ Memory Management</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Inheritance<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="inheritance.html" class="closed">C++ Inheritance</a>
+                    </li>
+                    <li>
+                        <a href="inheritance-access-control.html" class="closed">Inheritance Access Control</a>
+                    </li>
+                    <li>
+                        <a href="function-overriding.html" class="closed">C++ Function Overriding</a>
+                    </li>
+                    <li>
+                        <a href="inheritence-types.html" class="closed">Inheritance Types</a>
+                    </li>
+                    <li>
+                        <a href="friend-function.html" class="closed">C++ Friend Function</a>
+                    </li>
+                    <li>
+                        <a href="virtual-function.html" class="closed">C++ Virtual Function</a>
+                    </li>
+                    <li>
+                        <a href="templates.html" class="closed">C++ Templates</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+
+    </section>
+
+
+
+    <br>
+    <section class="para">
+        <!-- <div class="but mt-4">
+            &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-md btn-primary "><a href="../dsa.html"><i
+                        class="fas fa-arrow-left "></i>&nbsp;Back to Index</a></button>
+        </div> -->
+
+        <!-- breadcrumb -->
+
+        <nav class="bdcrumb" id="bdcrumb" aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../tutorials.html"><i class="fas fa-home"></i></a></li>
+                <li class="breadcrumb-item"><a href="../cpp.html">C++ Index</a></li>
+                <li class="breadcrumb-item active" aria-current="page">C++ Multidimensional Arrays</li>
+            </ul>
+        </nav>
+
+        <!-- breadcrumb ending -->
+
+        <!-- HEADING -->
+
+        <div class="wrapper">
+            <h3 class="pb-3 pt-3">Multidimensional Arrays in C++</h3>
+            <p>A multidimensional array is an array that is more than just a single row of
+                elements. It may have rows & columns, as in a 2D array, or may have 3D . All
+                elements must be of the same data type. C++ starts counting at zero for the
+                indexes of arrays.In C++, we can create an array of an array, known as a
+                multidimensional array.</p>
+
+            <p><strong>Syntax :</strong></p>
+            <pre>data_type  array_name[size1][size2]....[sizeN];</pre>
+
+            <hr />
+
+            <h4 class="pt-3 pb-3">Two-dimensional array</h4>
+            <p>The simplest form of the multidimensional array is the two-dimensional array. A
+                two-dimensional array is, in essence, a list of one-dimensional arrays. To declare a
+                two-dimensional integer array of size a,b you would write something as follows −</p>
+            <pre>data_type array_name [ a ][ b ];</pre>
+            <p><strong>For example :</strong></p>
+            <pre>int x[3][4];</pre>
+            <p>In the Example shown above <code>x</code> is 2D array of data type int and It can hold a
+                maximum of 12 elements.</p>
+            <div class="if-content-img d-flex flex-column m-5">
+                <img class="if-content m-auto" src="images/multi-array-1.png" alt="" />
+            </div>
+            <p class="pt-3 pb-3"><strong></strong>3D arrays also work in a similar way.</p>
+            <p>For example:</p>
+            <pre>float x[3][4][6];</pre>
+            <p>This array x can hold a maximum of 72 elements.</p>
+            <p>In order to find out the total number of elements in an array just simply multiply its
+                dimensions: we have 72 see below.</p>
+            <pre>3 * 4 * 6 = 72</pre>
+
+            <hr />
+
+            <h4 class="pt-3 pb-3">Multidimensional Array Initialization</h4>
+            <p>A Multidimensional Array can be initialize in more than one way.</p>
+            <h5 class="pt-3 pb-3">Initialization of 2D array</h5>
+            <pre>int my array[2][3];</pre>
+            <h6 class="pt-3 pb-3">Initialization : We have many ways to initialize arrays.</h6>
+            <p><strong>Method 1:</strong></p>
+            <pre>int arr[2][3] = {4,7,9,11,16,19};</pre>
+            <p><strong>Method 2:</strong></p>
+            <p>This way of initializing is preferred as you can visualize the rows and columns here.</p>
+            <pre>int arr[2][3] = {{4,7,9} , {11,16,19}};</pre>
+            <p>Accessing array elements:</p>
+            <pre>arr[0][0] – first element
+arr[0][1] – second element
+arr[0][2] – third element
+arr[1][0] – fourth element
+arr[1][1] – fifth element
+arr[1][2] – sixth element</pre>
+            <p><strong>Example: </strong>Two dimensional array in C++</p>
+            <pre>#include &lt;iostream> 
+
+using namespace std;
+
+int main() {
+    int arr[2][3] = {{4,7,9}, {11,16,19}};
+    for(int i = 0; i < 2; i++) {
+        for(int j = 0; j < 3 ; j++) {
+            cout << "arr[" << i << "][" << j << "]:
+            " << arr[i][j] << endl;
+        }
+    } 
+    return 0;
+}</pre>
+            <p><strong>Output:</strong></p>
+            <pre>arr[0][0]: 4
+arr[0][1]: 7
+arr[0][2]: 9
+arr[1][0]: 11
+arr[1][1]: 16
+arr[1][2]: 19</pre>
+            <h4 class="pt-3 pb-3">Three-dimensional array</h4>
+            <pre>int my array[2][3][2];</pre>
+            <p><strong>Initialization : We have many ways to initialize arrays.</strong></p>
+            <p><strong>Method 1:</strong></p>
+            <pre>int arr[2][3][2] = {1, -1 ,2 ,-2 , 3 , -3, 4, -4, 5, -5, 6, -6};</pre>
+            <p><strong>Method 2:</strong></p>
+            <pre>int arr[2][3][2] =
+{
+    { {11,-11}, {12, -12}, {13, -13}},
+    { {14, -14}, {15, -15}, {16, -16}}
+}</pre>
+            <p><strong>Example:</strong></p>
+            <pre>#include &lt;iostream>
+                
+using namespace std;
+
+int main() {
+    // initializing the array
+    
+    int arr[2][3][2] =  { { {11,-11}, {12,-12}, {13,-13} },
+                          { {14,-14}, {15,-15}, {16,-16} }
+                        };
+    
+    // displaying array values
+    for (int p = 0; p < 2; p++) {
+        for (int q = 0; q < 3; q++) {
+            for (int r = 0; r < 2; r++) {
+                cout << arr[p][q][r] << " ";
+            }
+        }
+    } 
+    return 0;
+}</pre>
+            <p><strong>Output:</strong></p>
+            <pre>11 -11 12 -12 13 -13 14 -14 15 -15 16 -16</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <div class="but text-right">
+            <button class="btn btn-primary pull-right"><a href="function-arrays.html">Next Topic&nbsp;<i
+                        class="fas fa-arrow-right "></i><br />C++ Function Arrays </a></button>
+        </div><br />
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="row footer">
+            <div class="logo">
+                <img src="../image.png" alt="" class="f-img">
+                <h5>LEARN CODE DISCUSS</h5>
+            </div>
+
+            <div class="footer-column ">
+
+                <ul class="footer-ul">
+                    <li class="foot-header"><strong>CodeMistic</strong></li>
+
+                    <li class="f-li"><a href="../index.html" class="f-links">Home</a></li>
+
+
+                    <li class="f-li"><a href="../team.html" class="f-links">Our Team</a></li>
+
+
+                    <li class="f-li"><a href="../terms-and-conditions.html" class="f-links">Terms of Service</a></li>
+
+
+                    <li class="f-li"><a href="../privacy-policy.html" class="f-links">Privacy Policy</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-column ">
+
+                <ul class="footer-ul ">
+                    <li class="foot-header"><strong>LEARN</strong></li>
+
+                    <li class="f-li"><a href="../cpp.html" class="f-links">C++</a></li>
+
+
+                    <li class="f-li"><a href="../java.html" class="f-links">Java</a></li>
+
+
+                    <li class="f-li"><a href="../python.html" class="f-links">Python</a></li>
+
+
+                    <li class="f-li"><a href="../dsa.html" class="f-links">DSA</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-column ">
+
+                <ul class="footer-ul ">
+                    <li class="foot-header"><strong>CONTRIBUTE</strong></li>
+
+                    <li class="f-li"><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSduxk_aP9M1lqUAebQJwRXiVm2ukmdgv3T7gjBpOsr_gdeOcQ/viewform?usp=sf_link"
+                            class="f-links" target="_blank">Write an Article/Blog</a></li>
+
+
+                    <li class="f-li"><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link"
+                            class="f-links" target="_blank">Internships</a></li>
+
+
+                    <li class="f-li"><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSe9nr_Aw0fGIqm3_xWhqEzTr3UWdOFz-pvKpQvkAsosORYq9w/viewform?usp=sf_link"
+                            class="f-links" target="_blank">Videos</a></li>
+
+                    <li class="f-li"><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLScOW3hJjxxwzPYL4u51oboc4T1aDtIUEIRa20hKPKu4UlcZAA/viewform?usp=sf_link"
+                            class="f-links" target="_blank">Donations/Funds</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-links" style="text-align: center;">
+            <!-- <h7>Connect With Us</h7><br><br> -->
+            <a href="https://www.facebook.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-facebook "
+                    style="color:#3b5998; "></i></a>
+            <a href="https://www.instagram.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-instagram "
+                    style="color:#e95950; "></i></a>
+            <a href="https://www.twitter.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-twitter "
+                    style="color:#8accf5; "></i></a>
+            <a href="https://www.linkedin.com/company/codemistic " target="_blank "><i
+                    class="icons fa-2x fab fa-linkedin " style="color:#88b3ee; "></i></a>
+            <a href="https://t.me/codemistic " target="_blank "><i class="icons fa-2x fab fa-telegram "
+                    style="color:#65adda; "></i></a>
+
+            <a href="https://www.youtube.com/channel/UCS1Iv_kkgQGDwoXtvrlwlag " target="_blank "><i
+                    class="icons fa-2x fab fa-youtube " style="color:red; "></i></a>
+            <p class="foot mt-3">&#169 Copyright : <strong>CodeMistic</strong> All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <!-- CSS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+        crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
+        crossorigin="anonymous "></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='../side.js'></script>
+</body>
+
+</html>

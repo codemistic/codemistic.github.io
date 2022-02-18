@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords" content="codemistic,code,c++,java,python,tutorials,lessons,learn c++,learn java,learn python,free tutorials,python tutorials,python lessons, python free course"/>
+    <meta name="description" content="coming soon"/>
+    <title>Coming Soon...</title>
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MCNC43J');</script>
+        <!-- End Google Tag Manager -->
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTQSLH0XW"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-YPTQSLH0XW');
+        </script>
+<script data-ad-client="ca-pub-5352867889640158" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Favicon -->
+
+    <link rel="icon" type="img/png" href="favicon.png"/>
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous"/>
+
+    <!-- FONTS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Ubuntu&family=Varela+Round&display=swap" rel="stylesheet"/>
+
+    <!-- Animate on scroll -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="lang_styles.css"/>
+    
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCNC43J"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- NAVIGATION BAR -->
+
+    <!-- <div class="container-fluid"> -->
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark">
+        <a class="navbar-brand" href="index.html">CODEMISTIC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tutorials
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        <a class="dropdown-item" href="cpp.html">C++</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="python.html">Python</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="java.html">Java</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="dsa.html">Data Structure and Algorithms</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="tutorials.html">All Tutorials</a>
+                        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="teen-code.html">Teen-Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="campus.html">Campus Programme</a>
+                </li>
+                <!-- <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" target="_blank">Contribute</a>
+                    </li> -->
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Join Our Community</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- </div> -->
+    <!-- HEADING -->
+<br>
+    <div class="wrapperhome">
+
+<h4 style="text-align: center;">We are working on it ... <br>Till then explore other sections of our website.</h4>
+
+   
+</div> 
+    <center><br>
+        <h5>More Topics Uploading soon...</h5>
+        <hr>
+        <h7>Do you want to contribute by preparing content for us :</h7>
+
+        <div class=" but ">
+            <button class="btn btn-md btn-primary "><a href="https://docs.google.com/forms/d/e/1FAIpQLSduxk_aP9M1lqUAebQJwRXiVm2ukmdgv3T7gjBpOsr_gdeOcQ/viewform" target="_blank ">Contribute</a></button>
+        </div>
+    </center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer >
+        <div class="row footer" >
+            <div class="logo">
+                <img src="image.png" alt="" class="f-img">
+                <h5>LEARN CODE DISCUSS</h5>
+            </div>
+            
+                <div class="footer-column ">
+                    
+                    <ul class="footer-ul">
+                        <li class="foot-header"><strong>CodeMistic</strong></li>
+                        
+                            <li class="f-li"><a href="index.html" class="f-links">Home</a></li>
+                        
+                        
+                            <li class="f-li"><a href="team.html" class="f-links">Our Team</a></li>
+                        
+                        
+                            <li class="f-li"><a href="terms-and-conditions.html" class="f-links">Terms of Service</a></li>
+                        
+                        
+                            <li class="f-li"><a href="privacy-policy.html" class="f-links">Privacy Policy</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-column ">
+                  
+                    <ul class="footer-ul ">
+                        <li class="foot-header"><strong>LEARN</strong></li>
+                        
+                            <li class="f-li"><a href="cpp.html" class="f-links">C++</a></li>
+                        
+                        
+                            <li class="f-li"><a href="java.html" class="f-links">Java</a></li>
+                        
+                        
+                            <li class="f-li"><a href="python.html" class="f-links">Python</a></li>
+                        
+                        
+                            <li class="f-li"><a href="dsa.html" class="f-links">DSA</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-column ">
+                    
+                    <ul class="footer-ul ">
+                        <li class="foot-header"><strong>CONTRIBUTE</strong></li>
+                        
+                            <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSduxk_aP9M1lqUAebQJwRXiVm2ukmdgv3T7gjBpOsr_gdeOcQ/viewform?usp=sf_link" class="f-links" target="_blank">Write an Article/Blog</a></li>
+                        
+                        
+                            <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" class="f-links" target="_blank">Internships</a></li>
+                        
+                        
+                            <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe9nr_Aw0fGIqm3_xWhqEzTr3UWdOFz-pvKpQvkAsosORYq9w/viewform?usp=sf_link" class="f-links" target="_blank">Videos</a></li>
+                        
+                            <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLScOW3hJjxxwzPYL4u51oboc4T1aDtIUEIRa20hKPKu4UlcZAA/viewform?usp=sf_link" class="f-links" target="_blank">Donations/Funds</a></li>
+                        
+                    </ul>
+                </div>
+            
+        </div>
+        <div class="footer-links" style="text-align: center;">
+            <!-- <h7>Connect With Us</h7><br><br> -->
+            <a href="https://www.facebook.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-facebook "
+                    style="color:#3b5998; "></i></a>
+            <a href="https://www.instagram.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-instagram "
+                    style="color:#e95950; "></i></a>
+            <a href="https://www.twitter.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-twitter "
+                    style="color:#8accf5; "></i></a>
+            <a href="https://www.linkedin.com/company/codemistic " target="_blank "><i
+                    class="icons fa-2x fab fa-linkedin " style="color:#88b3ee; "></i></a>
+            <a href="https://t.me/codemistic " target="_blank "><i class="icons fa-2x fab fa-telegram "
+                    style="color:#65adda; "></i></a>
+    
+            <a href="https://www.youtube.com/channel/UCS1Iv_kkgQGDwoXtvrlwlag " target="_blank "><i
+                    class="icons fa-2x fab fa-youtube " style="color:red; "></i></a>
+            <p class="foot mt-3">&#169 Copyright : <strong>CodeMistic</strong> All Rights Reserved.</p>
+        </div>
+    </footer>
+       
+    
+    
+    <!-- CSS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
+    </body>
+    
+    </html>

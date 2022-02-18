@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An Array in C++ is nothing but a homogeneous collection of multiple data
+    elements . It is a linear data structure. Arrays are opened from both the end and it
+    also allow us the random access of the elements , there is no such sequential rule
+    to follow for accessing the data you can choose the data element of your choice." />
+    <meta name="keywords"
+        content="array, arrays, array in cpp, array in c++, arrays in c++, arrays in cpp, what is an array, what is a array, what are arrays, what is array, what is an array in cpp, what is an array in c++, cpp arrays, app array, c++ array, c++ arrays" />
+    <title>C++ Arrays | C++ Tutorials | CodeMistic</title>
+
+    <!-- Google Ad -->
+
+    <script data-ad-client="ca-pub-5352867889640158" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MCNC43J');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTQSLH0XW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YPTQSLH0XW');
+    </script>
+
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="img/png" href="../favicon.png" />
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous" />
+
+    <!-- FONTS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Ubuntu&family=Varela+Round&display=swap"
+        rel="stylesheet" />
+
+    <!-- Animate on scroll -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../lang_styles.css" />
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCNC43J" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- NAVIGATION BAR -->
+
+    <!-- <div class="container-fluid"> -->
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark">
+        <a class="navbar-brand" href="../index.html">CODEMISTIC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tutorials
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                        <a class="dropdown-item" href="../cpp.html">C++</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../python.html">Python</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../java.html">Java</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../dsa.html">Data Structure and Algorithms</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../tutorials.html">All Tutorials</a>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../teen-code.html">Teen-Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../campus.html">Campus Programme</a>
+                </li>
+                <!-- <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" target="_blank">Contribute</a>
+                    </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../register.html">Join Our Community</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Accordion -->
+
+    <section class="lbar">
+        <div class="lang-img col-md-2">
+            <img src="../logo/cpp.png" alt="c++" class="cpp-img" style="margin-left: -25px;">
+        </div>
+        <ul id="accordion" class="accordion ml-5">
+            <li class=" collape in">
+                <div class="link">C++ Introduction<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="getting-started.html" class="closed">Getting Started</a>
+                    </li>
+                    <li>
+                        <a href="variables-and-literals.html " class="closed">C++ Variables and Literals</a>
+                    </li>
+                    <li>
+                        <a href="data-types.html" class="closed">C++ Data Types</a>
+                    </li>
+                    <li>
+                        <a href="input-output.html" class="closed">C++ Basic I/O</a>
+                    </li>
+                    <li>
+                        <a href="type-conversion.html" class="closed">C++ Type Conversion</a>
+                    </li>
+                    <li>
+                        <a href="operators.html" class="closed">C++ Operators</a>
+                    </li>
+                    <li>
+                        <a href="comments.html" class="closed">C++ Comments</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Flow Control<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="if-else.html" class="closed">C++ if...else</a>
+                    </li>
+                    <li>
+                        <a href="for-loop.html" class="closed">C++ for Loop</a>
+                    </li>
+                    <li>
+                        <a href="do-while.html" class="closed">C++ do...while Loop</a>
+                    </li>
+                    <li>
+                        <a href="break-and-continue.html" class="closed">C++ break & continue</a>
+                    </li>
+                    <li>
+                        <a href="switch-statement.html" class="closed">C++ switch Statement</a>
+                    </li>
+                    <li>
+                        <a href="goto-statement.html" class="closed">C++ goto Statement</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Function<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="functions.html" class="closed">C++ Functions</a>
+                    </li>
+                    <li>
+                        <a href="function-types.html" class="closed">C++ Function Types</a>
+                    </li>
+                    <li>
+                        <a href="function-overloading.html" class="closed">C++ Function Overloading</a>
+                    </li>
+                    <li>
+                        <a href="default-argument.html" class="closed">C++ Default Argument</a>
+                    </li>
+                    <li>
+                        <a href="storage-class.html" class="closed">C++ Storage Class</a>
+                    </li>
+                    <li>
+                        <a href="recursion.html" class="closed">C++ Recursion</a>
+                    </li>
+                    <li>
+                        <a href="return-reference.html" class="closed">C++ Return Reference</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Arrays & String<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse show">
+                    <li>
+                        <a href="arrays.html" class="opened">C++ Arrays</a>
+                    </li>
+                    <li>
+                        <a href="multidimensional-arrays.html" class="closed">C++ Multidimensional Arrays</a>
+                    </li>
+                    <li>
+                        <a href="function-arrays.html" class="closed">C++ Function and Array</a>
+                    </li>
+                    <li>
+                        <a href="string.html" class="closed">C++ String</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Structures<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="structures.html" class="closed">C++ Structures</a>
+                    </li>
+                    <li>
+                        <a href="structure-fuction.html" class="closed">Structure and Function</a>
+                    </li>
+                    <li>
+                        <a href="pointers-structures.html" class="closed">C++ Pointers to Structure</a>
+                    </li>
+                    <li>
+                        <a href="enumeration.html" class="closed">C++ Enumeration</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Object & Class<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="object-class.html" class="closed">C++ Objects and Class</a>
+                    </li>
+                    <li>
+                        <a href="constructors.html" class="closed">C++ Constructors</a>
+                    </li>
+                    <li>
+                        <a href="objects-fuctions.html" class="closed">C++ Objects & Function</a>
+                    </li>
+                    <li>
+                        <a href="operator-overloading.html" class="closed">C++ Operator Overloading</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Pointers<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="pointers.html" class="closed">C++ Pointers</a>
+                    </li>
+                    <li>
+                        <a href="pointers-arrays.html" class="closed">C++ Pointers and Arrays</a>
+                    </li>
+                    <li>
+                        <a href="pointers-functions.html" class="closed">C++ Pointers and Functions</a>
+                    </li>
+                    <li>
+                        <a href="memory-management.html" class="closed">C++ Memory Management</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Inheritance<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="inheritance.html" class="closed">C++ Inheritance</a>
+                    </li>
+                    <li>
+                        <a href="inheritance-access-control.html" class="closed">Inheritance Access Control</a>
+                    </li>
+                    <li>
+                        <a href="function-overriding.html" class="closed">C++ Function Overriding</a>
+                    </li>
+                    <li>
+                        <a href="inheritence-types.html" class="closed">Inheritance Types</a>
+                    </li>
+                    <li>
+                        <a href="friend-function.html" class="closed">C++ Friend Function</a>
+                    </li>
+                    <li>
+                        <a href="virtual-function.html" class="closed">C++ Virtual Function</a>
+                    </li>
+                    <li>
+                        <a href="templates.html" class="closed">C++ Templates</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+
+    </section>
+
+
+
+    <br>
+    <section class="para">
+        <!-- <div class="but mt-4">
+            &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-md btn-primary "><a href="../dsa.html"><i
+                        class="fas fa-arrow-left "></i>&nbsp;Back to Index</a></button>
+        </div> -->
+
+        <!-- breadcrumb -->
+
+        <nav class="bdcrumb" id="bdcrumb" aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../tutorials.html"><i class="fas fa-home"></i></a></li>
+                <li class="breadcrumb-item"><a href="../cpp.html">C++ Index</a></li>
+                <li class="breadcrumb-item active" aria-current="page">C++ Arrays</li>
+            </ul>
+        </nav>
+
+        <!-- breadcrumb ending -->
+
+        <!-- HEADING -->
+
+        <div class="wrapper">
+            <h3 class="pb-3 pt-3">C++ Arrays</h3>
+            <p>An Array in C++ is nothing but a homogeneous collection of multiple data
+                elements . It is a linear data structure. Arrays are opened from both the end and it
+                also allow us the random access of the elements , there is no such sequential rule
+                to follow for accessing the data you can choose the data element of your choice.</p>
+            <p>For example we want to store age of the employees working for company. Suppose that
+                the number employees are 63 then instead of creating 63 separate variables ,we can
+                simply create an array:</p>
+            <pre>int age[63];</pre>
+            <p>In the above example age is an array that can hold a maximum of 63 elements of
+                data type.</p>
+
+            <hr />
+            <h4 class="pt-3 pb-3">Syntax of Declaring an Array in C++</h4>
+            <pre>data_type variable_name[size];</pre>
+            <p><strong>Important points to remember :</strong></p>
+            <ol>
+                <li>
+                    <code>[size]</code> is number of values arrays can hold.
+                </li>
+                <li>
+                    This size must be an <strong>integer</strong> constant.
+                </li>
+            </ol>
+            <p>For example,</p>
+            <ol>
+                <li>
+                    <code>int</code>, <code>char</code>, <code>float</code> - data type of element to be stored.
+                </li>
+                <li>
+                    <strong>Roll nos</strong>, <strong>grades</strong>, <strong>per</strong> - names of arrays.
+                </li>
+                <li>
+                    <strong>40</strong>, <strong>14</strong>, <strong>20</strong> - size of the array.
+                </li>
+            </ol>
+            <h4 class="pt-3 pb-3">Syntax errors while declaration of array</h4>
+            <ol>
+                <li>
+                    The size of array must always be a constant in Turbo C compiler, variables
+                    cannot be used as size of array. However, GCC compiler allows variable also in the
+                    size of array.
+                </li>
+                <li>
+                    Size is a mandatory feature in array declaration and cannot be left blank. This
+                    rule is followed by all the compiler.
+                </li>
+                <li>
+                    The minimum size of any array can be 1 ,you cannot create less then that.
+                </li>
+            </ol>
+            <p><strong>Important : </strong>While declaring the array the number of square braces <code>[ ]</code> used
+                determines that of how many dimension the array will be.Currently in the above
+                example are single dimensional.</p>
+
+            <hr />
+
+            <h4 class="pt-3 pb-3">Access element in C++ array</h4>
+            <p>In C++, each element in an array is associated with a number. The
+                number is known as array index. We can access elements of an array by
+                using those indexes. Array elements are accessed by using an integer
+                index.</p>
+            <p><strong>Note : </strong>Index of array starts from <code>0</code> and goes up to <code>n-1</code> .</p>
+            <pre>// syntax to access array elements 
+array[index];</pre>
+            <div class="if-content-img d-flex flex-column m-5">
+                <img class="if-content m-auto" src="images/array-1.png" alt="image" />
+            </div>
+            <p><strong>Points to remember :</strong></p>
+            <ol>
+                <li>
+                    As we can see that the array index start from <strong>0</strong> , which simply tell us that
+                    <code>x[0]</code> is the first
+                    element to be stored at index number <strong>0</strong>.
+                </li>
+                <li>
+                    If in case, the size of an array is <strong>n</strong>, so in that case the last element will be
+                    stored at index
+                    number <strong>(n-1)</strong> . As you can see in the above figure that <strong>5</strong> is the
+                    last element stored in <code>x[5]</code>.
+                </li>
+                <li>In Array, elements have addresses which are successive. In the above figure let us
+                    suppose the starting address of <code>x[0]</code> is <strong>2020d</strong>. Then, the address of
+                    the next element <code>x[1]</code> will
+                    be <strong>2024d</strong>, the address of <code>x[2]</code> will be <strong>2028d</strong> upto n.
+                </li>
+            </ol>
+            <p>Here, as we can see that the size of each element is increased by <strong>4</strong>. Because the size
+                of <code>int</code> is <strong>4 bytes</strong>.</p>
+
+            <hr />
+            <h4 class="pt-3 pb-3">Initialization of array in C++</h4>
+            <p>The initialization for an array is basically a list of constant expressions that
+                are separated by commas and are enclosed in braces <code>{ }</code> . The initializer is lead
+                up by <code>=</code> sign . You do not need to initialize all elements in an array. In C++, We
+                can initialize an array during declaration of it . See below.</p>
+            <pre>int x[6] = {19, 10, 8, 17, 9, 15};</pre>
+            <div class="if-content-img d-flex flex-column m-5">
+                <img class="if-content m-auto" src="images/array-2.png" alt="" />
+            </div>
+            <p>Another method to initialize array during declaration :</p>
+            <pre>int x[] = {19, 10, 8, 17, 9, 15};</pre>
+            <p>In the above case we did’t mentioned the size of the array. In that case, the compiler
+                automatically computes the size based on the number of constants after <code>=</code> sign.</p>
+
+            <hr />
+
+            <h4 class="pt-3 pb-3">C++ array with empty members</h4>
+            <p>In C++, if an array has a size n, so we can store n number of elements in the array but if
+                we have array of n and you store less than n number of elements then what will happen ?</p>
+            <p>Look at the example below :</p>
+            <pre>int x[10] = {3, 7, 13, 6, 4};</pre>
+            <p>In the above case the array x has a size of 10. but, we have initialized only 5 elements. In
+                that case, the compiler automatically assigns some random values to the remaining
+                places and this random value is simply called as garbage value.</p>
+
+            <hr />
+            <h4 class="pt-3 pb-3">Inserting and printing array elements</h4>
+            <pre>int mark[5] = {19, 10, 8, 17, 9}
+
+// change 4th element to 9
+mark[3] = 9;
+
+// take input from the user
+// store the value at third position 
+cin >> mark[2];
+
+// take input from the user
+// insert at ith position 
+cin >> mark[i-1];
+
+// print first element of the array 
+cout << mark[0];
+
+// print ith element of the array 
+cout >> mark[i-1];</pre>
+
+            <hr />
+
+            <p><strong>Example 1: </strong>Displaying array elements</p>
+
+            <pre>#include &lt;iostream>
+
+using namespace std;
+
+int main() {
+    roll nos[7] = { };
+
+    cout << "roll nos are: ";
+
+    // Printing array elements
+    // using range based for loop
+
+    for (const int &n : roll nos) {
+        cout << n << " ";
+    }
+
+    cout << "\n roll nos are: ";
+
+    // Printing array elements
+    // using traditional for loop
+
+    for (int i = 0; i < 7; ++i) {
+        cout << roll nos[i] << " ";
+    }
+
+    return 0;
+}</pre>
+            <p><strong>Output :</strong></p>
+            <pre>roll nos are: 3 6 11 16 21 24 29
+Roll nos are: 3 6 11 16 21 24 29</pre>
+            <p>In the above example we have used a for loop to iterate from <code>i = 0</code> to <code>i = 6</code>. In
+                each iteration,
+                we have printed <code>numbers[i]</code>.</p>
+
+            <p><strong>Example 2: </strong>Taking inputs from user and storing them in
+                array</p>
+            <pre>#include &lt;iostream>
+
+using namespace std;
+
+int main() {
+    int ages[10];
+
+    cout << "kindly enter 10 ages: " << endl;
+
+    // store input from user to array
+    for (int i = 0; i < 10; ++i) {
+        cin >> ages[i];
+    }
+
+    cout << " entered ages are: ";
+
+    // print array elements
+    for (int n = 0; n < 10; ++n) {
+        cout << ages[n] << " ";
+    }
+
+    return 0;
+}</pre>
+            <p><strong>Output :</strong></p>
+            <pre>Kindly enter 10 ages:
+5
+9
+15
+19
+22
+24
+29
+36
+45
+53
+entered ages are: 5 9 15 19 22 24 29 36 45 53</pre>
+            <p>In the above example we again, used a for loop to iterate from <code>i = 0</code> to <code>i = 9</code>.
+                In each iteration,
+                we took an value from the user and stored it in <code>ages[i]</code>.Then, we used another for loop to
+                print all the array elements.</p>
+
+            <p><strong>Example 3: </strong>Displaying sum and average of array elements
+                using for loop</p>
+            <pre>#include &lt;iostream>
+
+using namespace std;
+
+int main() {
+
+    // initialize an array without specifying size
+    double nums[] = {10, 20, 30, 40};
+
+    double sum = 0;
+    double count = 0;
+    double average;
+
+    cout << " nums are: ";
+
+    // print array elements
+    // use of range-based for loop
+    for (const double &n : nums) {
+        cout << n << " ";
+
+        // calculate the sum
+        sum += n;
+
+        // count the no. of array elements
+        ++count;
+    }
+
+    // print the sum
+    cout << "\n Sum is = " << sum << endl;
+
+    // find the average
+    average = sum / count;
+
+    cout << " Average is = " << average << endl;
+
+    return 0;
+}</pre>
+            <p><strong>Output :</strong></p>
+            <pre>The nums are: 10 20 30 40
+Sum is = 100
+Average is = 25</pre>
+            <p><strong>Description of above code :</strong></p>
+            <p>In the above program, we have initialized a double
+                array of undefined size whose name is <strong>nums</strong>. Along with nums we have also declared 3
+                elements of double data type whose names are <strong>sum</strong>, <strong>count</strong>,
+                <strong>average</strong>. We have used a
+                ranged loop in it, (we have done so because a normal for loop require to specify the
+                number of iterations, which is given by size of array, but a ranged for loop does not any
+                such thing). In each iteration, we added current array element to the <strong>sum</strong>. Then we
+                incremented
+                the value of count by <strong>1</strong> by using <strong>pre-increment</strong> operator so that we get
+                the size of array at
+                the end. After printing all element we printed sum and average of nums with the help of
+                <code>cout</code>. The average of the nums are given by the formula <code>average = sum/count;</code>.
+            </p>
+
+            <hr />
+
+            <h4 class="pt-3 pb-3">Out of bounds array in C++</h4>
+            <p>The array <strong>out of bounds</strong> error is a special case of the <strong>buffer overflow</strong>
+                error. This error
+                usually pops up when the index used to address array items surpass the allowed value. It's
+                the area outside the array bounds which is being addressed.This could me understood
+                with the help of an example suppose that we declared array of size 5, then array will be
+                keeping data elements from index number 0 to 4.On the other hand, if we try to access the
+                element at index number 5 or you try to put more data element in it then it will result in
+                Undefined Behaviour.</p>
+        </div>
+        <div class="but text-right">
+            <button class="btn btn-primary pull-right"><a href="multidimensional-arrays.html">Next Topic&nbsp;<i
+                        class="fas fa-arrow-right "></i><br />C++ Multidimensional Arrays</a></button>
+        </div><br>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="row footer">
+            <div class="logo">
+                <img src="../image.png" alt="" class="f-img">
+                <h5>LEARN CODE DISCUSS</h5>
+            </div>
+
+            <div class="footer-column ">
+
+                <ul class="footer-ul">
+                    <li class="foot-header"><strong>CodeMistic</strong></li>
+
+                    <li class="f-li"><a href="../index.html" class="f-links">Home</a></li>
+
+
+                    <li class="f-li"><a href="../team.html" class="f-links">Our Team</a></li>
+
+
+                    <li class="f-li"><a href="../terms-and-conditions.html" class="f-links">Terms of Service</a></li>
+
+
+                    <li class="f-li"><a href="../privacy-policy.html" class="f-links">Privacy Policy</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-column ">
+
+                <ul class="footer-ul ">
+                    <li class="foot-header"><strong>LEARN</strong></li>
+
+                    <li class="f-li"><a href="../cpp.html" class="f-links">C++</a></li>
+
+
+                    <li class="f-li"><a href="../java.html" class="f-links">Java</a></li>
+
+
+                    <li class="f-li"><a href="../python.html" class="f-links">Python</a></li>
+
+
+                    <li class="f-li"><a href="../dsa.html" class="f-links">DSA</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-column ">
+
+                <ul class="footer-ul ">
+                    <li class="foot-header"><strong>CONTRIBUTE</strong></li>
+
+                    <li class="f-li"><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSduxk_aP9M1lqUAebQJwRXiVm2ukmdgv3T7gjBpOsr_gdeOcQ/viewform?usp=sf_link"
+                            class="f-links" target="_blank">Write an Article/Blog</a></li>
+
+
+                    <li class="f-li"><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link"
+                            class="f-links" target="_blank">Internships</a></li>
+
+
+                    <li class="f-li"><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSe9nr_Aw0fGIqm3_xWhqEzTr3UWdOFz-pvKpQvkAsosORYq9w/viewform?usp=sf_link"
+                            class="f-links" target="_blank">Videos</a></li>
+
+                    <li class="f-li"><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLScOW3hJjxxwzPYL4u51oboc4T1aDtIUEIRa20hKPKu4UlcZAA/viewform?usp=sf_link"
+                            class="f-links" target="_blank">Donations/Funds</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-links" style="text-align: center;">
+            <!-- <h7>Connect With Us</h7><br><br> -->
+            <a href="https://www.facebook.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-facebook "
+                    style="color:#3b5998; "></i></a>
+            <a href="https://www.instagram.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-instagram "
+                    style="color:#e95950; "></i></a>
+            <a href="https://www.twitter.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-twitter "
+                    style="color:#8accf5; "></i></a>
+            <a href="https://www.linkedin.com/company/codemistic " target="_blank "><i
+                    class="icons fa-2x fab fa-linkedin " style="color:#88b3ee; "></i></a>
+            <a href="https://t.me/codemistic " target="_blank "><i class="icons fa-2x fab fa-telegram "
+                    style="color:#65adda; "></i></a>
+
+            <a href="https://www.youtube.com/channel/UCS1Iv_kkgQGDwoXtvrlwlag " target="_blank "><i
+                    class="icons fa-2x fab fa-youtube " style="color:red; "></i></a>
+            <p class="foot mt-3">&#169 Copyright : <strong>CodeMistic</strong> All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <!-- CSS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+        crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
+        crossorigin="anonymous "></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='../side.js'></script>
+</body>
+
+</html>

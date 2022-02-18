@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Inheritance is the key features of “Object-oriented programming” in C++.
+    The capability of a class to derive properties and characteristics from another class is called “Inheritance”." />
+    <meta name="keywords"
+        content="inheritance, inheritance in cpp, inheritance in c++, what is inheritance, what is inheritance in cpp, what is inheritance in c++, define inheritance, inheritance of class, inheritance of class in cpp, inheritance of class in c++, types of inheritance, types of inheritance in c++, type of inheritance in cpp, c++, cpp" />
+    <title>C++ Virtual Function | C++ Tutorials | CodeMistic</title>
+
+    <!-- Google Ad -->
+
+    <script data-ad-client="ca-pub-5352867889640158" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <!-- Google Tag Manager -->
+
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MCNC43J');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTQSLH0XW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YPTQSLH0XW');
+    </script>
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="img/png" href="../favicon.png" />
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous" />
+
+    <!-- FONTS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Ubuntu&family=Varela+Round&display=swap"
+        rel="stylesheet" />
+
+    <!-- Animate on scroll -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../lang_styles.css" />
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCNC43J" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- NAVIGATION BAR -->
+
+    <!-- <div class="container-fluid"> -->
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark">
+        <a class="navbar-brand" href="../index.html">CODEMISTIC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tutorials
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                        <a class="dropdown-item" href="../cpp.html">C++</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../python.html">Python</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../java.html">Java</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../dsa.html">Data Structure and Algorithms</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../tutorials.html">All Tutorials</a>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../teen-code.html">Teen-Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../campus.html">Campus Programme</a>
+                </li>
+                <!-- <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" target="_blank">Contribute</a>
+                    </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../register.html">Join Our Community</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Accordion -->
+
+    <section class="lbar">
+        <div class="lang-img col-md-2">
+            <img src="../logo/cpp.png" alt="c++" class="cpp-img" style="margin-left: -25px;">
+        </div>
+        <ul id="accordion" class="accordion ml-5">
+            <li class=" collape in">
+                <div class="link">C++ Introduction<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="getting-started.html" class="closed">Getting Started</a>
+                    </li>
+                    <li>
+                        <a href="variables-and-literals.html " class="closed">C++ Variables and Literals</a>
+                    </li>
+                    <li>
+                        <a href="data-types.html" class="closed">C++ Data Types</a>
+                    </li>
+                    <li>
+                        <a href="input-output.html" class="closed">C++ Basic I/O</a>
+                    </li>
+                    <li>
+                        <a href="type-conversion.html" class="closed">C++ Type Conversion</a>
+                    </li>
+                    <li>
+                        <a href="operators.html" class="closed">C++ Operators</a>
+                    </li>
+                    <li>
+                        <a href="comments.html" class="closed">C++ Comments</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Flow Control<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="if-else.html" class="closed">C++ if...else</a>
+                    </li>
+                    <li>
+                        <a href="for-loop.html" class="closed">C++ for Loop</a>
+                    </li>
+                    <li>
+                        <a href="do-while.html" class="closed">C++ do...while Loop</a>
+                    </li>
+                    <li>
+                        <a href="break-and-continue.html" class="closed">C++ break & continue</a>
+                    </li>
+                    <li>
+                        <a href="switch-statement.html" class="closed">C++ switch Statement</a>
+                    </li>
+                    <li>
+                        <a href="goto-statement.html" class="closed">C++ goto Statement</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Function<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="functions.html" class="closed">C++ Functions</a>
+                    </li>
+                    <li>
+                        <a href="function-types.html" class="closed">C++ Function Types</a>
+                    </li>
+                    <li>
+                        <a href="function-overloading.html" class="closed">C++ Function Overloading</a>
+                    </li>
+                    <li>
+                        <a href="default-argument.html" class="closed">C++ Default Argument</a>
+                    </li>
+                    <li>
+                        <a href="storage-class.html" class="closed">C++ Storage Class</a>
+                    </li>
+                    <li>
+                        <a href="recursion.html" class="closed">C++ Recursion</a>
+                    </li>
+                    <li>
+                        <a href="return-reference.html" class="closed">C++ Return Reference</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Arrays & String<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="arrays.html" class="closed">C++ Arrays</a>
+                    </li>
+                    <li>
+                        <a href="multidimensional-arrays.html" class="closed">C++ Multidimensional Arrays</a>
+                    </li>
+                    <li>
+                        <a href="function-arrays.html" class="closed">C++ Function and Array</a>
+                    </li>
+                    <li>
+                        <a href="string.html" class="closed">C++ String</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Structures<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="structures.html" class="closed">C++ Structures</a>
+                    </li>
+                    <li>
+                        <a href="structure-fuction.html" class="closed">Structure and Function</a>
+                    </li>
+                    <li>
+                        <a href="pointers-structures.html" class="closed">C++ Pointers to Structure</a>
+                    </li>
+                    <li>
+                        <a href="enumeration.html" class="closed">C++ Enumeration</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Object & Class<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="object-class.html" class="closed">C++ Objects and Class</a>
+                    </li>
+                    <li>
+                        <a href="constructors.html" class="closed">C++ Constructors</a>
+                    </li>
+                    <li>
+                        <a href="objects-fuctions.html" class="closed">C++ Objects & Function</a>
+                    </li>
+                    <li>
+                        <a href="operator-overloading.html" class="closed">C++ Operator Overloading</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Pointers<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="pointers.html" class="closed">C++ Pointers</a>
+                    </li>
+                    <li>
+                        <a href="pointers-arrays.html" class="closed">C++ Pointers and Arrays</a>
+                    </li>
+                    <li>
+                        <a href="pointers-functions.html" class="closed">C++ Pointers and Functions</a>
+                    </li>
+                    <li>
+                        <a href="memory-management.html" class="closed">C++ Memory Management</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Inheritance<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse show">
+                    <li>
+                        <a href="inheritance.html" class="opened">C++ Inheritance</a>
+                    </li>
+                    <li>
+                        <a href="inheritance-access-control.html" class="closed">Inheritance Access Control</a>
+                    </li>
+                    <li>
+                        <a href="function-overriding.html" class="closed">C++ Function Overriding</a>
+                    </li>
+                    <li>
+                        <a href="inheritence-types.html" class="closed">Inheritance Types</a>
+                    </li>
+                    <li>
+                        <a href="friend-function.html" class="closed">C++ Friend Function</a>
+                    </li>
+                    <li>
+                        <a href="virtual-function.html" class="closed">C++ Virtual Function</a>
+                    </li>
+                    <li>
+                        <a href="templates.html" class="closed">C++ Templates</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+
+    </section>
+
+
+
+    <br>
+    <section class="para">
+        <!-- <div class="but mt-4">
+            &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-md btn-primary "><a href="../dsa.html"><i
+                        class="fas fa-arrow-left "></i>&nbsp;Back to Index</a></button>
+        </div> -->
+
+        <!-- breadcrumb -->
+
+        <nav class="bdcrumb" id="bdcrumb" aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../tutorials.html"><i class="fas fa-home"></i></a></li>
+                <li class="breadcrumb-item"><a href="../cpp.html">C++ Tutorials</a></li>
+                <li class="breadcrumb-item active" aria-current="page">C++ Inheritance</li>
+            </ul>
+        </nav>
+
+        <!-- breadcrumb ending -->
+
+        <!-- HEADING -->
+
+        <div class="wrapper">
+            <h3 class="pb-3 pt-3">Inheritance in C++</h3>
+            <p><strong>Inheritance</strong> is the key features of "Object-oriented programming" in C++.</p>
+            <p>The capability of a class to derive properties and characteristics from another class is called
+                <strong>Inheritance</strong>.</p>
+            <p><strong>Sun class: </strong>The class that inherits properties from another class is called Sub class or
+                Derived Class.</p>
+            <p><strong>Super class: </strong>The class whose properties are inherited by sub class is called Base Class
+                or Super class.</p>
+
+            <hr />
+
+            <h4 class="pt-3 pb-3">Why &When inheritance should be used in our program ?</h4>
+            <p>Consider a group of Human Being. You need to create classes for Hindi teacher, cricketer and business
+                man. The methods Run(), Eat(), will be same for all of the three classes. If we create these classes
+                avoiding inheritance then we have to write all of these functions in each of the three classes as shown
+                below :</p>
+            <div class="d-flex justify-content-center">
+                <table class="content m-2">
+                    <thead>
+                        <th style="border-radius: 3px 0 0 3px;text-align: center;">Hindi Teacher</th>
+                        <th style="text-align: center;">Cricketer</th>
+                        <th style="border-radius: 0 3px 3px 0;text-align: center;">Business Man</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;"><code>Eat()</code></td>
+                            <td style="text-align: center;"><code>Eat()</code></td>
+                            <td style="text-align: center;"><code>Eat()</code></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><code>Run()</code></td>
+                            <td style="text-align: center;"><code>Run()</code></td>
+                            <td style="text-align: center;"><code>Run()</code></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><code>Teach()</code></td>
+                            <td style="text-align: center;"><code>Play Cricket()</code></td>
+                            <td style="text-align: center;"><code>Run Business()</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Although, all of the characters are human being , they can perform daily activity . They also have some
+                special skills.</p>
+            <ul>
+                <li>
+                    A Hindi teacher can teach hindi to the students.
+                </li>
+                <li>
+                    A cricketer can play cricket.
+                </li>
+                <li>
+                    And a businessman can run a business.
+                </li>
+            </ul>
+            <p>You can separately create three classes, who can walk, talk and perform their special skill.</p>
+            <p>Using inheritance, we have to write the functions only one time instead of three times as we have
+                inherited rest of the three classes from base class(Human Being).</p>
+            <p>In above 3 classes, you can write the same code for walk and talk for each character.</p>
+            <p>If you want to new feature other than inherited one like eat, then you need to implement the same code
+                for each character.</p>
+            <p>It'd be a lot easier if we had a “Person” class with basic features like talk, walk, eat, sleep, and add
+                special skills to those features as per our characters. This can be done easily using inheritance.</p>
+            <p>While using inheritance, we do not implement the same codes for walk and talk for each class. You just
+                need to “inherit” them.</p>
+            <p>Now, for “Hindi teacher” (derived class), you inherit all features of a Person (base class) and add a new
+                feature <strong>“Teach Hindi”</strong>.</p>
+            <p>Similarly, for a footballer, you inherit all the features of a Person and add a new feature <strong>“Play
+                    Cricket”</strong>.</p>
+            <p><strong>It is important to remember that</strong>, each derived class should satisfy the condition
+                whether it <strong>"is a"</strong> base class or not.</p>
+
+            <hr />
+
+            <h4 class="pt-3 pb-3">How to implement Inheritance in C++ Programming?</h4>
+            <pre>// C++ program to demonstrate implementation of Inheritance
+#include &lt;stdio.h>
+
+using namespace std;
+
+// Base class
+class Parent {
+    public:
+        int id_p;
+};
+
+// Sub class inheriting from Base Class(Parent)
+class Child : public Parent {
+    public:
+        int id_c;
+};
+
+// main function
+int main() {
+    Child obj1;
+
+    // An object of class child has all data members
+    // and member functions of class parent
+    obj1.id_c = 10;
+    obj1.id_p = 94;
+
+    cout << "Child id is " << obj1.id_c << endl;
+    cout << "Parent id is " << obj1.id_p << endl;
+
+    return 0;
+}</pre>
+            <p><strong>Output :</strong></p>
+            <pre>Child id is 10
+Parent id is 94</pre>
+            <p>In the above program the <strong>‘Child’</strong> class is publicly inherited from the
+                <strong>‘Parent’</strong> class so the public data members of the class <strong>‘Parent’</strong> will
+                also be inherited by the class <strong>‘Child’</strong>.</p>
+
+            <p><strong>Mode of inheritance :</strong></p>
+            <ol>
+                <li>
+                    <strong>Public mode:</strong> If we derive a sub class from a public base class. Then the public
+                    member of the base class will become public in the derived class and protected members of the base
+                    class will become protected in derived class.
+                </li>
+                <li>
+                    <strong>Protected mode:</strong> If we derive a sub class from a Protected base class. Then both
+                    public member and protected members of the base class will become protected in derived class.
+                </li>
+                <li>
+                    <strong>Private mode:</strong> If we derive a sub class from a Private base class. Then both public
+                    member and protected members of the base class will become Private in derived class.
+                </li>
+            </ol>
+
+            <hr />
+
+            <p><strong>Example :</strong>Creating game characters using the concept of inheritance</p>
+            <pre>#include &lt;iostream>
+
+using namespace std;
+class Person
+{
+    public:
+        string profession;
+        int age;
+        Person(): profession("under age"), age(15) { }
+    void display()
+    {
+        cout << "My profession is: " << profession << endl;
+        cout << "My age is: " << age << endl;
+        walk();
+        talk();
+    }
+    void run()
+    {
+        cout << "I can run." << endl;
+    }
+    void read()
+    {
+        cout << "I can read." << endl;
+    }
+};
+
+class hindi Teacher: public Person
+{
+    public:
+        void teach Hindi()
+        {
+            cout << "I can teach Hindi." << endl;
+        }
+};
+
+class cricketer: public Person
+{
+    public:
+        void play cricket()
+        {
+            cout << "I can play cricket." << endl;
+        }
+};
+
+int main() 
+{
+    Hindi Teacher teacher;
+
+    teacher.profession = "Teacher";
+    teacher.age = 24;
+    teacher.display();
+    teacher.teachhindi();
+
+    cricket criceter;
+
+    cricketer.profession = "Footballer";
+    cricketer.age = 19;
+    cricketer.display();
+    cricketer.play cricket();
+
+    return 0;
+}</pre>
+            <p><strong>Output :</strong></p>
+            <pre>My profession is: Teacher
+My age is: 24
+I can run.
+I can eat.
+I can teach Hindi.
+My profession is: cricketer
+My age is: 20
+I can run.
+I can eat.
+I can play cricket.</pre>
+            <ul>
+                <li>
+                    In above program, <strong>“Person”</strong> is a base class, while <strong>“Hindi Teacher”</strong>
+                    and <strong>“cricketer”</strong> are derived from <strong>“Person”</strong>.
+                </li>
+                <li>
+                    <strong>“Person”</strong> class has two data members - <strong>profession</strong> and
+                    <strong>age</strong>.
+                </li>
+                <li>
+                    It also has two member functions - <code>run()</code> and <code>eat()</code>.
+                </li>
+            </ul>
+            <ol class="mt-3" style="color: black; text-align: left;">
+                <li>
+                    Both <strong>“Hindi Teacher”</strong> and <strong>“Cricketer”</strong> can access all data members
+                    and member functions of <strong>“Person”</strong>.
+                </li>
+                <li>
+                    Since, Hindi Teacher and Footballer have their own member functions as well:
+                    <code> teach-hindi()</code> and <code>play-cricket()</code> respectively.
+                </li>
+                <li>
+                    These functions are only accessed by their own class.
+                </li>
+            </ol>
+            <p>The below table summarizes the above three modes and shows the access specifier of the members of base
+                class in the sub class when derived in public, protected and private modes :</p>
+
+            <div class="if-content-img d-flex flex-column m-5">
+                <img class="if-content m-auto" src="images/inheritance-1.png" alt="" />
+            </div>
+
+            <hr />
+            <h4 class="pt-3 pb-3">Types of Inheritance in C++</h4>
+            <ol>
+                <li>
+                    <strong>Single Inheritance:</strong> In single inheritance, a class is allowed to inherit from only
+                    one class. i.e. one sub class is inherited by one base class only.
+                    <div class="if-content-img d-flex flex-column m-5">
+                        <img class="if-content m-auto" src="images/inheritance-2.png" alt="" />
+                    </div>
+                    <p><strong>Syntax :</strong></p>
+                    <pre>class subclass_name : access_mode base_class
+{
+    // body of subclass
+};</pre>
+                    <p>C++ program to explain single inheritance</p>
+                    <pre>// Single inheritance
+#include &lt;iostream>
+
+using namespace std;
+
+// base class
+class Vehicle {
+    public:
+        Vehicle()
+        {
+            cout << "This is a Vehicle" << endl;
+        }
+};
+
+// sub class derived from two base classes
+class Car: public Vehicle{
+};
+
+// main function
+int main()
+{
+    // creating object of sub class will
+    // invoke the constructor of base classes
+    Car obj;
+    return 0;
+}</pre>
+                    <p><strong>Output :</strong></p>
+                    <pre>This is a vehicle</pre>
+                </li>
+                <li>
+                    <strong>Multiple Inheritance:</strong> Multiple Inheritance is a feature of C++ where a class can
+                    inherit from more than one classes. i.e one sub class is inherited from more than one base classes.
+                    <div class="if-content-img d-flex flex-column m-5">
+                        <img class="if-content m-auto" src="images/inheritance-3.png" alt="" />
+                    </div>
+                    <p><strong>Syntax :</strong></p>
+                    <pre>class subclass_name : access_mode base_class1, access_mode base_class2, ....
+{
+    //body of subclass
+};</pre>
+                    <p>Here, the number of base classes will be separated by a comma (‘, ‘) and access mode for every
+                        base class must be specified.</p>
+                    <p>C++ program to explain multiple inheritance</p>
+
+                    <pre>#include &lt;iostream>
+
+using namespace std;
+
+// first base class
+class Vehicle {
+    public:
+        Vehicle()
+        {
+            cout << "This is a Vehicle" << endl;
+        }
+};
+
+// second base class
+class FourWheeler {
+    public:
+    FourWheeler()
+    {
+        cout << "This is a 4 wheeler Vehicle" << endl;
+    }
+};
+
+// sub class derived from two base classes
+class Car: public Vehicle, public FourWheeler {
+};
+
+// main function
+int main()
+{
+    // creating object of sub class will
+    // invoke the constructor of base classes
+    Car obj;
+    return 0;
+}</pre>
+                    <p><strong>Output :</strong></p>
+                    <pre>This is a Vehicle
+This is a 4 wheeler Vehicle</pre>
+
+                </li>
+                <li>
+                    <p><strong>Multilevel Inheritance:</strong> In this type of inheritance, a derived class is created
+                        from another derived class.</p>
+                    <div class="if-content-img d-flex flex-column m-5">
+                        <img class="if-content m-auto" src="images/inheritance-4.png" alt="" />
+                    </div>
+                    <p><strong>C++ program to implement Multilevel Inheritance</strong></p>
+                    <pre>#include &lt;iostream>
+
+using namespace std;
+
+// base class
+class Vehicle
+{
+    public:
+        Vehicle()
+        {
+            cout << "This is a Vehicle" << endl;
+        }
+};
+
+class fourWheeler: public Vehicle
+{ 
+    public:
+    fourWheeler()
+    {
+        cout << "Objects with 4 wheels are vehicles" << endl;
+    }
+};
+
+// sub class derived from two base classes
+class Car: public fourWheeler {
+    public:
+    car()
+    {
+        cout << "Car has 4 Wheels" << endl;
+    }
+};
+
+// main function
+int main()
+{
+    //creating object of sub class will
+    //invoke the constructor of base classes
+    Car obj;
+
+    return 0;
+}</pre>
+                    <p><strong>Output :</strong></p>
+                    <pre>This is a Vehicle
+Objects with 4 wheels are vehicles
+Car has 4 Wheels</pre>
+                </li>
+                <li>
+                    <p><strong>Hierarchical Inheritance:</strong> In this type of inheritance, more than one sub class
+                        is inherited from a single base class. i.e. more than one derived class is created from a single
+                        base class.</p>
+                    <div class="if-content-img d-flex flex-column m-5">
+                        <img class="if-content m-auto" src="images/inheritance-5.png" alt="" />
+                    </div>
+                    <p>C++ program to explain Hierarchical inheritance</p>
+                    <pre>#include &lt;iostream>
+
+using namespace std;
+
+// base class
+class Vehicle
+{
+    public:
+        Vehicle()
+        {
+            cout << "This is a Vehicle" << endl;
+        }
+};
+
+// first sub class
+class Car: public Vehicle {
+};
+
+// second sub class
+class Bus: public Vehicle {
+};
+
+// main function
+int main()
+{
+    // creating object of sub class will
+    // invoke the constructor of base class
+    Car obj1;
+
+    Bus obj2;
+
+    return 0;
+}</pre>
+                    <p><strong>Output :</strong></p>
+                    <pre>This is a Vehicle
+This is a Vehicle</pre>
+                </li>
+                <li>
+                    <p><strong>Hybrid (Virtual) Inheritance:</strong> Hybrid Inheritance is implemented by combining
+                        more than one type of inheritance. For example: Combining Hierarchical inheritance and Multiple
+                        Inheritance.</p>
+                    <p>Below image shows the combination of hierarchical and multiple inheritance.</p>
+                    <div class="if-content-img d-flex flex-column m-5">
+                        <img class="if-content m-auto" src="images/inheritance-6.png" alt="" />
+                    </div>
+                    <p>C++ program to explain Hybrid inheritance</p>
+                    <pre>#include &lt;iostream>
+
+using namespace std;
+
+// base class
+class Vehicle
+{
+    public:
+        Vehicle()
+        {
+            cout << "This is a Vehicle" << endl;
+        }
+};
+
+//base class
+class Fare
+{
+    public:
+        Fare()
+        {
+            cout<<"Fare of Vehicle\n";
+        }
+};
+
+// first sub class
+class Car: public Vehicle {
+};
+
+// second sub class
+class Bus: public Vehicle, public Fare {
+};
+
+// main function
+int main()
+{
+    // creating object of sub class will
+    // invoke the constructor of base class
+    Bus obj2;
+
+    return 0;
+}</pre>
+                    <p><strong>Output :</strong></p>
+                    <pre>This is a Vehicle
+Fare of Vehicle</pre>
+                </li>
+            </ol>
+
+            <hr />
+
+            <h5 class="pt-3 pb-3">Access specifiers in Inheritance :-</h5>
+            <ol>
+                <li>
+                    When we create a derived class from a base class, we can use different access specifiers to inherit the data members of the base class.
+                </li>
+                <li>
+                    These can be public, protected or private
+                </li>
+                <li>
+                    As shown in the above example, the base class <code>Person</code> has been inherited <code>publicly</code> by <code>Hindi Teacher</code> and <code>cricketer</code>
+                </li>
+            </ol>
+            <h5 class="pt-3 pb-3">Member Function Overriding in Inheritance :-</h5>
+            <p>When the, base class and derived class have member functions with same name and arguments.</p>
+            <p>If you create an object of the derived class and try to access that member function, the member function in derived class is only invoked.</p>
+            <p>The member function of derived class overrides the member function of base class.</p>
+        </div>
+
+        <div class="but text-right">
+            <button class="btn btn-primary pull-right"><a href="inheritance-access-control.html">Next Topic&nbsp;<i
+                        class="fas fa-arrow-right "></i><br />C++ Inheritance Access Control</a></button>
+        </div><br />
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="row footer">
+            <div class="logo">
+                <img src="../image.png" alt="" class="f-img">
+                <h5>LEARN CODE DISCUSS</h5>
+            </div>
+
+            <div class="footer-column ">
+
+                <ul class="footer-ul">
+                    <li class="foot-header"><strong>CodeMistic</strong></li>
+
+                    <li class="f-li"><a href="../index.html" class="f-links">Home</a></li>
+
+
+                    <li class="f-li"><a href="../team.html" class="f-links">Our Team</a></li>
+
+
+                    <li class="f-li"><a href="../terms-and-conditions.html" class="f-links">Terms of Service</a></li>
+
+
+                    <li class="f-li"><a href="../privacy-policy.html" class="f-links">Privacy Policy</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-column ">
+
+                <ul class="footer-ul ">
+                    <li class="foot-header"><strong>LEARN</strong></li>
+
+                    <li class="f-li"><a href="../cpp.html" class="f-links">C++</a></li>
+
+
+                    <li class="f-li"><a href="../java.html" class="f-links">Java</a></li>
+
+
+                    <li class="f-li"><a href="../python.html" class="f-links">Python</a></li>
+
+
+                    <li class="f-li"><a href="../dsa.html" class="f-links">DSA</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-column ">
+
+                <ul class="footer-ul ">
+                    <li class="foot-header"><strong>CONTRIBUTE</strong></li>
+
+                    <li class="f-li"><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSduxk_aP9M1lqUAebQJwRXiVm2ukmdgv3T7gjBpOsr_gdeOcQ/viewform?usp=sf_link"
+                            class="f-links" target="_blank">Write an Article/Blog</a></li>
+
+
+                    <li class="f-li"><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link"
+                            class="f-links" target="_blank">Internships</a></li>
+
+
+                    <li class="f-li"><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSe9nr_Aw0fGIqm3_xWhqEzTr3UWdOFz-pvKpQvkAsosORYq9w/viewform?usp=sf_link"
+                            class="f-links" target="_blank">Videos</a></li>
+
+                    <li class="f-li"><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLScOW3hJjxxwzPYL4u51oboc4T1aDtIUEIRa20hKPKu4UlcZAA/viewform?usp=sf_link"
+                            class="f-links" target="_blank">Donations/Funds</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-links" style="text-align: center;">
+            <!-- <h7>Connect With Us</h7><br><br> -->
+            <a href="https://www.facebook.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-facebook "
+                    style="color:#3b5998; "></i></a>
+            <a href="https://www.instagram.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-instagram "
+                    style="color:#e95950; "></i></a>
+            <a href="https://www.twitter.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-twitter "
+                    style="color:#8accf5; "></i></a>
+            <a href="https://www.linkedin.com/company/codemistic " target="_blank "><i
+                    class="icons fa-2x fab fa-linkedin " style="color:#88b3ee; "></i></a>
+            <a href="https://t.me/codemistic " target="_blank "><i class="icons fa-2x fab fa-telegram "
+                    style="color:#65adda; "></i></a>
+
+            <a href="https://www.youtube.com/channel/UCS1Iv_kkgQGDwoXtvrlwlag " target="_blank "><i
+                    class="icons fa-2x fab fa-youtube " style="color:red; "></i></a>
+            <p class="foot mt-3">&#169 Copyright : <strong>CodeMistic</strong> All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <!-- CSS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+        crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
+        crossorigin="anonymous "></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='../side.js'></script>
+</body>
+
+</html>

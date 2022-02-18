@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Operators are symbols that perform operations on operands and produces the result. For example, + is an operator used for addition, while - is an operator used for subtraction." />
+    <meta name="keywords" content="c++  operators,operators in c++, operators in cpp, operators in c++, operators in cpp, operators, pointers, operators, what is a operators in c++, what are operators in c++, what is a operators in cpp, what are operators in cpp" />
+    <title>C++ Introduction | C++ Tutorials | CodeMistic</title>
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MCNC43J');</script>
+    <!-- End Google Tag Manager -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTQSLH0XW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-YPTQSLH0XW');
+    </script>
+
+    <script data-ad-client="ca-pub-5352867889640158" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="img/png" href="../favicon.png"/>
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous"/>
+
+    <!-- FONTS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Ubuntu&family=Varela+Round&display=swap" rel="stylesheet"/>
+
+    <!-- Animate on scroll -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../lang_styles.css"/>
+    
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCNC43J"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- NAVIGATION BAR -->
+
+    <!-- <div class="container-fluid"> -->
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark">
+        <a class="navbar-brand" href="../index.html">CODEMISTIC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tutorials
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        <a class="dropdown-item" href="../cpp.html">C++</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../python.html">Python</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../java.html">Java</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../dsa.html">Data Structure and Algorithms</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../tutorials.html">All Tutorials</a>
+                        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../teen-code.html">Teen-Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../campus.html">Campus Programme</a>
+                </li>
+                <!-- <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" target="_blank">Contribute</a>
+                    </li> -->
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="../register.html">Join Our Community</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Accordion -->
+
+    <section class="lbar">
+        <div class="lang-img col-md-2">
+            <img src="../logo/cpp.png" alt="c++" class="cpp-img" style="margin-left: -25px;" >
+        </div>
+        <ul id="accordion" class="accordion ml-5">
+            <li class=" collape in">
+                <div class="link">C++ Introduction<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse show">
+                    <li>
+                        <a href="getting-started.html" class="closed">Getting Started</a>
+                    </li>
+                    <li>
+                        <a href="variables-and-literals.html " class="closed">C++ Variables and Literals</a>
+                    </li>
+                    <li>
+                        <a href="data-types.html" class="closed">C++ Data Types</a>
+                    </li>
+                    <li>
+                        <a href="input-output.html" class="closed">C++ Basic I/O</a>
+                    </li>
+                    <li>
+                        <a href="type-conversion.html" class="closed">C++ Type Conversion</a>
+                    </li>
+                    <li>
+                        <a href="operators.html" class="opened">C++ Operators</a>
+                    </li>
+                    <li>
+                        <a href="comments.html" class="closed">C++ Comments</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Flow Control<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                                <a href="if-else.html" class="closed">C++ if...else</a>
+                            </li>
+                            <li>
+                                <a href="for-loop.html" class="closed">C++ for Loop</a>
+                            </li>
+                            <li>
+                            <a href="do-while.html" class="closed">C++ do...while Loop</a>
+                        </li>
+                        <li>
+                            <a href="break-and-continue.html" class="closed">C++ break & continue</a>
+                        </li>
+                        <li>
+                            <a href="switch-statement.html" class="closed">C++ switch Statement</a>
+                        </li>
+                        <li>
+                            <a href="goto-statement.html" class="closed">C++ goto Statement</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Function<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="functions.html" class="closed">C++ Functions</a>
+                         </li>
+                         <li>
+                            <a href="function-types.html" class="closed">C++ Function Types</a>
+                        </li>
+                        <li>
+                            <a href="function-overloading.html" class="closed">C++ Function Overloading</a>
+                        </li>
+                        <li>
+                            <a href="default-argument.html" class="closed">C++ Default Argument</a>
+                        </li>
+                        <li>
+                            <a href="storage-class.html" class="closed">C++ Storage Class</a>
+                        </li>
+                        <li>
+                            <a href="recursion.html" class="closed">C++ Recursion</a>
+                        </li>
+                        <li>
+                            <a href="return-reference.html" class="closed">C++ Return Reference</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Arrays & String<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                                <a href="arrays.html" class="closed">C++ Arrays</a>
+                            </li>
+                            <li>
+                                <a href="multidimensional-arrays.html" class="closed">C++ Multidimensional Arrays</a>
+                            </li>
+                            <li>
+                                <a href="function-arrays.html" class="closed">C++ Function and Array</a>
+                            </li>
+                            <li>
+                                <a href="string.html" class="closed">C++ String</a>
+                            </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Structures<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="structures.html" class="closed">C++ Structures</a>
+                         </li>
+                         <li>
+                            <a href="structure-fuction.html" class="closed">Structure and Function</a>
+                        </li>
+                        <li>
+                            <a href="pointers-structures.html" class="closed">C++ Pointers to Structure</a>
+                        </li>
+                        <li>
+                            <a href="enumeration.html" class="closed">C++ Enumeration</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Object & Class<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="object-class.html" class="closed">C++ Objects and Class</a>
+                         </li>
+                         <li>
+                            <a href="constructors.html" class="closed">C++ Constructors</a>
+                        </li>
+                        <li>
+                            <a href="objects-functions.html" class="closed">C++ Objects & Function</a>
+                        </li>
+                        <li>
+                            <a href="operator-overloading.html" class="closed">C++ Operator Overloading</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Pointers<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="pointers.html" class="closed">C++ Pointers</a>
+                         </li>
+                         <li>
+                            <a href="pointers-arrays.html" class="closed">C++ Pointers and Arrays</a>
+                        </li>
+                        <li>
+                            <a href="pointers-functions.html" class="closed">C++ Pointers and Functions</a>
+                        </li>
+                        <li>
+                            <a href="memory-management.html" class="closed">C++ Memory Management</a>
+                        </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Inheritance<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                             <a href="inheritance.html" class="closed">C++ Inheritance</a>
+                         </li>
+                         <li>
+                            <a href="inheritance-access-control.html" class="closed">Inheritance Access Control</a>
+                        </li>
+                        <li>
+                            <a href="function-overriding.html" class="closed">C++ Function Overriding</a>
+                        </li>
+                        <li>
+                            <a href="inheritence-types.html" class="closed">Inheritance Types</a>
+                        </li>
+                        <li>
+                            <a href="friend-function.html" class="closed">C++ Friend Function</a>
+                        </li>
+                        <li>
+                            <a href="virtual-function.html" class="closed">C++ Virtual Function</a>
+                        </li>
+                        <li>
+                            <a href="templates.html" class="closed">C++ Templates</a>
+                        </li>
+                </ul>
+            </li>
+
+        </ul>
+
+    </section>
+
+
+
+    <br>
+    <section class="para">
+        <!-- <div class="but mt-4">
+            &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-md btn-primary "><a href="../dsa.html"><i
+                        class="fas fa-arrow-left "></i>&nbsp;Back to Index</a></button>
+        </div> -->
+
+        <!-- breadcrumb -->
+
+        <nav class="bdcrumb" id="bdcrumb" aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../tutorials.html"><i class="fas fa-home"></i></a></li>
+                <li class="breadcrumb-item"><a href="../cpp.html">C++ Index</a></li>
+                <li class="breadcrumb-item active" aria-current="page">C++ Operators </li>
+            </ul>
+        </nav>
+
+        <!-- breadcrumb ending -->
+
+        <!-- HEADING -->
+
+        <div class="wrapper">
+            <h3 class="pb-3 pt-3">C++ Operators</h3>
+            <p>In this tutorial, we will learn about the different types of operators in C++
+with the help of examples. In programming, an operator is a symbol that
+operates on a value or a variable or operands.
+</p>
+            <p>Operators are symbols that perform operations on operands and produces
+the result. For example, + is an operator used for addition, while - is an
+operator used for subtraction.</p>
+            <p>Operators in C++ can be classified into 6 types:</p>
+            <ol>
+                <li>Arithmetic Operators</li>
+                <li>Assignment Operators</li>
+                <li>Relational Operators</li>
+                <li>Logical Operators</li>
+                <li>Bitwise Operators</li>
+                <li>Other Operators</li>
+            </ol>
+            <hr/>
+            <h4 class="pt-3 pb-3"> 1. C++ Arithmetic Operators</h4>
+            <p>Arithmetic operators are used to perform arithmetic operations on variables
+and data. For example,</p>
+            <pre>a + b;</pre>
+            <p>Here, the + operator is used to add two variables a and b. Similarly there are
+various other arithmetic operators in C++.</p>
+            <div class="d-flex justify-content-center">
+                <table class="content m-2">
+                    <thead>
+                        <th style="border-radius: 3px 0 0 3px;">Operator</th>
+                        <th>Operation</th>
+                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">+</td>
+                            <td style="text-align: center;">Addition(needs two operands to work)</td>
+                            
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">-</td>
+                            <td style="text-align: center;">Subtraction(needs minimum one and maximum two operand to work)
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">*</td>
+                            <td style="text-align: center;">Multiplication(needs two operands to work)</td>
+                            
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">/</td>
+                            <td style="text-align: center;">Division(needs two operands to work)</td>
+                            
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">%</td>
+                            <td style="text-align: center;">Modulo Operation (Remainder after division and needs two integer operands to work)</td>
+                            
+                        </tr>
+                        
+                        
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Example 1: Arithmetic Operators</strong></p>
+            <pre>#include &lt;iostream>
+using namespace std;
+int main() {
+     int x, y;
+     x = 7;
+     y = 2;
+
+    // printing the sum of x and y
+    cout << "x + y = " << (x + y) << endl;
+
+     // printing the difference of x and y
+     cout << "x - y = " << (x - y) << endl;
+
+     // printing the product of x and y
+     cout << "x * y = " << (x * y) << endl;
+
+     // printing the division of x by y
+     cout << "x / y = " << (x / y) << endl;
+
+     // printing the modulo of x by y
+     cout << "x % y = " << (x % y) << endl;
+
+     return 0;
+}</pre>
+            <p><strong>Output:</strong></p>
+            <pre>x + y = 9
+x - y = 5
+x * y = 14
+x / y = 3
+x % y = 1
+</pre>
+            <p>Here, the operators +, - and * compute addition, subtraction, and
+multiplication respectively as we might have expected.</p><br>
+            <p><strong>/ Division Operator</strong></p>
+            <p>Note the operation (x / y) in our program. The / operator is the division
+operator.</p>
+            <p>As we can see from the above example, if an integer is divided by another integer, we will get the quotient. However, if either divisor or dividend is a floating-point number, we will get the result in decimals.</p>
+            <pre>In C++,
+
+//integer divided by int is an integer.
+
+7/2 is 3
+
+//float divided by int is a float.
+
+7.0 / 2 is 3.5
+
+7 / 2.0 is 3.5
+
+//float divided by float is a float.
+
+7.0 / 2.0 is 3.5
+</pre>
+            <p><strong>Note:</strong> The above example also shows implicit type coversion</p><br>
+            <p><strong>% Modulo Operator</strong></p>
+            <p>The modulo operator % computes the remainder. When x = 9 is divided by y= 4, the remainder is 1.</p>
+            <p><strong>Note:</strong>The % operator can only be used with integers.</p>
+            <hr/>
+            <h5 class="pt-3 pb-3"> Increment and Decrement Operators</h5>
+            <p>C++ also provides increment and decrement operators: <code>++</code> and <code>--</code> respectively. <code>++</code> increases the value of the operand by <strong>1</strong>, while <code>--</code> decreases it by <strong>1</strong>.</p>
+            <p>For example,</p>
+            <pre>int a = 5;
+
+// increasing num by 1
+++a;</pre>
+            <p>Here, the value of <code>a</code> gets increased to <strong>6</strong> from its initial value of <strong>5</strong>.</p>
+            <p><strong>Example 2: Increment and Decrement Operators</strong></p>
+            <pre>// Working of increment and decrement operators
+
+#include &lt;iostream>
+using namespace std;
+int main() {
+
+    int x = 10, y = 100, result_x, result_y;
+    // incrementing a by 1 and storing the result in result_x
+    result_x = ++x;
+    cout << "result_x = " << result_y << endl;
+
+     // decrementing b by 1 and storing the result in result_y
+     result_y = --y;
+     cout << "result_y = " << result_y << endl;
+
+     return 0;
+}</pre>
+            <p><strong>Output:</strong></p>
+            <pre>result_x = 11
+result_y = 99
+</pre>
+            <p>In the above program, we used ++ and -- operator as <strong>prefixes</strong>. We can
+also use these operators as <strong>postfix</strong>.<br>
+There is a slight difference when these operators are used as a prefix
+versus when they are used as a postfix.
+</p>
+            <p>In prefix the value of the operand is first increased/decreased and then the
+next operation is performed whereas in postfix first the operation is
+performed on the operand then the value is increased/decreased. It depends on the situation whether you have to use postfix or prefix.</p>
+            <hr/>
+
+            <h4 class="pt-3 pb-3">2. C++ Assignment Operators</h4>
+            <p>In C++, assignment operators are used to assign values to variables. For
+example,</p>
+            <pre>// assign 5 to x
+x = 5;</pre>
+            <p>Here, we have assigned a value of <strong>5</strong> to the variable <code>a</code>.</p>
+            <div class="d-flex justify-content-center">
+                <table class="content m-2">
+                    <thead>
+                        <th style="border-radius: 3px 0 0 3px;">Operator</th>
+                        <th>Operation</th>
+                        <th>Equivalent to</th>
+                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">=</td>
+                            <td style="text-align: center;">x=y;</td>
+                            <td style="text-align: center;">x=y;</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">+=</td>
+                            <td style="text-align: center;">x+=y;
+                            </td>
+                            <td style="text-align: center;">x=x+y;</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">-=</td>
+                            <td style="text-align: center;">x-=y;</td>
+                            <td style="text-align: center;">x=x-y;</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">*=</td>
+                            <td style="text-align: center;">x*=y;</td>
+                            <td style="text-align: center;">x=x*y;</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">/=</td>
+                            <td style="text-align: center;">x/=y;</td>
+                            <td style="text-align: center;">x=x/y;</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">%=</td>
+                            <td style="text-align: center;">x%=y;</td>
+                            <td style="text-align: center;">x=x%y;</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Example 2: Assignment Operators</strong></p>
+            <pre>#include &lt;iostream>
+using namespace std;
+int main() {
+     int x, y, temp;
+
+     // 2 is assigned to x
+     x = 2;
+
+     // 7 is assigned to y
+     y = 7;
+
+     // value of a is assigned to temp
+     temp = a; // temp will be 2
+     cout << "temp = " << temp << endl;
+
+     // assigning the sum of x and y to x
+     x += y; // x= x + y
+     cout << "x = " << x << endl;
+
+     return 0;
+}
+</pre>
+            <p><strong>Output:</strong></p>
+            <pre>temp = 2
+x = 9</pre>
+            <hr/>
+            <h4 class="pt-3 pb-3">3. C++ Relational Operators</h4>
+            <p>A relational operator is used to check the relationship between two
+operands. For example,</p>
+            <pre>// checks if x is greater than y
+x > y;
+</pre>
+            <p>Here, <code>></code> is a relational operator. It checks if <code>x</code> is greater than <code>y</code> or not.
+If the relation is <strong>true</strong>, it returns <strong>1</strong> whereas if the relation is <strong>false</strong>, it returns <strong>0</strong></p>
+            <div class="d-flex justify-content-center">
+                <table class="content m-2">
+                    <thead>
+                        <th style="border-radius: 3px 0 0 3px;">Operator</th>
+                        <th>Meaning</th>
+                        <th>Example</th>
+                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">==</td>
+                            <td style="text-align: center;">Is Equal To</td>
+                            <td style="text-align: center;">3 == 5 gives us false
+</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">!=</td>
+                            <td style="text-align: center;">Not Equal To 
+                            </td>
+                            <td style="text-align: center;">3 != 5 gives us true</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">></td>
+                            <td style="text-align: center;">Greater Than</td>
+                            <td style="text-align: center;">3 > 5 gives us false</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><</td>
+                            <td style="text-align: center;">Less Than</td>
+                            <td style="text-align: center;">3 < 5 gives us true</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">>=</td>
+                            <td style="text-align: center;">Greater Than or Equal To</td>
+                            <td style="text-align: center;">3 >= 5 give us false</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><=</td>
+                            <td style="text-align: center;">Less Than or Equal To</td>
+                            <td style="text-align: center;">3 <= 5 gives us true</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Note:</strong>The relational operator always returns only 2 values i.e. 1 or 0. It will
+never return the operands used with these operators. </p>
+            <p><strong>Example 4: Relational Operators</strong></p>
+            <pre>#include &lt;iostream>
+using namespace std;
+int main() {
+
+     int a, b;
+     x = 3;
+     y = 5;
+
+     int result;
+
+     result = (x == y);   // false
+     cout << "3 == 5 is " << result << endl;
+
+     result = (x != y);   // true
+     cout << "3 != 5 is " << result << endl;
+
+     result = x > y;      // false
+     cout << "3 > 5 is " << result << endl;
+
+     result = x < y;      // true
+     cout << "3 < 5 is " << result << endl;
+
+     result = x >= y;     // false
+     cout << "3 >= 5 is " << result << endl;
+
+     result = x <= y;     // true
+     cout << "3 <= 5 is " << result << endl;
+
+     return 0;
+}
+</pre>
+            <p><strong>Output:</strong></p>
+            <pre>3 == 5 is 0
+3 != 5 is 1
+3 > 5 is 0
+3 < 5 is 1
+3 >= 5 is 0
+3 <= 5 is 1</pre>
+            <p><strong>Note:</strong>Relational operators are used in decision making and loops.</p>
+            <hr/>
+            <h4 class="pt-3 pb-3">4. C++ Logical Operators</h4>
+            <p>Logical operators are used to check whether an expression is true or false.
+If the expression is true, it returns 1 whereas if the expression is false, it
+returns 0.</p>
+            <div class="d-flex justify-content-center">
+                <table class="content m-2">
+                    <thead>
+                        <th style="border-radius: 3px 0 0 3px;">Operator</th>
+                        <th>Example</th>
+                        <th>Meaning</th>
+                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">&&</td>
+                            <td style="text-align: center;">expression1 && expression 2</td>
+                            <td style="text-align: center;">Logical AND.<br>
+True only if both the expressions are true.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">||</td>
+                            <td style="text-align: center;">expression1 || expression 2 
+                            </td>
+                            <td style="text-align: center;">Logical OR.<br>
+True if at least one of the expressions is true.</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">!</td>
+                            <td style="text-align: center;">!expression</td>
+                            <td style="text-align: center;">Logical NOT.<br>
+True only if the expression is false.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>In C++, logical operators are commonly used in decision making. To further
+understand the logical operators, let's see the following examples,</p>
+            <pre>Suppose,
+x = 9
+y = 15
+Then,
+(a > 3) && (b > 5) evaluates to true
+(a > 3) && (b < 5) evaluates to false
+(a > 3) || (b > 5) evaluates to true
+(a > 3) || (b < 5) evaluates to true
+(a < 3) || (b < 5) evaluates to false
+!(a == 3) evaluates to true
+!(a > 3) evaluates to false</pre>
+            <p><strong>Example 5: Logical Operators</strong></p>
+            <pre>#include <iostream>
+using namespace std;
+int main() {
+ int result;
+     result = (5 != 15) && (5 < 15); // true
+     cout << "(5 != 15) && (5 < 15) is " << result << endl;
+
+     result = (5 == 15) && (5 < 15); // false
+     cout << "(5 == 15) && (5 < 15) is " << result << endl;
+
+     result = (5 == 15) && (5 > 15); // false
+     cout << "(5 == 15) && (5 > 15) is " << result << endl;
+
+     result = (5 != 15) || (5 < 15); // true
+     cout << "(5 != 15) || (5 < 15) is " << result << endl;
+
+     result = (5 != 15) || (5 > 15); // true
+     cout << "(5 != 15) || (5 > 15) is " << result << endl;
+
+     result = (5 == 15) || (5 > 15); // false
+     cout << "(5 == 15) || (5 > 15) is " << result << endl;
+
+     result = !(5 == 20); // true
+     cout << "!(5 == 20) is " << result << endl;
+
+     result = !(5 == 5); // false
+     cout << "!(5 == 5) is " << result << endl;
+
+    return 0;
+}</pre>
+            <p><strong>Output:</strong></p>
+            <pre>(5 != 15) && (5 < 15) is 1
+(5 == 15) && (5 < 15) is 0
+(5 == 15) && (5 > 15) is 0
+(5 != 15) || (5 < 15) is 1
+(5 != 15) || (5 > 15) is 1
+(5 == 15) || (5 < 15) is 0
+!(5 == 20) is 1
+!(5 == 5) is 0</pre>
+            <p><strong>Explanation of logical operator program</strong></p>
+            <ul>
+                <li>(5 != 15) && (5 < 15) evaluates to 1 because both operands (5 !=15)
+and (5 < 15) are 1 (true).</li>
+                <li>(5 == 15) && (5 < 15) evaluates to 0 because the operand (5 ==
+15) is 0 (false).</li>
+                <li>(5 == 15) && (5 > 15) evaluates to 0 because both operands (5 == 15) and (5
+> 15) are 0 (false).</li>
+                <li>(5 != 15) || (5 < 15) evaluates to 1 because both operands (5 != 15) and (5
+< 15) are 1 (true).</li>
+                <li>(5 != 15) || (5 > 15) evaluates to 1 because the operand (5 !=
+15) is 1 (true).</li>
+                <li>(5 == 15) || (5 > 15) evaluates to 0 because both operands (5 == 15) and (5
+> 15) are 0 (false).</li>
+                <li>!(5 == 20) evaluates to 1 because the operand (5 == 20) is 0 (false).</li>
+                <li>!(5 == 5) evaluates to 0 because the operand (5 == 5) is 1 (true).</li>
+            </ul>
+            <hr/>
+            <h4 class="pt-3 pb-3">5. C++ Bitwise Operators</h4>
+            <p>In C++, bitwise operators are used to perform operations on individual bits.
+They can only be used alongside <code>char</code> and <code>int</code> data types.
+</p>
+            <div class="d-flex justify-content-center">
+                <table class="content m-2">
+                    <thead>
+                        <th style="border-radius: 3px 0 0 3px;">Operator</th>
+                        <th>Description</th>
+                        
+                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">&</td>
+                            <td style="text-align: center;">Binary AND</td>
+                            
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">|</td>
+                            <td style="text-align: center;">Binary OR 
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">^</td>
+                            <td style="text-align: center;">Binary XOR</td>
+                            
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">~</td>
+                            <td style="text-align: center;">Binary One's Complement</td>
+                            
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><<</td>
+                            <td style="text-align: center;">Binary Shift Left</td>
+                            
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">>></td>
+                            <td style="text-align: center;">Binary Shift Right</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+
+
+
+
+
+            
+
+        
+
+        </div>
+        <div class="but text-right">
+            <button class="btn btn-primary pull-right"><a href="comments.html">Next Topic&nbsp;<i
+                        class="fas fa-arrow-right "></i><br/>C++ Comments</a></button>
+        </div><br>
+    </section>
+    
+    <!-- footer -->
+    
+    <footer >
+        <div class="row footer" >
+            <div class="logo">
+                <img src="../image.png" alt="" class="f-img">
+                <h5>LEARN CODE DISCUSS</h5>
+            </div>
+            
+                <div class="footer-column ">
+                    
+                    <ul class="footer-ul">
+                        <li class="foot-header"><strong>CodeMistic</strong></li>
+                        
+                            <li class="f-li"><a href="../index.html" class="f-links">Home</a></li>
+                        
+                        
+                            <li class="f-li"><a href="../team.html" class="f-links">Our Team</a></li>
+                        
+                        
+                            <li class="f-li"><a href="../terms-and-conditions.html" class="f-links">Terms of Service</a></li>
+                        
+                        
+                            <li class="f-li"><a href="../privacy-policy.html" class="f-links">Privacy Policy</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-column ">
+                  
+                    <ul class="footer-ul ">
+                        <li class="foot-header"><strong>LEARN</strong></li>
+                        
+                            <li class="f-li"><a href="../cpp.html" class="f-links">C++</a></li>
+                        
+                        
+                            <li class="f-li"><a href="../java.html" class="f-links">Java</a></li>
+                        
+                        
+                            <li class="f-li"><a href="../python.html" class="f-links">Python</a></li>
+                        
+                        
+                            <li class="f-li"><a href="../dsa.html" class="f-links">DSA</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-column ">
+                    
+                    <ul class="footer-ul ">
+                        <li class="foot-header"><strong>CONTRIBUTE</strong></li>
+                        
+                            <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSduxk_aP9M1lqUAebQJwRXiVm2ukmdgv3T7gjBpOsr_gdeOcQ/viewform?usp=sf_link" class="f-links" target="_blank">Write an Article/Blog</a></li>
+                        
+                        
+                            <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" class="f-links" target="_blank">Internships</a></li>
+                        
+                        
+                            <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe9nr_Aw0fGIqm3_xWhqEzTr3UWdOFz-pvKpQvkAsosORYq9w/viewform?usp=sf_link" class="f-links" target="_blank">Videos</a></li>
+                        
+                            <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLScOW3hJjxxwzPYL4u51oboc4T1aDtIUEIRa20hKPKu4UlcZAA/viewform?usp=sf_link" class="f-links" target="_blank">Donations/Funds</a></li>
+                        
+                    </ul>
+                </div>
+            
+        </div>
+        <div class="footer-links" style="text-align: center;">
+            <!-- <h7>Connect With Us</h7><br><br> -->
+            <a href="https://www.facebook.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-facebook "
+                    style="color:#3b5998; "></i></a>
+            <a href="https://www.instagram.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-instagram "
+                    style="color:#e95950; "></i></a>
+            <a href="https://www.twitter.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-twitter "
+                    style="color:#8accf5; "></i></a>
+            <a href="https://www.linkedin.com/company/codemistic " target="_blank "><i
+                    class="icons fa-2x fab fa-linkedin " style="color:#88b3ee; "></i></a>
+            <a href="https://t.me/codemistic " target="_blank "><i class="icons fa-2x fab fa-telegram "
+                    style="color:#65adda; "></i></a>
+    
+            <a href="https://www.youtube.com/channel/UCS1Iv_kkgQGDwoXtvrlwlag " target="_blank "><i
+                    class="icons fa-2x fab fa-youtube " style="color:red; "></i></a>
+            <p class="foot mt-3">&#169 Copyright : <strong>CodeMistic</strong> All Rights Reserved.</p>
+        </div>
+    </footer>
+       
+    
+    
+    <!-- CSS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+    crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+    crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
+    crossorigin="anonymous "></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='../side.js'></script>
+</body>
+    
+</html>

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A multidimensional array is an array that is more than just a single row of
+        elements. It may have rows & columns, as in a 2D array, or may have 3D . All
+        elements must be of the same data type. C++ starts counting at zero for the
+        indexes of arrays.I" />
+    <meta name="keywords"
+        content="multidimensional arrays, multidimensional array,multidimensional arrays in cpp, multidimensional arrays in c++, multidimensional array in cpp, multidimensional array in c++, what is a multidimensional array, what are multidimensional arrays, what is a multidimensional array in cpp,what is a multidimensional array in c++,what are multidimensional arrays in cpp, what are multidimensional arrays in c++" />
+    <title>C++ Friend Function | C++ Tutorials | CodeMistic</title>
+
+    <!-- Google Ad -->
+
+    <script data-ad-client="ca-pub-5352867889640158" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MCNC43J');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTQSLH0XW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YPTQSLH0XW');
+    </script>
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="img/png" href="../favicon.png" />
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous" />
+
+    <!-- FONTS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Ubuntu&family=Varela+Round&display=swap"
+        rel="stylesheet" />
+
+    <!-- Animate on scroll -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../lang_styles.css" />
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCNC43J" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- NAVIGATION BAR -->
+
+    <!-- <div class="container-fluid"> -->
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark">
+        <a class="navbar-brand" href="../index.html">CODEMISTIC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tutorials
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                        <a class="dropdown-item" href="../cpp.html">C++</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../python.html">Python</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../java.html">Java</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../dsa.html">Data Structure and Algorithms</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../tutorials.html">All Tutorials</a>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../teen-code.html">Teen-Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../campus.html">Campus Programme</a>
+                </li>
+                <!-- <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" target="_blank">Contribute</a>
+                    </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../register.html">Join Our Community</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Accordion -->
+
+    <section class="lbar">
+        <div class="lang-img col-md-2">
+            <img src="../logo/cpp.png" alt="c++" class="cpp-img" style="margin-left: -25px;">
+        </div>
+        <ul id="accordion" class="accordion ml-5">
+            <li class=" collape in">
+                <div class="link">C++ Introduction<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="getting-started.html" class="closed">Getting Started</a>
+                    </li>
+                    <li>
+                        <a href="variables-and-literals.html " class="closed">C++ Variables and Literals</a>
+                    </li>
+                    <li>
+                        <a href="data-types.html" class="closed">C++ Data Types</a>
+                    </li>
+                    <li>
+                        <a href="input-output.html" class="closed">C++ Basic I/O</a>
+                    </li>
+                    <li>
+                        <a href="type-conversion.html" class="closed">C++ Type Conversion</a>
+                    </li>
+                    <li>
+                        <a href="operators.html" class="closed">C++ Operators</a>
+                    </li>
+                    <li>
+                        <a href="comments.html" class="closed">C++ Comments</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Flow Control<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="if-else.html" class="closed">C++ if...else</a>
+                    </li>
+                    <li>
+                        <a href="for-loop.html" class="closed">C++ for Loop</a>
+                    </li>
+                    <li>
+                        <a href="do-while.html" class="closed">C++ do...while Loop</a>
+                    </li>
+                    <li>
+                        <a href="break-and-continue.html" class="closed">C++ break & continue</a>
+                    </li>
+                    <li>
+                        <a href="switch-statement.html" class="closed">C++ switch Statement</a>
+                    </li>
+                    <li>
+                        <a href="goto-statement.html" class="closed">C++ goto Statement</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Function<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="functions.html" class="closed">C++ Functions</a>
+                    </li>
+                    <li>
+                        <a href="function-types.html" class="closed">C++ Function Types</a>
+                    </li>
+                    <li>
+                        <a href="function-overloading.html" class="closed">C++ Function Overloading</a>
+                    </li>
+                    <li>
+                        <a href="default-argument.html" class="closed">C++ Default Argument</a>
+                    </li>
+                    <li>
+                        <a href="storage-class.html" class="closed">C++ Storage Class</a>
+                    </li>
+                    <li>
+                        <a href="recursion.html" class="closed">C++ Recursion</a>
+                    </li>
+                    <li>
+                        <a href="return-reference.html" class="closed">C++ Return Reference</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Arrays & String<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="arrays.html" class="closed">C++ Arrays</a>
+                    </li>
+                    <li>
+                        <a href="multidimensional-arrays.html" class="closed">C++ Multidimensional Arrays</a>
+                    </li>
+                    <li>
+                        <a href="function-arrays.html" class="closed">C++ Function and Array</a>
+                    </li>
+                    <li>
+                        <a href="string.html" class="closed">C++ String</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Structures<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="structures.html" class="closed">C++ Structures</a>
+                    </li>
+                    <li>
+                        <a href="structure-fuction.html" class="closed">Structure and Function</a>
+                    </li>
+                    <li>
+                        <a href="pointers-structures.html" class="closed">C++ Pointers to Structure</a>
+                    </li>
+                    <li>
+                        <a href="enumeration.html" class="closed">C++ Enumeration</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Object & Class<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="object-class.html" class="closed">C++ Objects and Class</a>
+                    </li>
+                    <li>
+                        <a href="constructors.html" class="closed">C++ Constructors</a>
+                    </li>
+                    <li>
+                        <a href="objects-fuctions.html" class="closed">C++ Objects & Function</a>
+                    </li>
+                    <li>
+                        <a href="operator-overloading.html" class="closed">C++ Operator Overloading</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Pointers<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li>
+                        <a href="pointers.html" class="closed">C++ Pointers</a>
+                    </li>
+                    <li>
+                        <a href="pointers-arrays.html" class="closed">C++ Pointers and Arrays</a>
+                    </li>
+                    <li>
+                        <a href="pointers-functions.html" class="closed">C++ Pointers and Functions</a>
+                    </li>
+                    <li>
+                        <a href="memory-management.html" class="closed">C++ Memory Management</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">C++ Inheritance<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse show">
+                    <li>
+                        <a href="inheritance.html" class="closed">C++ Inheritance</a>
+                    </li>
+                    <li>
+                        <a href="inheritance-access-control.html" class="closed">Inheritance Access Control</a>
+                    </li>
+                    <li>
+                        <a href="function-overriding.html" class="closed">C++ Function Overriding</a>
+                    </li>
+                    <li>
+                        <a href="inheritence-types.html" class="closed">Inheritance Types</a>
+                    </li>
+                    <li>
+                        <a href="friend-function.html" class="opened">C++ Friend Function</a>
+                    </li>
+                    <li>
+                        <a href="virtual-function.html" class="closed">C++ Virtual Function</a>
+                    </li>
+                    <li>
+                        <a href="templates.html" class="closed">C++ Templates</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+
+    </section>
+
+
+
+    <br>
+    <section class="para">
+        <!-- <div class="but mt-4">
+            &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-md btn-primary "><a href="../dsa.html"><i
+                        class="fas fa-arrow-left "></i>&nbsp;Back to Index</a></button>
+        </div> -->
+
+        <!-- breadcrumb -->
+
+        <nav class="bdcrumb" id="bdcrumb" aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../tutorials.html"><i class="fas fa-home"></i></a></li>
+                <li class="breadcrumb-item"><a href="../cpp.html">C++ Tutorials</a></li>
+                <li class="breadcrumb-item active" aria-current="page">C++ Friend Function</li>
+            </ul>
+        </nav>
+
+        <!-- breadcrumb ending -->
+
+        <!-- HEADING -->
+
+        <div class="wrapper">
+            <h3 class="pb-3 pt-3">Friend Function in C++</h3>
+            <p>In Object-Oriented Programming, a friend Function which is a "friend" of
+                a given class, is a special function that is given the same access as given
+                to the methods to private data and protected data. For example a
+                LinkedList class may be allowed to access private members of Node.</p>
+            <p>A friend Function is declared by the class that is granting access, so friend
+                functions are part of the class interface. A friend function of a class is
+                defined outside that class but it can access all private and protected
+                members of the class. Even though the prototypes for friend functions
+                appear in the class definition, friends are not member functions.In a
+                designed program the private and protected data can be accessed using
+                the function ,if the function is defined as a friend function.The compiler
+                can easily understand that the given function is a Friend Function ,the
+                compiler can do so by seeing a keyword called <code>friend</code>.</p>
+
+            <hr />
+
+            <h4 class="pt-3 pb-3">Properties of friend function</h4>
+            <ul>
+                <li>
+                    Friend of the class can be member of some other class.
+                </li>
+                <li>
+                    Friend of one class can be friend of another class or all the
+                    other classes in single program, such type of friend is
+                    called as Global Friend.
+                </li>
+                <li>
+                    Friend can access the private member or protected
+                    members of the class in which they are declared to be
+                    friend, but they can use the members for a perticular
+                    object.
+                </li>
+                <li>
+                    Friends are non-members hence do not get <code>this</code> pointer
+                </li>
+                <li>
+                    Friends, can be friend of more than one class, hence they
+                    can be used for message passing between the classes.
+                </li>
+                <li>
+                    Friend can be declared anywhere whether in public,
+                    protected or private part of the class.
+                </li>
+            </ul>
+
+            <hr />
+            <h4 class="pt-3 pb-3">Declaration of friend function</h4>
+            <pre>class class_name
+{
+    ….… …… …….
+    friend return_type function_name(argument/s);
+    ….…. …. ……
+}</pre>
+
+            <p>Now, you can define the friend function as a normal function to access the data of
+                the class. No friend keyword is used in the definition.</p>
+            <pre>class className
+{
+    ... .. ...
+    friend return_type functionName(argument/s);
+    ... .. ...
+}
+
+return_type functionName(argument/s)
+{
+    ... .. ...
+    // Private and protected data of className can be accessed from
+    // this function because it is a friend function of className.
+    ... .. ...
+}</pre>
+            <hr />
+            <p>Example 1: Working of friend function</p>
+            <pre>/* working of friend function.*/
+
+#include &lt;iostream> 
+
+using namespace std;
+
+class interspace {
+    private:
+        int centimeter;
+    public:
+        interspace(): centimeter(0) { }
+
+        //friend function
+        friend int addsixteen(interspace);
+};
+
+// friend function definition
+int addsixteen(interspace i) {
+    //accessing private data from non-member function
+    i.centimeter += 16;
+    return i.centimeter;
+}
+
+int main() {
+    interspace I;
+
+    cout<<"interspace: "<< addsixteen(I);
+
+    return 0;
+}</pre>
+            <p><strong>Output:</strong></p>
+            <pre>interspace: 16</pre>
+            <p>Here, friend function addsixteen() is declared inside interspace class. So, the private
+                data centimeter can be accessed from this function.A more meaningful use would to when
+                you need to operate on objects of two different classes.</p>
+            <p><strong>Example 2:</strong>Addition of member of two different classes using friend function</p>
+            <pre>include &lt;iostream>
+
+using namespace std;
+
+// forward declaration class P
+class Q {
+    private:
+        int numberP;
+    public:
+        P(): numberP(25) { }
+
+        // friend function declaration
+        friend int add(P, Q);
+};
+
+class Q {
+    private:
+        int numberQ;
+    public:
+        Q(): number(8) { }
+        // friend function declaration
+        friend int add(P , Q);
+};
+
+// Function add() is the friend function of classes A and B
+// that accesses the member variables numberP and numberQ 
+int add(P objectP, Q objectQ) {
+    return (objectP.numberP + objectQ.numberQ);
+}
+
+int main(){
+    P objectP;
+    Q objectQ;
+
+    cout<<"Sum: "<< add(objectP, objectQ);
+
+    return 0;
+}</pre>
+            <p><strong>Output:</strong></p>
+            <pre>Sum: 33</pre>
+            <p>the above program, classes P and class Q have declared <code>add()</code> as a <strong>friend
+                    function</strong>.
+                Thus, this function can access private data of both the class.Here, <code>add()</code> function adds the
+                private data <code>numberP</code> and <code>numberQ</code> of two objects <code>objectP</code> and
+                <code>objectQ</code> , and returns it to
+                the <strong>main</strong> function.</p>
+        </div>
+
+        <div class="but text-right">
+            <button class="btn btn-primary pull-right"><a href="virtual-function.html">Next Topic&nbsp;<i
+                        class="fas fa-arrow-right "></i><br />C++ Virtual Function</a></button>
+        </div><br />
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="row footer">
+            <div class="logo">
+                <img src="../image.png" alt="" class="f-img">
+                <h5>LEARN CODE DISCUSS</h5>
+            </div>
+
+            <div class="footer-column ">
+
+                <ul class="footer-ul">
+                    <li class="foot-header"><strong>CodeMistic</strong></li>
+
+                    <li class="f-li"><a href="../index.html" class="f-links">Home</a></li>
+
+
+                    <li class="f-li"><a href="../team.html" class="f-links">Our Team</a></li>
+
+
+                    <li class="f-li"><a href="../terms-and-conditions.html" class="f-links">Terms of Service</a></li>
+
+
+                    <li class="f-li"><a href="../privacy-policy.html" class="f-links">Privacy Policy</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-column ">
+
+                <ul class="footer-ul ">
+                    <li class="foot-header"><strong>LEARN</strong></li>
+
+                    <li class="f-li"><a href="../cpp.html" class="f-links">C++</a></li>
+
+
+                    <li class="f-li"><a href="../java.html" class="f-links">Java</a></li>
+
+
+                    <li class="f-li"><a href="../python.html" class="f-links">Python</a></li>
+
+
+                    <li class="f-li"><a href="../dsa.html" class="f-links">DSA</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-column ">
+
+                <ul class="footer-ul ">
+                    <li class="foot-header"><strong>CONTRIBUTE</strong></li>
+
+                    <li class="f-li"><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSduxk_aP9M1lqUAebQJwRXiVm2ukmdgv3T7gjBpOsr_gdeOcQ/viewform?usp=sf_link"
+                            class="f-links" target="_blank">Write an Article/Blog</a></li>
+
+
+                    <li class="f-li"><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link"
+                            class="f-links" target="_blank">Internships</a></li>
+
+
+                    <li class="f-li"><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSe9nr_Aw0fGIqm3_xWhqEzTr3UWdOFz-pvKpQvkAsosORYq9w/viewform?usp=sf_link"
+                            class="f-links" target="_blank">Videos</a></li>
+
+                    <li class="f-li"><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLScOW3hJjxxwzPYL4u51oboc4T1aDtIUEIRa20hKPKu4UlcZAA/viewform?usp=sf_link"
+                            class="f-links" target="_blank">Donations/Funds</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-links" style="text-align: center;">
+            <!-- <h7>Connect With Us</h7><br><br> -->
+            <a href="https://www.facebook.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-facebook "
+                    style="color:#3b5998; "></i></a>
+            <a href="https://www.instagram.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-instagram "
+                    style="color:#e95950; "></i></a>
+            <a href="https://www.twitter.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-twitter "
+                    style="color:#8accf5; "></i></a>
+            <a href="https://www.linkedin.com/company/codemistic " target="_blank "><i
+                    class="icons fa-2x fab fa-linkedin " style="color:#88b3ee; "></i></a>
+            <a href="https://t.me/codemistic " target="_blank "><i class="icons fa-2x fab fa-telegram "
+                    style="color:#65adda; "></i></a>
+
+            <a href="https://www.youtube.com/channel/UCS1Iv_kkgQGDwoXtvrlwlag " target="_blank "><i
+                    class="icons fa-2x fab fa-youtube " style="color:red; "></i></a>
+            <p class="foot mt-3">&#169 Copyright : <strong>CodeMistic</strong> All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <!-- CSS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+        crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
+        crossorigin="anonymous "></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='../side.js'></script>
+</body>
+
+</html>
