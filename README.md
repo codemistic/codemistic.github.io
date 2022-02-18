@@ -5,8 +5,8 @@
 </p></a>
 
 ### This repository is maintainted by <a href="https://www.linkedin.com/in/gantavyamalviya/" target="blank"><img src="https://img.shields.io/badge/-Gantavya Malviya-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/gantavyamalviya/" alt="gantavyamalviya"/></a>
-<p> CodeMistic is an effort to build a community of coders and entrepreneurs in India.
+<p><i> CodeMistic is an effort to build a community of coders and entrepreneurs in India.
 Here you can participate in global events of CodeMistic and win cash prizes and goodies.
 
-You can also learn programming languages with our easy tutorials, so what you are waiting for? Visit <a href="https://codemistic.github.io/"> CodeMistic </a>
+You can also learn programming languages with our easy tutorials, so what you are waiting for? Visit <a href="https://codemistic.github.io/"> CodeMistic </a></i>
   </p>
