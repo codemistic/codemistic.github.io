@@ -467,7 +467,7 @@ footer .mt-3{
 .team_img {
     width: 150px;
     height: 150px;
-    object-fit: cover;
+    
     border-radius: 50%;
     margin: 0 auto 20px auto;
 }
@@ -476,4 +476,9 @@ footer .mt-3{
     color: #fff;
     background-color: steelblue;
     border-color: steelblue;
+}
+.card-img {
+    padding:10px;
+    width: 100%;
+    border-radius: 25px;
 }
