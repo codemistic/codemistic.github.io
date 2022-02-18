@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="The Java StringReader class is a character stream whose source is a string."/>
+<meta name="keywords" content="Java StringReader, StringReader class, StringReader in java,about StringReader class,use of StringReader class,data structure,C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+    <title>Java StringReader | Java Tutorials | CodeMistic</title>
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MCNC43J');</script>
+    <!-- End Google Tag Manager -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTQSLH0XW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-YPTQSLH0XW');
+    </script>
+    <script data-ad-client="ca-pub-5352867889640158" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="img/png" href="../favicon.png"/>
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous"/>
+
+    <!-- FONTS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Ubuntu&family=Varela+Round&display=swap"
+        rel="stylesheet"/>
+
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity=""
+        crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity=""
+        crossorigin="anonymous"/>
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../lang_styles.css"/>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCNC43J"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- NAVIGATION BAR -->
+
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark">
+        <a class="navbar-brand" href="../index.html">CODEMISTIC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tutorials
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        <a class="dropdown-item" href="../cpp.html">C++</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../python.html">Python</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../java.html">Java</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../dsa.html">Data Structure and Algorithms</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../tutorials.html">All Tutorials</a>
+                        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../teen-code.html">Teen-Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../campus.html">Campus Programme</a>
+                </li>
+                <!-- <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" target="_blank">Contribute</a>
+                    </li> -->
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="../register.html">Join Our Community</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+
+
+
+    
+    <!-- Accordion -->
+
+    <section class="lbar">
+        <div class="lang-img col-md-2">
+            <img src="../logo/java.png" alt="dsa" class="cpp-img">
+        </div>
+	<ul id="accordion" class="accordion ml-5">
+            <li>
+                <div class="link">Java Introduction<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse ">
+                    <li>
+                        <a href="hello-world-java.html" class="closed" >Java Hello World</a>
+                    </li>
+                    <li>
+                       <a href="JVM-JRE-JDK-java.html" class="closed">Java JVM, JRE and JDK</a>
+                   </li>
+                   <li>
+                       <a href="data-types-java.html" class="closed">Java Data Types</a>
+                   </li>
+                   <li>
+                       <a href="operators-java.html" class="closed">Java Operators</a>
+                   </li>
+                   <li>
+                       <a href="input-and-output-java.html" class="closed">Java Input and Output</a>
+                   </li>
+                   <li>
+                       <a href="expressions-and-blocks-java.html" class="closed">Java Expressions &amp; Blocks</a>
+                   </li>
+                   <li>
+                       <a href="comment-java.html" class="closed">Java Comment</a>
+                   </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Java Flow Control<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li><a href="if-else-java.html" class="closed">Java if...else</a></li>
+                    <li><a href="switch-statement-java.html" class="closed">Java switch Statement</a></li>
+                    <li><a href="for-loop-java.html" class="closed">Java for Loop</a></li>
+                    <li><a href="for-each-loop-java.html" class="closed">Java for-each Loop</a></li>
+                    <li><a href="while-loop-java.html" class="closed">Java while Loop</a></li>
+                    <li><a href="break-statement-java.html" class="closed">Java break Statement</a></li>
+                    <li><a href="continue-statement-java.html" class="closed">Java continue Statement</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Java Arrays<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse ">
+                    <li><a href="arrays-java.html" class="closed" >Java Arrays</a></li>
+                    <li><a href="multidimensional-array-java.html" class="closed">Multidimensional Array</a></li>
+                    <li><a href="copy-arrays-java.html" class="closed" >Java Copy Arrays</a></li>
+                    
+                </ul>
+            </li>
+            <li>
+                <div class="link">Java OOP(I)<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse ">
+                    <li><a href="class-objects-java.html" class="closed"> Java Class and Objects</a></li>
+                    <li><a href="methods-java.html" class="closed">Java Methods</a></li>
+                    <li><a href="constructor-java.html" class="closed"> Java Constructor</a></li>
+                    <li><a href="string-java.html" class="closed"> Java String</a></li>
+                    <li><a href="access-modifiers-java.html" class="closed"> Java Access Modifiers</a></li>
+                    <li><a href="this-keyword-java.html" class="closed"> Java this Keyword</a></li>
+                    <li><a href="final-keyword-java.html" class="closed"> Java final Keyword</a></li>
+                    <li><a href="recursion-java.html" class="closed"> Java Recursion</a></li>
+                    <li><a href="instance-of-operator-java.html" class="closed"> Java instanceOf Operator</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Java OOP(II)<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse ">
+                    <li><a href="inheritance-java.html" class="closed">Java Inheritance</a></li>
+                    <li><a href="methods-overriding-java.html" class="closed">Java Methods Overriding </a></li>
+                    <li><a href="super-keyword-java.html" class="closed">Java Super Keyword</a></li>
+                    <li><a href="abstract-class-method-java.html" class="closed">Abstract Class &mp; Method</a></li>
+                    <li><a href="interfaces-java.html" class="closed">Java Interfaces</a></li>
+                    <li><a href="polymorphism-java.html" class="closed">Java Polymorphism</a></li>
+                    <li><a href="encapsulation-java.html" class="closed">Java Encapsulation</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Java OOP(III)<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li><a href="nested-inner-class-java.html" class="closed">Nested &amp; Inner Class</a></li>
+                    <li><a href="static-class-java.html" class="closed">Java Static class </a></li>
+                    <li><a href="anonymous-java.html" class="closed">Java Anonymous</a></li>
+                     <li><a href="singleton-java.html" class="closed">Java Singleton</a></li>
+                      <li><a href="enum-class-java.html" class="closed">Java enum Class </a></li>
+                       <li><a href="enum-constructor-java.html" class="closed">Java enum Constructor</a></li>
+                        <li><a href="enum-string-java.html" class="closed">Java enum String</a></li>
+                        <li><a href="reflection-java.html" class="closed">Java Reflection</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Java Exception Handling<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse ">
+                        <li><a href="exceptions-java.html" class="closed" >Java Exceptions</a>
+                        </li>
+                        <li><a href="exception-handling-java.html" class="closed" >Java Exception Handling</a>
+                        </li>
+                        <li> <a href="throw-throws-java.html" class="closed" >Java throw and throws</a>
+                        </li>
+                        <li><a href="catch-multiple-exceptions-java.html" class="closed" >Java catch Multiple Exceptions</a>
+                        </li>
+                        <li ><a href="try-with-resources-java.html" class="closed" >Java try-with-resources</a>
+                        </li>
+                        <li ><a href="annotation-java.html" class="closed" >Java Annotation</a>
+                        </li>
+                        <li><a href="logging-java.html"  class="closed" >Java Logging</a>
+                        </li>
+                        <li><a href="assertions-java.html"  class="closed" >Java Assertions</a>
+                        </li>
+                        
+                </ul>
+            </li>
+            <li>
+                <div class="link">Java List<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                           <li><a href="collections-framework-java.html" class="closed" >Java Collections Framework</a></li>
+                          <li><a href="collection-interface-java.html" class="closed" >Java Collection Interface</a></li>
+                          <li><a href="list-interface-java.html" class="closed" >Java List Interface</a></li>
+                          <li><a href="array-list-java.html" class="closed" >Java ArrayList</a ></li>
+                         <li> <a href="vector-java.html" class="closed" >Java Vector</a></li>
+                         <li> <a href="stack-java.html" class="closed" >Java Stack</a></li>
+                </ul>
+            </li>
+                        <li>
+                <div class="link">Java Queue<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li> <a href="queue-interface-java.html" class="closed">Java Queue Interface </a></li>
+                    <li> <a href="priority-queue-java.html" class="closed">Java PriorityQueue </a></li>
+                    <li> <a href="deque-interface-java.html" class="closed">Java Deque Interface </a></li>
+                    <li> <a href="linked-list-java.html" class="closed">Java LinkedList </a></li>
+                    <li> <a href="array-deque-java.html" class="closed">Java ArrayDeque </a></li>
+                    <li> <a href="blocking-queue-interface-java.html" class="closed">Java BlockingQueue Interface </a></li>
+                    <li> <a href="array-blocking-queue-java.html" class="closed">Java ArrayBlockingQueue </a></li>
+                    <li> <a href="linked-blocking-queue-java.html" class="closed">Java LinkedBlockingQueue </a></li>
+                </ul>
+            </li>
+                        <li>
+                <div class="link">Java Map<i class="fa fa-chevron-down"></i>
+                </div>
+                  <ul class="submenu collapse">
+                            <li><a href="map-interface-java.html" class="closed" >Java Map Interface</a> </li>
+                            <li><a href="hashmap-java.html" class="closed" >Java HashMap</a> <li>
+                            <li><a href="linked-hashmap-java.html" class="closed" >Java LinkedHashMap</a> <li>
+                            <li><a href="weak-hashmap-java.html" class="closed" >Java WeakHashMap</a> <li>
+                            <li><a href="enum-map-java.html" class="closed" >Java EnumMap</a> <li>
+                            <li><a href="sorted-map-interface-java.html" class="closed" >Java SortedMap Interface</a> <li>
+                            <li><a href="navigable-map-interface-java.html" class="closed" >Java NavigableMap Interface</a> <li>
+                            <li><a href="tree-map-java.html" class="closed" >Java TreeMap</a> <li>
+                            <li><a href="concurrent-map-interface-java.html" class="closed" >Java ConcurrentMap Interface</a> <li>
+                            <li><a href="concurrent-hashmap-java.html" class="closed" >Java ConcurrentHashMap</a> <li>
+                </ul>
+            </li>        
+                   <li>
+                <div class="link">Java Set<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                            <li > <a href="set-interface-java.html" class="closed">Java Set Interface</a>    </li>
+                            <li><a href="hashset-java.html" class="closed">Java HashSet</a></li>
+                            <li><a href="linked-hashset-java.html" class="closed">Java LinkedHashSet</a> </li>
+                            <li><a href="enum-set-java.html" class="closed">Java EnumSet</a></li>
+                            <li><a href="sorted-set-interface-java.html" class="closed">Java SortedSet Interface</a></li>
+                            <li><a href="navigable-set-interface-java.html" class="closed">Java NavigableSet Interface</a></li>
+                            <li><a href="tree-set-java.html" class="closed">Java TreeSet</a></li>
+                            <li><a href="algorithms-java.html" class="closed">Java Algorithms</a></li>
+                            <li><a href="iterator-java.html" class="closed">Java Iterator</a></li>
+                            <li><a href="list-iterator-java.html" class="closed">Java ListIterator</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <div class="link">Java I/O Streams<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                            <li > <a href="I/O-streams-java.html" class="closed">Java I/O Streams</a>    </li>
+                            <li><a href="input-stream-java.html" class="closed">Java Input Stream</a></li>
+                            <li><a href="output-stream-java.html" class="closed">Java Output Stream</a> </li>
+                            <li><a href="file-input-stream-java.html" class="closed">Java FileInput Stream</a></li>
+                            <li><a href="file-output-stream-java.html" class="closed">Java FileOutput Stream</a></li>
+                            <li><a href="bytearray-input-stream-java.html" class="closed">Java ByteArrayInput Stream</a></li>
+                            <li><a href="bytearray-output-stream-java.html" class="closed">Java ByteArrayOutput Stream</a></li>
+                            <li><a href="object-input-stream-java.html" class="closed">Java ObjectInput Stream</a></li>
+                            <li><a href="object-output-stream-java.html" class="closed">Java ObjectOutput Stream</a></li>
+                            <li><a href="buffered-input-java.html" class="closed">Java BufferedInput</a></li>
+                            <li><a href="buffered-output-java.html" class="closed">Java BufferedOutput</a></li>
+                            <li><a href="print-input-java.html" class="closed">Java PrintInput</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <div class="link">Java Reader/Writer<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse show">
+                            <li > <a href="reader-java.html" class="closed">Java Reader</a>    </li>
+                            <li><a href="writer-java.html" class="closed">Java Writer</a></li>
+                            <li><a href="input-stream-reader-java.html" class="closed">Java InputStreamReader</a> </li>
+                            <li><a href="output-stream-writer-java.html" class="closed">Java OutputStreamWriter</a></li>
+                            <li><a href="file-reader-java.html" class="closed">Java FileReader</a></li>
+                            <li><a href="file-writer-java.html" class="closed">Java FileWriter</a></li>
+                            <li><a href="buffered-reader-java.html" class="closed">Java BufferedReader</a></li>
+                            <li><a href="buffered-writer-java.html" class="closed">Java BufferedWriter</a></li>
+                            <li><a href="string-reader-java.html" class="opened">Java StringReader</a></li>
+                            <li><a href="string-writer-java.html" class="closed">Java StringWriter</a></li>
+                            <li><a href="print-writer-java.html" class="closed">Java PrintWriter</a></li>
+                           
+                </ul>
+            </li>
+            <li>
+                <div class="link">Additional Topics<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                            <li > <a href="scanner-class-java.html" class="closed">Java Scanner Class</a>    </li>
+                            <li><a href="type-casting-java.html" class="closed">Java Type Casting</a></li>
+                            <li><a href="autoboxing-and-unboxing-java.html" class="closed">Java Autoboxing and Unboxing</a> </li>
+                            <li><a href="lambda-expression-java.html" class="closed">Java Lambda Expression</a></li>
+                            <li><a href="generics-java.html" class="closed">Java Generics</a></li>
+                            <li><a href="file-class-java.html" class="closed">Java File Class</a></li>
+                            <li><a href="wrapper-class-java.html" class="closed">Java Wrapper Class</a></li>
+                            <li><a href="command-line-arguments-java.html" class="closed">Java Command line Arguments</a></li>
+                            
+                           
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    
+
+    <br>
+    <section class="para">
+        <!-- <div class="but mt-4">
+            &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-md btn-primary "><a href="../dsa.html"><i
+                        class="fas fa-arrow-left "></i>&nbsp;Back to Index</a></button>
+        </div> -->
+
+        <!-- breadcrumb -->
+
+        <nav class="bdcrumb" id="bdcrumb" aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a  href="../tutorials.html"><i class="fas fa-home"></i></a></li>
+                <li class="breadcrumb-item"><a  href="../java.html#languages">Java Index</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Java StringReader</li>
+            </ul>
+        </nav>
+
+        <!-- breadcrumb ending -->
+    <!--    para-->
+    
+   <div class="wrapper">
+       <h3>Java StringReader</h3>
+       <p><strong>In this tutorial, we will learn about the Java StringReader, its constructors and its methods with the help of an example.</strong></p>
+       <p>Java StringReader writes text to a character-output stream, buffering characters so as to provide for the efficient writing of single characters, arrays, and strings.</p>
+       
+<h4>Constructors of StringReader</h4>
+<ul><li><strong>StringReader(String s) :</strong>This creates a new string reader.</li></ul>
+<h4>Methods</h4>
+<table border=2><tr><th>Methods</th><th>Description</th></tr>
+<tr><td>void close()</td><td>Closes the stream and releases any system resources associated with it.</td></tr>
+<tr><td>void mark(int readAheadLimit)</td><td>Marks the present position in the stream.</td></tr>
+<tr><td>boolean	markSupported()</td><td>Tells whether this stream supports the mark() operation, which it does.</td></tr>
+<tr><td>int read()</td><td>Reads a single character.</td></tr>
+<tr><td>int read(char[] cbuf, int off, int len)</td><td>Reads characters into a portion of an array.</td></tr>
+<tr><td>boolean	ready()</td><td>Tells whether this stream is ready to be read.</td></tr>
+<tr><td>void reset()</td><td>Resets the stream to the most recent mark, or to the beginning of the string if it has never been marked.</td></tr>
+<tr><td>long skip(long ns)</td><td>Skips the specified number of characters in the stream.</td></tr></table>
+<h4>Examples :</h4>
+<pre><code>
+import java.io.StringReader;
+
+public class Codemistic 
+{
+  	public static void main(String[] args) 
+	{
+
+    		String data = "This file consists of a single line.";
+
+    		// Create a character array
+    		char[] array = new char[100];
+
+    		try 
+		{
+      			// Create a StringReader
+      			StringReader input = new StringReader(data);
+
+      			//Use the read method
+      			input.read(array);
+      			System.out.println("Data read from the string:");
+      			System.out.println(array);
+
+      			input.close();
+    		}
+    		catch(Exception e) 
+		{
+      			e.getStackTrace();
+    		}
+  	}
+}
+
+<strong>Output :</strong>
+
+Data read from the string:
+This file consists of a single line.
+</code></pre>
+
+<hr>
+</div>
+<div class="but text-right">
+    <button class="btn btn-primary pull-right"><a href="string-writer-java.html">Next Topic&nbsp;<i
+                class="fas fa-arrow-right "></i><br/>Java StringWriter</a></button>
+</div><br>
+</section>
+
+<!-- footer -->
+
+<footer >
+<div class="row footer" >
+    <div class="logo">
+        <img src="../image.png" alt="" class="f-img">
+        <h5>LEARN CODE DISCUSS</h5>
+    </div>
+    
+        <div class="footer-column ">
+            
+            <ul class="footer-ul">
+                <li class="foot-header"><strong>CodeMistic</strong></li>
+                
+                    <li class="f-li"><a href="../index.html" class="f-links">Home</a></li>
+                
+                
+                    <li class="f-li"><a href="../team.html" class="f-links">Our Team</a></li>
+                
+                
+                    <li class="f-li"><a href="../terms-and-conditions.html" class="f-links">Terms of Service</a></li>
+                
+                
+                    <li class="f-li"><a href="../privacy-policy.html" class="f-links">Privacy Policy</a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-column ">
+          
+            <ul class="footer-ul ">
+                <li class="foot-header"><strong>LEARN</strong></li>
+                
+                    <li class="f-li"><a href="../cpp.html" class="f-links">C++</a></li>
+                
+                
+                    <li class="f-li"><a href="../java.html" class="f-links">Java</a></li>
+                
+                
+                    <li class="f-li"><a href="../python.html" class="f-links">Python</a></li>
+                
+                
+                    <li class="f-li"><a href="../dsa.html" class="f-links">DSA</a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-column ">
+            
+            <ul class="footer-ul ">
+                <li class="foot-header"><strong>CONTRIBUTE</strong></li>
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSduxk_aP9M1lqUAebQJwRXiVm2ukmdgv3T7gjBpOsr_gdeOcQ/viewform?usp=sf_link" class="f-links" target="_blank">Write an Article/Blog</a></li>
+                
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" class="f-links" target="_blank">Internships</a></li>
+                
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe9nr_Aw0fGIqm3_xWhqEzTr3UWdOFz-pvKpQvkAsosORYq9w/viewform?usp=sf_link" class="f-links" target="_blank">Videos</a></li>
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLScOW3hJjxxwzPYL4u51oboc4T1aDtIUEIRa20hKPKu4UlcZAA/viewform?usp=sf_link" class="f-links" target="_blank">Donations/Funds</a></li>
+                
+            </ul>
+        </div>
+    
+</div>
+<div class="footer-links" style="text-align: center;">
+    <!-- <h7>Connect With Us</h7><br><br> -->
+    <a href="https://www.facebook.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-facebook "
+            style="color:#3b5998; "></i></a>
+    <a href="https://www.instagram.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-instagram "
+            style="color:#e95950; "></i></a>
+    <a href="https://www.twitter.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-twitter "
+            style="color:#8accf5; "></i></a>
+    <a href="https://www.linkedin.com/company/codemistic " target="_blank "><i
+            class="icons fa-2x fab fa-linkedin " style="color:#88b3ee; "></i></a>
+    <a href="https://t.me/codemistic " target="_blank "><i class="icons fa-2x fab fa-telegram "
+            style="color:#65adda; "></i></a>
+
+    <a href="https://www.youtube.com/channel/UCS1Iv_kkgQGDwoXtvrlwlag " target="_blank "><i
+            class="icons fa-2x fab fa-youtube " style="color:red; "></i></a>
+    <p class="foot mt-3">&#169 Copyright : <strong>CodeMistic</strong> All Rights Reserved.</p>
+</div>
+</footer>
+
+
+
+<!-- CSS Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
+integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
+crossorigin="anonymous "></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='../side.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Java provides many types of operators which can be used according to the need. They are classified based on the functionality they provide. Some of the types are:"/>
+<meta name="keywords" content="Java Operators,operators in java,Types of operators,java operators,about operators,What are operators,C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+    <title>Java Operators | Java Tutorials | CodeMistic</title>
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MCNC43J');</script>
+    <!-- End Google Tag Manager -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTQSLH0XW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-YPTQSLH0XW');
+    </script>
+    <script data-ad-client="ca-pub-5352867889640158" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="img/png" href="../favicon.png"/>
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous"/>
+
+    <!-- FONTS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Ubuntu&family=Varela+Round&display=swap"
+        rel="stylesheet"/>
+
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity=""
+        crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity=""
+        crossorigin="anonymous"/>
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../lang_styles.css"/>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCNC43J"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- NAVIGATION BAR -->
+
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark">
+        <a class="navbar-brand" href="../index.html">CODEMISTIC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tutorials
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        <a class="dropdown-item" href="../cpp.html">C++</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../python.html">Python</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../java.html">Java</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../dsa.html">Data Structure and Algorithms</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../tutorials.html">All Tutorials</a>
+                        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../teen-code.html">Teen-Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../campus.html">Campus Programme</a>
+                </li>
+                <!-- <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" target="_blank">Contribute</a>
+                    </li> -->
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="../register.html">Join Our Community</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+
+
+
+    
+    <!-- Accordion -->
+
+    <section class="lbar">
+        <div class="lang-img col-md-2">
+            <img src="../logo/java.png" alt="dsa" class="cpp-img">
+        </div>
+	<ul id="accordion" class="accordion ml-5">
+            <li>
+                <div class="link">Java Introduction<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse show">
+                    <li>
+                        <a href="hello-world-java.html" class="closed" >Java Hello World</a>
+                    </li>
+                    <li>
+                       <a href="JVM-JRE-JDK-java.html" class="closed">Java JVM, JRE and JDK</a>
+                   </li>
+                   <li>
+                       <a href="data-types-java.html" class="closed">Java Data Types</a>
+                   </li>
+                   <li>
+                       <a href="operators-java.html" class="opened">Java Operators</a>
+                   </li>
+                   <li>
+                       <a href="input-and-output-java.html" class="closed">Java Input and Output</a>
+                   </li>
+                   <li>
+                       <a href="expressions-and-blocks-java.html" class="closed">Java Expressions &amp; Blocks</a>
+                   </li>
+                   <li>
+                       <a href="comment-java.html" class="closed">Java Comment</a>
+                   </li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Java Flow Control<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse ">
+                    <li><a href="if-else-java.html" class="closed">Java if...else</a></li>
+                    <li><a href="switch-statement-java.html" class="closed">Java switch Statement</a></li>
+                    <li><a href="for-loop-java.html" class="closed">Java for Loop</a></li>
+                    <li><a href="for-else-loop-java.html" class="closed">Java for-else Loop</a></li>
+                    <li><a href="while-loop-java.html" class="closed">Java while Loop</a></li>
+                    <li><a href="break-statement-java.html" class="closed">Java break Statement</a></li>
+                    <li><a href="continue-statement-java.html" class="closed">Java continue Statement</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Java Arrays<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li><a href="arrays-java.html" class="closed" >Java Arrays</a></li>
+                    <li><a href="multidimensional-array-java.html" class="closed">Multidimensional Array</a></li>
+                    <li><a href="copy-arrays-java.html" class="closed" >Java Copy Arrays</a></li>
+                    
+                </ul>
+            </li>
+            <li>
+                <div class="link">Java OOP(I)<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse ">
+                    <li><a href="class-objects-java.html" class="closed"> Java Class and Objects</a></li>
+                    <li><a href="methods-java.html" class="closed">Java Methods</a></li>
+                    <li><a href="constructor-java.html" class="closed"> Java Constructor</a></li>
+                    <li><a href="string-java.html" class="closed"> Java String</a></li>
+                    <li><a href="access-modifiers-java.html" class="closed"> Java Access Modifiers</a></li>
+                    <li><a href="this-keyword-java.html" class="closed"> Java this Keyword</a></li>
+                    <li><a href="final-keyword-java.html" class="closed"> Java final Keyword</a></li>
+                    <li><a href="recursion-java.html" class="closed"> Java Recursion</a></li>
+                    <li><a href="instance-of-operator-java.html" class="closed"> Java instanceOf Operator</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Java OOP(II)<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse ">
+                    <li><a href="inheritance-java.html" class="closed">Java Inheritance</a></li>
+                    <li><a href="methods-overriding-java.html" class="closed">Java Methods Overriding </a></li>
+                    <li><a href="super-keyword-java.html" class="closed">Java Super Keyword</a></li>
+                    <li><a href="abstract-class-method-java.html" class="closed">Abstract Class &mp; Method</a></li>
+                    <li><a href="interfaces-java.html" class="closed">Java Interfaces</a></li>
+                    <li><a href="polymorphism-java.html" class="closed">Java Polymorphism</a></li>
+                    <li><a href="encapsulation-java.html" class="closed">Java Encapsulation</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Java OOP(III)<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li><a href="nested-inner-class-java.html" class="closed">Nested &amp; Inner Class</a></li>
+                    <li><a href="static-class-java.html" class="closed">Java Static class </a></li>
+                    <li><a href="anonymous-java.html" class="closed">Java Anonymous</a></li>
+                     <li><a href="singleton-java.html" class="closed">Java Singleton</a></li>
+                      <li><a href="enum-class-java.html" class="closed">Java enum Class </a></li>
+                       <li><a href="enum-constructor-java.html" class="closed">Java enum Constructor</a></li>
+                        <li><a href="enum-string-java.html" class="closed">Java enum String</a></li>
+                        <li><a href="reflection-java.html" class="closed">Java Reflection</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="link">Java Exception Handling<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse ">
+                        <li><a href="exceptions-java.html" class="closed" >Java Exceptions</a>
+                        </li>
+                        <li><a href="exception-handling-java.html" class="closed" >Java Exception Handling</a>
+                        </li>
+                        <li> <a href="throw-throws-java.html" class="closed" >Java throw and throws</a>
+                        </li>
+                        <li><a href="catch-multiple-exceptions-java.html" class="closed" >Java catch Multiple Exceptions</a>
+                        </li>
+                        <li ><a href="try-with-resources-java.html" class="closed" >Java try-with-resources</a>
+                        </li>
+                        <li ><a href="annotation-java.html" class="closed" >Java Annotation</a>
+                        </li>
+                        <li><a href="logging-java.html"  class="closed" >Java Logging</a>
+                        </li>
+                        <li><a href="assertions-java.html"  class="closed" >Java Assertions</a>
+                        </li>
+                        
+                </ul>
+            </li>
+            <li>
+                <div class="link">Java List<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                           <li><a href="collections-framework-java.html" class="closed" >Java Collections Framework</a></li>
+                          <li><a href="collection-interface-java.html" class="closed" >Java Collection Interface</a></li>
+                          <li><a href="list-interface-java.html" class="closed" >Java List Interface</a></li>
+                          <li><a href="array-list-java.html" class="closed" >Java ArrayList</a ></li>
+                         <li> <a href="vector-java.html" class="closed" >Java Vector</a></li>
+                         <li> <a href="stack-java.html" class="closed" >Java Stack</a></li>
+                </ul>
+            </li>
+                        <li>
+                <div class="link">Java Queue<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                    <li> <a href="queue-interface-java.html" class="closed">Java Queue Interface </a></li>
+                    <li> <a href="priority-queue-java.html" class="closed">Java PriorityQueue </a></li>
+                    <li> <a href="deque-interface-java.html" class="closed">Java Deque Interface </a></li>
+                    <li> <a href="linked-list-java.html" class="closed">Java LinkedList </a></li>
+                    <li> <a href="array-deque-java.html" class="closed">Java ArrayDeque </a></li>
+                    <li> <a href="blocking-queue-interface-java.html"class="closed">Java BlockingQueue Interface </a></li>
+                    <li> <a href="array-blocking-queue-java.html" class="closed">Java ArrayBlockingQueue </a></li>
+                    <li> <a href="linked-blocking-queue-java.html" class="closed">Java LinkedBlockingQueue </a></li>
+                </ul>
+            </li>
+                        <li>
+                <div class="link">Java Map<i class="fa fa-chevron-down"></i>
+                </div>
+                  <ul class="submenu collapse">
+                            <li><a href="map-interface-java.html" class="closed" >Java Map Interface</a> </li>
+                            <li><a href="hashmap-java.html" class="closed" >Java HashMap</a> <li>
+                            <li><a href="linked-hashmap-java.html" class="closed" >Java LinkedHashMap</a> <li>
+                            <li><a href="weak-hashmap-java.html" class="closed" >Java WeakHashMap</a> <li>
+                            <li><a href="enum-map-java.html" class="closed" >Java EnumMap</a> <li>
+                            <li><a href="sorted-map-interface-java.html" class="closed" >Java SortedMap Interface</a> <li>
+                            <li><a href="navigable-map-interface-java.html" class="closed" >Java NavigableMap Interface</a> <li>
+                            <li><a href="tree-map-java.html" class="closed" >Java TreeMap</a> <li>
+                            <li><a href="concurrent-map-interface-java.html" class="closed" >Java ConcurrentMap Interface</a> <li>
+                            <li><a href="concurrent-hashmap-java.html" class="closed" >Java ConcurrentHashMap</a> <li>
+                </ul>
+            </li>        
+                   <li>
+                <div class="link">Java Set<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                            <li > <a href="set-interface-java.html" class="closed">Java Set Interface</a>    </li>
+                            <li><a href="hashset-java.html" class="closed">Java HashSet</a></li>
+                            <li><a href="linked-hashset-java.html" class="closed">Java LinkedHashSet</a> </li>
+                            <li><a href="enum-set-java.html" class="closed">Java EnumSet</a></li>
+                            <li><a href="sorted-set-interface-java.html" class="closed">Java SortedSet Interface</a></li>
+                            <li><a href="navigable-set-interface-java.html" class="closed">Java NavigableSet Interface</a></li>
+                            <li><a href="tree-set-java.html" class="closed">Java TreeSet</a></li>
+                            <li><a href="algorithms-java.html" class="closed">Java Algorithms</a></li>
+                            <li><a href="iterator-java.html" class="closed">Java Iterator</a></li>
+                            <li><a href="list-iterator-java.html" class="closed">Java ListIterator</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <div class="link">Java I/O Streams<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                            <li > <a href="I/O-streams-java.html" class="closed">Java I/O Streams</a>    </li>
+                            <li><a href="input-stream-java.html" class="closed">Java Input Stream</a></li>
+                            <li><a href="output-stream-java.html" class="closed">Java Output Stream</a> </li>
+                            <li><a href="file-input-stream-java.html" class="closed">Java FileInput Stream</a></li>
+                            <li><a href="file-output-stream-java.html" class="closed">Java FileOutput Stream</a></li>
+                            <li><a href="bytearray-input-stream-java.html" class="closed">Java ByteArrayInput Stream</a></li>
+                            <li><a href="bytearray-output-stream-java.html" class="closed">Java ByteArrayOutput Stream</a></li>
+                            <li><a href="object-input-stream-java.html" class="closed">Java ObjectInput Stream</a></li>
+                            <li><a href="object-output-stream-java.html" class="closed">Java ObjectOutput Stream</a></li>
+                            <li><a href="buffered-input-java.html" class="closed">Java BufferedInput</a></li>
+                            <li><a href="buffered-output-java.html" class="closed">Java BufferedOutput</a></li>
+                            <li><a href="print-input-java.html" class="closed">Java PrintInput</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <div class="link">Java Reader/Writer<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                            <li > <a href="reader-java.html" class="closed">Java Reader</a>    </li>
+                            <li><a href="writer-java.html" class="closed">Java Writer</a></li>
+                            <li><a href="input-stream-reader-java.html" class="closed">Java InputStreamReader</a> </li>
+                            <li><a href="output-stream-writer-java.html" class="closed">Java OutputStreamWriter</a></li>
+                            <li><a href="file-reader-java.html" class="closed">Java FileReader</a></li>
+                            <li><a href="file-writer-java.html" class="closed">Java FileWriter</a></li>
+                            <li><a href="buffered-reader-java.html" class="closed">Java BufferedReader</a></li>
+                            <li><a href="buffered-writer-java.html" class="closed">Java BufferedWriter</a></li>
+                            <li><a href="string-reader-java.html" class="closed">Java StringReader</a></li>
+                            <li><a href="string-writer-java.html" class="closed">Java StringWriter</a></li>
+                            <li><a href="print-writer-java.html" class="closed">Java PrintWriter</a></li>
+                           
+                </ul>
+            </li>
+            <li>
+                <div class="link">Additional Topics<i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu collapse">
+                            <li > <a href="scanner-class-java.html" class="closed">Java Scanner Class</a>    </li>
+                            <li><a href="type-casting-java.html" class="closed">Java Type Casting</a></li>
+                            <li><a href="autoboxing-and-unboxing-java.html" class="closed">Java Autoboxing and Unboxing</a> </li>
+                            <li><a href="lambda-expression-java.html" class="closed">Java Lambda Expression</a></li>
+                            <li><a href="generics-java.html" class="closed">Java Generics</a></li>
+                            <li><a href="file-class-java.html" class="closed">Java File Class</a></li>
+                            <li><a href="wrapper-class-java.html" class="closed">Java Wrapper Class</a></li>
+                            <li><a href="command-line-arguments-java.html" class="closed">Java Command line Arguments</a></li>
+                            
+                           
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    
+
+    <br>
+    <section class="para">
+        <!-- <div class="but mt-4">
+            &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-md btn-primary "><a href="../dsa.html"><i
+                        class="fas fa-arrow-left "></i>&nbsp;Back to Index</a></button>
+        </div> -->
+
+        <!-- breadcrumb -->
+
+        <nav class="bdcrumb" id="bdcrumb" aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a  href="../tutorials.html"><i class="fas fa-home"></i></a></li>
+                <li class="breadcrumb-item"><a  href="../java.html#languages">Java Index</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Java Operators</li>
+            </ul>
+        </nav>
+
+        <!-- breadcrumb ending -->
+    <!--    para-->
+    
+   <div class="wrapper">
+       <h3><strong>Java Operators</strong></h3>
+        
+       <strong> <p >In this tutorial, you'll learn about different types of operators in Java, their syntax and how to use them with the help of examples.</p></strong>
+        <p >Java provides many types of operators which can be used according to the need. They are classified based on the functionality they provide. Some of the types are- </p>
+        
+            <ul class="list-group" style="width: fit-content; ">
+                <li class="list-group-item">Arithmetic Operators</li>
+                <li class="list-group-item" >Unary Operators</li>
+                <li class="list-group-item" >Assignment Operator</li>
+                <li class="list-group-item">Relational Operators</li>
+                <li class="list-group-item">Logical Operators</li>
+                <li class="list-group-item">Bitwise Operators</li>
+                <li class="list-group-item">Ternary Operator</li>
+                <li class="list-group-item">Shift Operators</li>
+                <li class="list-group-item">instance ofoperator</li>
+            </ul>
+            
+        
+
+
+
+
+        <h6 class="subheading"><strong>1. Arithmetic Operators</strong></h6>
+
+        <p > <strong >Arithmetic Operators:</strong> They are used to perform simple arithmetic operations on primitive data types.<br >
+            1.<mark > * </mark> : Multiplication<br >
+            2.<mark > / </mark> : Division<br >
+            3.<mark > % </mark> : Modulo <br>
+            4.<mark > + </mark> : Addition<br >
+            5.<mark > - </mark> : Subtraction <br> <br>
+            <strong >EXAMPLE:</strong></p>
+    
+
+        <pre ><code >
+// Java program to illustrate 
+// arithmetic operators 
+public class operators { 
+    public static void main(String[] arg)
+    { 
+        int a = 20, b = 10, c = 0, d = 20, e = 40, f = 30; 
+        String x = "Thank", y = "You"; 
+                                     
+        // + and - operator 
+        System.out.println("a + b = " + (a + b)); 
+        System.out.println("a - b = " + (a - b)); 
+                                   
+        // + operator if used with strings 
+        // concatenates the given strings. 
+        System.out.println("x + y = " + x + y);
+  
+        // * and / operator 
+        System.out.println("a * b = " + (a * b)); 
+        System.out.println("a / b = " + (a / b)); 
+  
+        // modulo operator gives remainder 
+        // on dividing first operand with second 
+        System.out.println("a % b = " + (a % b)); 
+  
+        // if denominator is 0 in division 
+        // then Arithmetic exception is thrown. 
+        // uncommenting below line would throw 
+        // an exception 
+        // System.out.println(a/c); 
+        }
+    }
+        
+    
+<strong >Output:
+                a + b = 30
+                a - b = 10
+                x + y = ThankYou
+                a * b = 200
+                a / b = 2
+                a % b = 0</strong>
+              </code></pre>
+
+        <h6 class="subheading"><strong>2.Unary Operators</strong></h6>
+        <p > <strong >Unary Operators: </strong>Unary operators need only one operand. They are used to increment, decrement or negate a value.<br >
+            1.<mark > - </mark> : Unary minus, used for negating the values.<br >
+            2. <mark > + </mark> : Unary plus, used for giving positive values. Only used when deliberately converting a negative value to positive.<br >
+            3.<mark > ++ </mark> : Increment operator, used for incrementing the value by 1. There are two varieties of increment operator. <br>
+            4.<mark > Post-Increment </mark> : Value is first used for computing the result and then incremented.<br >
+            5.<mark > Pre-Increment </mark>:  Value is incremented first and then result is computed. <br> 
+            4.<mark > -- </mark> : Decrement operator, used for decrementing the value by 1. There are two varieties of decrement operator.<br >
+            5.<mark > Post-decrement </mark>: Value is first used for computing the result and then decremented. <br> 
+            4.<mark > Pre-Decrement  </mark> : Value is decremented first and then result is computed.<br >
+            5.<mark > !  </mark>:Logical not operator, used for inverting a boolean value. <br> <br>
+            <strong >EXAMPLE:</strong></p>
+            
+            
+            <pre ><code >
+// Java program to illustrate 
+// unary operators 
+public class operators { 
+    public static void main(String[] args) 
+    { 
+        int a = 20, b = 10, c = 0, d = 20, e = 40, f = 30; 
+        boolean condition = true; 
+  
+        // pre-increment operator 
+        // a = a+1 and then c = a; 
+          c = ++a; 
+          System.out.println("Value of c (++a) = " + c); 
+   
+                                   
+        // post increment operator 
+        // c=b then b=b+1 
+          c = b++; 
+          System.out.println("Value of c (b++) = " + c); 
+  
+        // pre-decrement operator 
+        // d=d-1 then c=d 
+          c = --d; 
+          System.out.println("Value of c (--d) = " + c); 
+  
+        // post-decrement operator 
+        // c=e then e=e-1 
+          c = e--; 
+          System.out.println("Value of c (e--) = " + c); 
+  
+        // Logical not operator 
+          System.out.println("Value of !condition =" + !condition); 
+        }
+    }
+        
+<strong >Output:
+            Value of c (++a) = 21
+            Value of c (b++) = 10
+            Value of c (--d) = 19
+            Value of c (e--) = 40
+            Value of !condition =false</strong>
+              </code></pre>
+              
+              
+        <h6 class="subheading"><strong>3.Assignment Operator</strong></h6>
+       <p><strong>Assignment Operator</strong>  : <mark>‘=’</mark> Assignment operator is used to assign a value to any variable. It has a right to left associativity, i.e value given on right hand side of operator is assigned to the variable on the left and therefore right hand side value must be declared before using it or should be a constant.<br>
+         <mark> += </mark>, for adding left operand with right operand and then assigning it to variable on the left.<br>
+         <mark> -= </mark>, for subtracting left operand with right operand and then assigning it to variable on the left.<br>
+         <mark>*=</mark> , for multiplying left operand with right operand and then assigning it to variable on the left.<br>
+         <mark>/=</mark> , for dividing left operand with right operand and then assigning it to variable on the left.<br>
+          <mark> %= </mark>, for assigning modulo of left operand with right operand and then assigning it to variable on the left.
+          <br><br>
+           <strong >EXAMPLE:</strong></p>
+           
+            <pre ><code >
+// Java program to illustrate 
+// assignment operators 
+    public class operators { 
+        public static void main(String[] args) 
+        { 
+            int a = 20, b = 10, c; 
+  
+            // simple assignment operator 
+            c = b; 
+            System.out.println("Value of c = " + c);
+        }
+    }
+        
+<strong >Output:
+        Value of c = 10</strong>
+              </code></pre>
+              
+        <h6 class="subheading"><strong>4.Relational Operator</strong></h6>
+       <p><strong>Relational Operator</strong>  : The equality and relational operators determine the relationship between the two operands. It checks if an operand is greater than, less than, equal to, not equal to and so on. Depending on the relationship, it is evaluated to either true or false.<br>
+         <mark> == </mark>, Equal to : returns true of left hand side is equal to right hand side.<br>
+         <mark> != </mark>, Not Equal to : returns true of left hand side is not equal to right hand side.<br>
+         <mark> < </mark>, less than : returns true of left hand side is less than right hand side.<br>
+         <mark> <= </mark> , less than or equal to : returns true of left hand side is less than or equal to right hand side.<br>
+         <mark> > </mark> , Greater than : returns true of left hand side is greater than right hand side..<br>
+          <mark> >= </mark>,Greater than or equal to: returns true of left hand side is greater than or equal to right hand side.
+          <br><br>
+           <strong >EXAMPLE:</strong></p>
+             
+             
+             <pre ><code>
+// Java program to illustrate 
+// relational operators 
+public class operators { 
+    public static void main(String[] args) 
+    { 
+        int a = 30, b = 20; 
+        
+        // various conditional operators 
+        System.out.println("a == b :" + (a == b)); 
+        System.out.println("a &lt; b :" + (a &lt; b)); 
+        System.out.println("a &lt;= b :" + (a &lt;= b)); 
+        System.out.println("a &gt; b :" + (a &gt; b)); 
+        System.out.println("a &gt;= b :" + (a &gt;= b)); 
+        System.out.println("a != b :" + (a != b)); 
+    }
+<strong >Output:
+    a == b :false
+    a &lt; b :false
+    a <= b :false
+    a &gt; b :true
+    a >= b :true
+    a != b :true</strong>
+              </code></pre>
+             
+    <h6 class="subheading"><strong>5.Logical Operators</strong></h6>
+    <p><strong>Logical Operators</strong> :These operators are used to perform <em>“logical AND” and “logical OR” </em>operation, i.e. the function similar to AND gate and OR gate in digital electronics. One thing to keep in mind is the second condition is not evaluated if the first one is false, i.e. it has a short-circuiting effect. Used extensively to test for several conditions for making a decision.<br>
+        Conditional operators are-<br>
+         <mark> || </mark> Logical OR : returns true if at least one condition is true.<br>
+         <mark> &amp;&amp; </mark> Logical AND : returns true when both conditions are true.<br>
+          <br>
+           <strong >EXAMPLE:</strong></p>
+             
+             
+             <pre ><code >
+// Java program to illustrate 
+// Logica operators 
+public class operators { 
+    public static void main(String[] args) 
+    { 
+        int number1 = 1, number2 = 2, number3 = 9;
+        boolean result;
+        
+        // At least one expression needs to be true for the result to be true
+        result = (number1 &gt; number2) || (number3 &gt; number1);
+
+        // result will be true because (number1 &gt; number2) is true
+        System.out.println(result);
+    			
+        // All expression must be true from result to be true	
+        result = (number1 &gt; number2) && (number3 &gt; number1);
+
+        // result will be false because (number3 &gt; number1) is false
+        System.out.println(result);
+    }
+}
+  
+<strong >Output:
+      true
+      false </strong>
+              </code></pre>
+     
+
+
+           
+   <h6 class="subheading"><strong>6.Ternary operator </strong></h6>
+    <p><strong>Ternary operator </strong>  : Ternary operator is a shorthand version of if-else statement. It has three operands and hence the name ternary. General format is-<br>
+     <mark> condition ? if true : if false</mark><br>
+     The above statement means that if the condition evaluates to true, then execute the statements after the ‘?’ else execute the statements after the ‘:’<br><br>
+           <strong >EXAMPLE:</strong></p>
+             
+             
+             <pre ><code >
+// Java program to illustrate 
+// Ternary operator 
+public class operators { 
+    public static void main(String[] args) 
+    { 
+        int a = 20, b = 10, c = 30, result; 
+  
+        // result holds max of three 
+        // numbers 
+        result = ((a &gt; b) 
+              ? (a &gt; c) 
+              ? a 
+              : c 
+              : (b &gt; c) 
+              ? b 
+              : c); 
+        System.out.println("Max of three numbers =" + result); 
+    
+    }
+}
+  
+<strong >Output:
+        Max of three numbers = 30
+</strong>
+              </code></pre>
+              
+              
+               <h6 class="subheading"><strong>7.Bitwise Operators</strong></h6>
+    <p><strong>Bitwise Operators</strong> :These operators are used to perform manipulation of individual bits of a number. They can be used with any of the integer types. They are used when performing update and query operations of Binary indexed tree.<br>
+   <mark> &amp;</mark>, Bitwise AND operator: returns bit by bit AND of input values.<br>
+     <mark>|</mark>, Bitwise OR operator: returns bit by bit OR of input values.<br>
+     <mark>^</mark>, Bitwise XOR operator: returns bit by bit XOR of input values.<br>
+      <mark>&#126;</mark>, Bitwise Complement Operator: This is a unary operator which returns the one’s compliment representation of the input value, i.e. with all bits inversed.<br><br>
+         
+           <strong >EXAMPLE:</strong></p>
+             
+             
+             <pre ><code >
+// Java program to illustrate 
+// bitwise operators 
+public class operators { 
+    public static void main(String[] args) 
+    { 
+        int a = 0x0005; 
+        int b = 0x0007; 
+  
+        // bitwise and 
+        // 0101 &amp; 0111=0101 
+        System.out.println("a&amp;b = " + (a &amp; b));
+    }
+}
+  
+        
+<strong >Output:
+    a&amp;b = 5
+</strong>
+              </code></pre>
+     
+           
+           <h6 class="subheading"><strong>8.Shift Operators </strong></h6>
+    <p><strong>Shift Operators </strong> :These operators are used to shift the bits of a number left or right thereby multiplying or dividing the number by two respectively. They can be used when we have to multiply or divide a number by two. General format-<br>
+     <mark> number shift_op number_of_places_to_shift;</mark><br>
+     <mark> &lt;&lt;</mark> Left shift operator: shifts the bits of the number to the left and fills 0 on voids left as a result. Similar effect as of multiplying the number with some power of two.<br>
+      <mark>&gt;&gt;</mark> Signed Right shift operator: shifts the bits of the number to the right and fills 0 on voids left as a result. The leftmost bit depends on the sign of initial number. Similar effect as of dividing the number with some power of two.<br>
+      <mark>&gt;&gt;&gt;</mark> Unsigned Right shift operator: shifts the bits of the number to the right and fills 0 on voids left as a result. The leftmost bit is set to 0.<br><br>
+           <strong >EXAMPLE:</strong></p>
+             
+             
+             <pre ><code >
+// Java program to illustrate 
+// Shift Operators 
+public class operators { 
+    public static void main(String[] args) 
+    { 
+        int a = 0x0005; 
+        int b = -10; 
+  
+        // left shift operator 
+        // 0000 0101&gt;&gt;2 =0001 0100(20) 
+        // similar to 5*(2^2) 
+        System.out.println("a&gt;&gt;2 = " + (a &gt;&gt; 2)); 
+    }
+}
+  
+        
+<strong>Output:
+    a &lt;&lt; 2 = 20
+    </strong>
+              </code></pre>
+     
+           
+           
+           <h6 class="subheading"><strong>9.Instance of operator</strong></h6>
+    <p><strong>Instance of operator </strong> :Instance of operator is used for type checking. It can be used to test if an object is an instance of a class, a subclass or an interface. General format-<br>
+     <mark> object instance of class/subclass/interface</mark><br><br>
+           <strong >EXAMPLE:</strong></p>
+             
+             
+             <pre ><code >
+// Java program to illustrate 
+// Instance of operator 
+public class operators { 
+    public static void main(String[] args) 
+    { 
+        String test = "asdf";
+        boolean result;
+    	
+        result = test instanceof String;
+        System.out.println("Is test an object of String? " + result);
+    
+    }
+}
+<strong >Output:
+    Is test an object of String? true
+</strong>
+              </code></pre>
+</div>
+<div class="but text-right">
+    <button class="btn btn-primary pull-right"><a href="input-and-output-java.html">Next Topic&nbsp;<i
+                class="fas fa-arrow-right "></i><br/>Java Input And Output</a></button>
+</div><br>
+</section>
+
+<!-- footer -->
+
+<footer >
+<div class="row footer" >
+    <div class="logo">
+        <img src="../image.png" alt="" class="f-img">
+        <h5>LEARN CODE DISCUSS</h5>
+    </div>
+    
+        <div class="footer-column ">
+            
+            <ul class="footer-ul">
+                <li class="foot-header"><strong>CodeMistic</strong></li>
+                
+                    <li class="f-li"><a href="../index.html" class="f-links">Home</a></li>
+                
+                
+                    <li class="f-li"><a href="../team.html" class="f-links">Our Team</a></li>
+                
+                
+                    <li class="f-li"><a href="../terms-and-conditions.html" class="f-links">Terms of Service</a></li>
+                
+                
+                    <li class="f-li"><a href="../privacy-policy.html" class="f-links">Privacy Policy</a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-column ">
+          
+            <ul class="footer-ul ">
+                <li class="foot-header"><strong>LEARN</strong></li>
+                
+                    <li class="f-li"><a href="../cpp.html" class="f-links">C++</a></li>
+                
+                
+                    <li class="f-li"><a href="../java.html" class="f-links">Java</a></li>
+                
+                
+                    <li class="f-li"><a href="../python.html" class="f-links">Python</a></li>
+                
+                
+                    <li class="f-li"><a href="../dsa.html" class="f-links">DSA</a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-column ">
+            
+            <ul class="footer-ul ">
+                <li class="foot-header"><strong>CONTRIBUTE</strong></li>
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSduxk_aP9M1lqUAebQJwRXiVm2ukmdgv3T7gjBpOsr_gdeOcQ/viewform?usp=sf_link" class="f-links" target="_blank">Write an Article/Blog</a></li>
+                
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link" class="f-links" target="_blank">Internships</a></li>
+                
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe9nr_Aw0fGIqm3_xWhqEzTr3UWdOFz-pvKpQvkAsosORYq9w/viewform?usp=sf_link" class="f-links" target="_blank">Videos</a></li>
+                
+                    <li class="f-li"><a href="https://docs.google.com/forms/d/e/1FAIpQLScOW3hJjxxwzPYL4u51oboc4T1aDtIUEIRa20hKPKu4UlcZAA/viewform?usp=sf_link" class="f-links" target="_blank">Donations/Funds</a></li>
+                
+            </ul>
+        </div>
+    
+</div>
+<div class="footer-links" style="text-align: center;">
+    <!-- <h7>Connect With Us</h7><br><br> -->
+    <a href="https://www.facebook.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-facebook "
+            style="color:#3b5998; "></i></a>
+    <a href="https://www.instagram.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-instagram "
+            style="color:#e95950; "></i></a>
+    <a href="https://www.twitter.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-twitter "
+            style="color:#8accf5; "></i></a>
+    <a href="https://www.linkedin.com/company/codemistic " target="_blank "><i
+            class="icons fa-2x fab fa-linkedin " style="color:#88b3ee; "></i></a>
+    <a href="https://t.me/codemistic " target="_blank "><i class="icons fa-2x fab fa-telegram "
+            style="color:#65adda; "></i></a>
+
+    <a href="https://www.youtube.com/channel/UCS1Iv_kkgQGDwoXtvrlwlag " target="_blank "><i
+            class="icons fa-2x fab fa-youtube " style="color:red; "></i></a>
+    <p class="foot mt-3">&#169 Copyright : <strong>CodeMistic</strong> All Rights Reserved.</p>
+</div>
+</footer>
+
+
+
+<!-- CSS Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
+integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
+crossorigin="anonymous "></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='../side.js'></script>
+</body>
+
+</html>
