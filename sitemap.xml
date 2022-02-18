@@ -1,0 +1,1127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.codemistic.in/</loc>
+  <lastmod>2020-08-21T13:45:44+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/index.html</loc>
+  <lastmod>2020-08-21T13:45:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp.html</loc>
+  <lastmod>2020-08-10T09:55:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python.html</loc>
+  <lastmod>2020-08-10T09:56:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java.html</loc>
+  <lastmod>2020-08-10T09:58:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/dsa.html</loc>
+  <lastmod>2020-08-10T09:48:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/tutorials.html</loc>
+  <lastmod>2020-08-07T10:13:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/events.html</loc>
+  <lastmod>2020-08-24T14:57:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/teen-code.html</loc>
+  <lastmod>2020-08-14T08:03:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/campus.html</loc>
+  <lastmod>2020-08-14T08:05:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/register.html</loc>
+  <lastmod>2020-08-09T17:56:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/team.html</loc>
+  <lastmod>2020-08-09T18:31:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/terms-and-conditions.html</loc>
+  <lastmod>2020-08-14T08:04:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/privacy-policy.html</loc>
+  <lastmod>2020-08-09T19:34:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/getting-started.html</loc>
+  <lastmod>2020-08-09T16:08:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/variables-and-literals.html</loc>
+  <lastmod>2020-08-09T13:04:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/data-types.html</loc>
+  <lastmod>2020-08-09T13:04:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/input-output.html</loc>
+  <lastmod>2020-08-09T13:04:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/type-conversion.html</loc>
+  <lastmod>2020-08-09T13:04:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/operators.html</loc>
+  <lastmod>2020-08-09T13:04:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/comments.html</loc>
+  <lastmod>2020-08-09T13:04:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/if-else.html</loc>
+  <lastmod>2020-08-09T13:04:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/for-loop.html</loc>
+  <lastmod>2020-08-09T13:04:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/do-while.html</loc>
+  <lastmod>2020-08-09T13:04:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/break-and-continue.html</loc>
+  <lastmod>2020-08-09T13:04:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/switch-statement.html</loc>
+  <lastmod>2020-08-09T13:04:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/goto-statement.html</loc>
+  <lastmod>2020-08-09T13:04:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/functions.html</loc>
+  <lastmod>2020-08-09T13:04:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/function-types.html</loc>
+  <lastmod>2020-08-09T13:04:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/function-overloading.html</loc>
+  <lastmod>2020-08-09T13:04:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/default-argument.html</loc>
+  <lastmod>2020-08-09T13:04:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/storage-class.html</loc>
+  <lastmod>2020-08-09T13:04:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/recursion.html</loc>
+  <lastmod>2020-08-10T07:00:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/return-reference.html</loc>
+  <lastmod>2020-08-09T13:04:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/arrays.html</loc>
+  <lastmod>2020-08-09T13:04:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/multidimensional-arrays.html</loc>
+  <lastmod>2020-08-09T13:04:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/function-arrays.html</loc>
+  <lastmod>2020-08-09T13:04:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/string.html</loc>
+  <lastmod>2020-08-09T13:04:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/structures.html</loc>
+  <lastmod>2020-08-09T13:04:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/structure-fuction.html</loc>
+  <lastmod>2020-08-09T13:04:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/pointers-structures.html</loc>
+  <lastmod>2020-08-09T13:04:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/enumeration.html</loc>
+  <lastmod>2020-08-09T13:04:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/object-class.html</loc>
+  <lastmod>2020-08-10T07:02:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/constructors.html</loc>
+  <lastmod>2020-08-09T16:25:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/operator-overloading.html</loc>
+  <lastmod>2020-08-09T13:04:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/pointers.html</loc>
+  <lastmod>2020-08-09T13:04:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/pointers-arrays.html</loc>
+  <lastmod>2020-08-09T13:04:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/pointers-functions.html</loc>
+  <lastmod>2020-08-09T13:04:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/memory-management.html</loc>
+  <lastmod>2020-08-09T13:04:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/inheritance.html</loc>
+  <lastmod>2020-08-09T13:04:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/inheritance-access-control.html</loc>
+  <lastmod>2020-08-09T13:04:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/function-overriding.html</loc>
+  <lastmod>2020-08-10T07:05:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/inheritence-types.html</loc>
+  <lastmod>2020-08-09T13:21:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/friend-function.html</loc>
+  <lastmod>2020-08-09T13:04:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/virtual-function.html</loc>
+  <lastmod>2020-08-09T13:04:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/templates.html</loc>
+  <lastmod>2020-08-09T13:04:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/start-python.html</loc>
+  <lastmod>2020-08-07T10:49:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/keyword-and-identifiers-python.html</loc>
+  <lastmod>2020-08-07T10:49:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/statements-and-comments-python.html</loc>
+  <lastmod>2020-08-07T10:49:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/variables-python.html</loc>
+  <lastmod>2020-08-07T10:49:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/datatypes-python.html</loc>
+  <lastmod>2020-08-20T10:15:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/type-conversion-python.html</loc>
+  <lastmod>2020-08-07T10:49:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/input-output-import-python.html</loc>
+  <lastmod>2020-08-07T10:49:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/operators-python.html</loc>
+  <lastmod>2020-08-07T10:49:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/namespace-python.html</loc>
+  <lastmod>2020-08-07T10:49:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/if-else-python.html</loc>
+  <lastmod>2020-08-07T10:49:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/keyword-for-loop-python.html</loc>
+  <lastmod>2020-08-07T10:49:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/while-loop-python.html</loc>
+  <lastmod>2020-08-07T10:49:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/break-and-continue-python.html</loc>
+  <lastmod>2020-08-07T10:49:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/pass-python.html</loc>
+  <lastmod>2020-08-07T10:49:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/functions-python.html</loc>
+  <lastmod>2020-08-07T10:49:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/keyword-and-arguments-python.html</loc>
+  <lastmod>2020-08-07T10:49:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/recursion-python.html</loc>
+  <lastmod>2020-08-07T10:49:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/anonymous-python.html</loc>
+  <lastmod>2020-08-07T10:49:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/global-local-and-nonlocal-python.html</loc>
+  <lastmod>2020-08-07T10:49:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/modules-python.html</loc>
+  <lastmod>2020-08-07T10:49:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/package-python.html</loc>
+  <lastmod>2020-08-07T10:49:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/numbers-python.html</loc>
+  <lastmod>2020-08-07T10:49:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/list-python.html</loc>
+  <lastmod>2020-08-07T10:49:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/tuple-python.html</loc>
+  <lastmod>2020-08-07T10:49:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/string-python.html</loc>
+  <lastmod>2020-08-07T10:49:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/set-python.html</loc>
+  <lastmod>2020-08-07T10:49:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/dictionary-python.html</loc>
+  <lastmod>2020-08-07T10:49:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/file-operation-python.html</loc>
+  <lastmod>2020-08-07T10:49:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/directory-and-file-management-python.html</loc>
+  <lastmod>2020-08-07T10:49:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/exception-python.html</loc>
+  <lastmod>2020-08-07T10:49:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/exception-handling-python.html</loc>
+  <lastmod>2020-08-07T10:49:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/user-defined-exception-python.html</loc>
+  <lastmod>2020-08-07T10:49:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/oop-python.html</loc>
+  <lastmod>2020-08-07T10:49:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/class-python.html</loc>
+  <lastmod>2020-08-07T10:49:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/inheritance-python.html</loc>
+  <lastmod>2020-08-07T10:49:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/multiple-inheritance-python.html</loc>
+  <lastmod>2020-08-07T10:49:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/operator-overloading-python.html</loc>
+  <lastmod>2020-08-07T10:49:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/iterator-python.html</loc>
+  <lastmod>2020-08-07T10:49:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/generator-python.html</loc>
+  <lastmod>2020-08-07T10:49:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/closure-python.html</loc>
+  <lastmod>2020-08-07T10:49:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/decorator-python.html</loc>
+  <lastmod>2020-08-07T10:49:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/properties-python.html</loc>
+  <lastmod>2020-08-07T10:49:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/regex-python.html</loc>
+  <lastmod>2020-08-07T10:49:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/datetime-python.html</loc>
+  <lastmod>2020-08-07T10:49:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/datetime.strftime()-python.html</loc>
+  <lastmod>2020-08-07T10:49:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/datetime.strptime()-python.html</loc>
+  <lastmod>2020-08-07T10:49:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/current-date-and-time-python.html</loc>
+  <lastmod>2020-08-07T10:49:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/get-current-time-python.html</loc>
+  <lastmod>2020-08-07T10:49:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/timestamp-to-datetime-python.html</loc>
+  <lastmod>2020-08-07T10:49:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/time-module-python.html</loc>
+  <lastmod>2020-08-07T10:49:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/python/time.sleep-python.html</loc>
+  <lastmod>2020-08-07T10:49:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/hello-world-java.html</loc>
+  <lastmod>2020-08-08T19:56:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/JVM-JRE-JDK-java.html</loc>
+  <lastmod>2020-08-08T19:56:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/data-types-java.html</loc>
+  <lastmod>2020-08-08T19:56:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/operators-java.html</loc>
+  <lastmod>2020-08-08T19:56:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/input-and-output-java.html</loc>
+  <lastmod>2020-08-08T19:56:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/expressions-and-blocks-java.html</loc>
+  <lastmod>2020-08-08T19:56:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/comment-java.html</loc>
+  <lastmod>2020-08-08T19:56:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/if-else-java.html</loc>
+  <lastmod>2020-08-08T19:56:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/switch-statement-java.html</loc>
+  <lastmod>2020-08-08T19:56:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/for-loop-java.html</loc>
+  <lastmod>2020-08-08T19:56:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/for-each-loop-java.html</loc>
+  <lastmod>2020-08-08T19:56:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/while-loop-java.html</loc>
+  <lastmod>2020-08-08T19:56:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/break-statement-java.html</loc>
+  <lastmod>2020-08-08T19:56:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/continue-statement-java.html</loc>
+  <lastmod>2020-08-08T19:56:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/arrays-java.html</loc>
+  <lastmod>2020-08-08T19:56:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/multidimensional-array-java.html</loc>
+  <lastmod>2020-08-08T19:56:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/copy-arrays-java.html</loc>
+  <lastmod>2020-08-10T06:39:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/class-objects-java.html</loc>
+  <lastmod>2020-08-08T19:56:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/methods-java.html</loc>
+  <lastmod>2020-08-08T19:56:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/constructor-java.html</loc>
+  <lastmod>2020-08-08T19:56:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/string-java.html</loc>
+  <lastmod>2020-08-08T19:56:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/access-modifiers-java.html</loc>
+  <lastmod>2020-08-08T19:56:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/this-keyword-java.html</loc>
+  <lastmod>2020-08-08T19:56:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/final-keyword-java.html</loc>
+  <lastmod>2020-08-08T19:56:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/recursion-java.html</loc>
+  <lastmod>2020-08-08T19:56:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/instance-of-operator-java.html</loc>
+  <lastmod>2020-08-08T19:56:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/inheritance-java.html</loc>
+  <lastmod>2020-08-08T19:56:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/methods-overriding-java.html</loc>
+  <lastmod>2020-08-08T19:56:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/super-keyword-java.html</loc>
+  <lastmod>2020-08-08T19:56:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/abstract-class-method-java.html</loc>
+  <lastmod>2020-08-08T19:56:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/interfaces-java.html</loc>
+  <lastmod>2020-08-08T19:56:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/polymorphism-java.html</loc>
+  <lastmod>2020-08-08T19:56:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/encapsulation-java.html</loc>
+  <lastmod>2020-08-08T19:56:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/nested-inner-class-java.html</loc>
+  <lastmod>2020-08-08T19:56:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/static-class-java.html</loc>
+  <lastmod>2020-08-08T19:56:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/anonymous-java.html</loc>
+  <lastmod>2020-08-08T19:56:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/singleton-java.html</loc>
+  <lastmod>2020-08-08T19:56:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/enum-class-java.html</loc>
+  <lastmod>2020-08-08T19:56:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/enum-constructor-java.html</loc>
+  <lastmod>2020-08-08T19:56:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/enum-string-java.html</loc>
+  <lastmod>2020-08-08T19:56:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/reflection-java.html</loc>
+  <lastmod>2020-08-08T19:56:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/exceptions-java.html</loc>
+  <lastmod>2020-08-08T19:56:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/exception-handling-java.html</loc>
+  <lastmod>2020-08-08T19:56:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/throw-throws-java.html</loc>
+  <lastmod>2020-08-08T19:56:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/catch-multiple-exceptions-java.html</loc>
+  <lastmod>2020-08-08T19:56:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/try-with-resources-java.html</loc>
+  <lastmod>2020-08-08T19:56:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/annotation-java.html</loc>
+  <lastmod>2020-08-08T19:56:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/logging-java.html</loc>
+  <lastmod>2020-08-08T19:56:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/assertions-java.html</loc>
+  <lastmod>2020-08-08T19:56:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/collections-framework-java.html</loc>
+  <lastmod>2020-08-08T19:56:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/collection-interface-java.html</loc>
+  <lastmod>2020-08-08T19:56:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/list-interface-java.html</loc>
+  <lastmod>2020-08-08T20:00:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/array-list-java.html</loc>
+  <lastmod>2020-08-08T19:56:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/vector-java.html</loc>
+  <lastmod>2020-08-08T19:56:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/stack-java.html</loc>
+  <lastmod>2020-08-08T19:56:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/queue-interface-java.html</loc>
+  <lastmod>2020-08-08T19:56:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/priority-queue-java.html</loc>
+  <lastmod>2020-08-08T19:56:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/deque-interface-java.html</loc>
+  <lastmod>2020-08-08T19:56:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/linked-list-java.html</loc>
+  <lastmod>2020-08-08T19:56:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/array-deque-java.html</loc>
+  <lastmod>2020-08-08T19:56:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/blocking-queue-interface-java.html</loc>
+  <lastmod>2020-08-08T19:56:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/array-blocking-queue-java.html</loc>
+  <lastmod>2020-08-08T19:56:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/linked-blocking-queue-java.html</loc>
+  <lastmod>2020-08-08T19:56:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/map-interface-java.html</loc>
+  <lastmod>2020-08-08T19:56:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/hashmap-java.html</loc>
+  <lastmod>2020-08-08T19:56:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/linked-hashmap-java.html</loc>
+  <lastmod>2020-08-08T19:56:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/weak-hashmap-java.html</loc>
+  <lastmod>2020-08-08T19:56:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/enum-map-java.html</loc>
+  <lastmod>2020-08-08T19:56:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/sorted-map-interface-java.html</loc>
+  <lastmod>2020-08-08T19:56:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/navigable-map-interface-java.html</loc>
+  <lastmod>2020-08-08T19:56:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/tree-map-java.html</loc>
+  <lastmod>2020-08-08T19:56:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/concurrent-map-interface-java.html</loc>
+  <lastmod>2020-08-08T19:56:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/concurrent-hashmap-java.html</loc>
+  <lastmod>2020-08-08T19:56:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/set-interface-java.html</loc>
+  <lastmod>2020-08-08T19:56:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/hashset-java.html</loc>
+  <lastmod>2020-08-08T19:56:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/linked-hashset-java.html</loc>
+  <lastmod>2020-08-08T19:56:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/enum-set-java.html</loc>
+  <lastmod>2020-08-08T19:56:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/sorted-set-interface-java.html</loc>
+  <lastmod>2020-08-08T19:56:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/navigable-set-interface-java.html</loc>
+  <lastmod>2020-08-08T19:56:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/tree-set-java.html</loc>
+  <lastmod>2020-08-08T19:56:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/algorithms-java.html</loc>
+  <lastmod>2020-08-08T19:56:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/iterator-java.html</loc>
+  <lastmod>2020-08-08T19:56:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/list-iterator-java.html</loc>
+  <lastmod>2020-08-08T19:56:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/I/O-streams-java.html</loc>
+  <lastmod>2020-08-09T18:27:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/input-stream-java.html</loc>
+  <lastmod>2020-08-10T06:48:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/output-stream-java.html</loc>
+  <lastmod>2020-08-10T06:51:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/file-input-stream-java.html</loc>
+  <lastmod>2020-08-10T06:55:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/file-output-stream-java.html</loc>
+  <lastmod>2020-08-09T18:33:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/bytearray-input-stream-java.html</loc>
+  <lastmod>2020-08-09T18:33:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/bytearray-output-stream-java.html</loc>
+  <lastmod>2020-08-09T18:33:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/object-input-stream-java.html</loc>
+  <lastmod>2020-08-10T07:21:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/object-output-stream-java.html</loc>
+  <lastmod>2020-08-10T06:30:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/buffered-input-java.html</loc>
+  <lastmod>2020-08-09T18:33:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/buffered-output-java.html</loc>
+  <lastmod>2020-08-10T06:58:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/print-input-java.html</loc>
+  <lastmod>2020-08-10T07:24:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/reader-java.html</loc>
+  <lastmod>2020-08-09T18:33:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/writer-java.html</loc>
+  <lastmod>2020-08-09T18:33:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/input-stream-reader-java.html</loc>
+  <lastmod>2020-08-10T07:20:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/output-stream-writer-java.html</loc>
+  <lastmod>2020-08-09T18:33:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/file-reader-java.html</loc>
+  <lastmod>2020-08-09T18:33:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/file-writer-java.html</loc>
+  <lastmod>2020-08-10T07:15:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/buffered-reader-java.html</loc>
+  <lastmod>2020-08-09T18:33:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/buffered-writer-java.html</loc>
+  <lastmod>2020-08-09T18:33:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/string-reader-java.html</loc>
+  <lastmod>2020-08-09T18:33:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/string-writer-java.html</loc>
+  <lastmod>2020-08-09T18:33:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/print-writer-java.html</loc>
+  <lastmod>2020-08-09T18:33:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/scanner-class-java.html</loc>
+  <lastmod>2020-08-09T18:33:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/type-casting-java.html</loc>
+  <lastmod>2020-08-09T18:33:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/autoboxing-and-unboxing-java.html</loc>
+  <lastmod>2020-08-09T18:33:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/lambda-expression-java.html</loc>
+  <lastmod>2020-08-09T18:33:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/generics-java.html</loc>
+  <lastmod>2020-08-09T18:33:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/file-class-java.html</loc>
+  <lastmod>2020-08-09T18:33:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/wrapper-class-java.html</loc>
+  <lastmod>2020-08-09T18:33:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/java/command-line-arguments-java.html</loc>
+  <lastmod>2020-08-09T19:15:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/codebattle.php</loc>
+  <lastmod>2020-08-25T07:47:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.codemistic.in/cpp/objects-functions.html</loc>
+  <lastmod>2020-08-09T13:25:57+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
